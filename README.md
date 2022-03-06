@@ -1,6 +1,6 @@
 # Changelog
 
-* [Eris] 6/3/22: Set up character movement
+* [Eris] 6/3/22: Set up character movement, animation
 
 # Acknowledgements
 
@@ -10,4 +10,4 @@
 
 ### Assets
 
-* [8-direction top down character](https://gamekrazzy.itch.io/8-direction-top-down-character)
+* [8-direction top down character - Gamekrazzy](https://gamekrazzy.itch.io/8-direction-top-down-character)
