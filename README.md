@@ -8,6 +8,26 @@
       * 04 Idle & Face Correct
       * 06 Camera Follow (excluding parts related to tilemaps)
 
+# Folder Hierarchy-ish
+
+* Assets
+   * Animations
+      * [Idle___]
+      * [Walk___]
+   * Art
+      * TopDownCharacter
+         * Character
+            * ...
+         * Weapon
+            * ...
+   * Prefabs
+   * Scenes
+      * Test
+   * Scripts
+      * CameraController
+      * PlayerController
+* ...
+
 # Acknowledgements
 
 ### Tutorials
