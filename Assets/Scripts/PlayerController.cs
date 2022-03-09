@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float speed;
 
+    private float attackTime = 0.25f;
+    private float attackCounter = 0.25f;
+    private bool isAttacking;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +28,30 @@ public class PlayerController : MonoBehaviour
         myAnim.SetFloat("moveX", myRB.velocity.x);
         myAnim.SetFloat("moveY", myRB.velocity.y);
 
-	if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1
-           || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
-        {
-	    myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-            myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1
+            || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+            {
+            myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+                myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
+        if(isAttacking)
+        {   
+            myRB.velocity = Vector2.zero;
+            attackCounter-= Time.deltaTime;
+            if(attackCounter <= 0 )
+            {
+                myAnim.SetBool("isAttacking", false);
+                isAttacking = false;
+            }
         }
+
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            attackCounter = attackTime;
+            myAnim.SetBool("isAttacking",true);
+            isAttacking = true;
+        }
+
     }
+
 }
