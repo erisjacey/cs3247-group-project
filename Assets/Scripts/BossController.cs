@@ -24,6 +24,8 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        myAnim.SetBool("isWithinRange", false);
+
         if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange) 
         {
             FollowPlayer();
@@ -31,6 +33,10 @@ public class BossController : MonoBehaviour
         else if (Vector3.Distance(target.position, transform.position) > maxRange)
         {
             GoHome();
+        }
+        else if (Vector3.Distance(target.position, transform.position) < minRange)
+        {
+            AttackPlayer();
         }
     }
 
@@ -40,6 +46,14 @@ public class BossController : MonoBehaviour
         myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+    }
+
+    public void AttackPlayer()
+    {
+        myAnim.SetBool("isWithinRange", true);
+        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
+        // damage player NEED TO UPDATE
     }
 
     public void GoHome()
