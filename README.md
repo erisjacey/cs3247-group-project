@@ -7,6 +7,7 @@
       * 03 Animation
       * 04 Idle & Face Correct
       * 06 Camera Follow (excluding parts related to tilemaps)
+* [Zx] 10/3/22: Set up Enemy movement, patrolling, follow player, and knock back.
 
 # Folder Hierarchy-ish
 
