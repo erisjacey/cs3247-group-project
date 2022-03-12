@@ -1,0 +1,758 @@
+Unity Editor version:    2020.3.30f1 (1fb1bf06830e)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.2.1 (Build 21D62)
+Darwin version:          21.3.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/huitinglee/Github/cs3247-group-project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50400
+Successfully changed project path to: /Users/huitinglee/Github/cs3247-group-project
+/Users/huitinglee/Github/cs3247-group-project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 59.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/huitinglee/Github/cs3247-group-project/Assets
+GfxDevice: creating device client; threaded=0
+2022-03-13 01:59:38.743 Unity[34932:1668911] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2022-03-13 01:59:38.743 Unity[34932:1668911] Metal devices available: 1
+2022-03-13 01:59:38.743 Unity[34932:1668911] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2022-03-13 01:59:38.743 Unity[34932:1668911] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.30f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003032 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 49.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.743 seconds
+Domain Reload Profiling:
+	ReloadAssembly (743ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (562ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (214ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (207ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004481 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 49.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.338 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1339ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1092ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (371ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.000875 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.000789 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Initializing Unity extensions:
+2022-03-13 01:59:42.570 Unity[34932:1668911] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000edd7a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-03-13 01:59:42.573 Unity[34932:1668911] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000ed3f70 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 211.4 MB.
+System memory in use after: 210.5 MB.
+
+Unloading 106 unused Assets to reduce memory usage. Loaded Objects now: 2668.
+Total: 4.406283 ms (FindLiveObjects: 0.184212 ms CreateObjectMapping: 0.090756 ms MarkObjects: 3.328259 ms  DeleteObjects: 0.802080 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27229c93fff168fb91c1f7ba66d64459') in 0.163236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 116.505652 seconds.
+  path: Assets/Tiles
+  artifactKey: Guid(c1fc2479ea87f429893d9677f7fb0ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles using Guid(c1fc2479ea87f429893d9677f7fb0ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03338a9fe877b6161bdfd9e572f279fc') in 0.001377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.477907 seconds.
+  path: Assets/Tiles/SupermarketBackground
+  artifactKey: Guid(b1d52d906edb5479487244fbd1768cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground using Guid(b1d52d906edb5479487244fbd1768cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d63e6e7fdfa80389d9c96f4737ba472') in 0.001819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 148.075517 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png
+  artifactKey: Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png using Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3878a2fe169ecd997e54e39b5c1778') in 0.879332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.936389 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png
+  artifactKey: Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png using Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f86ff5d116a97368da1cb893b1e5b4') in 0.008800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.727779 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png
+  artifactKey: Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png using Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4cd9c38391270ac66bd6318d9e75f1') in 0.169433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.531661 seconds.
+  path: Assets/Tiles/SupermarketBackground/SupermarketBackground.prefab
+  artifactKey: Guid(8bc9c2992b81e4ad9bd5541e6411eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/SupermarketBackground.prefab using Guid(8bc9c2992b81e4ad9bd5541e6411eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302a104701513b7e23c20d1fa5d3ed27') in 0.203883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.204436 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_0.asset
+  artifactKey: Guid(57f698595b79943d7971c7333364a600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_0.asset using Guid(57f698595b79943d7971c7333364a600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4aa72282e7d20f82ddd8602455ef835') in 0.030905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_27.asset
+  artifactKey: Guid(f2f411b506dad4dae843f4700bd4098f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_27.asset using Guid(f2f411b506dad4dae843f4700bd4098f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bcbb9e6962e1810e7ea8aace5ed36a9') in 0.015146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_11.asset
+  artifactKey: Guid(10ebc15d4573b40eeb38e0ae4140c72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_11.asset using Guid(10ebc15d4573b40eeb38e0ae4140c72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96df2da31b95ab84900d04ca6902c49') in 0.013120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_13.asset
+  artifactKey: Guid(796da652b47de45db82625f0cebef0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_13.asset using Guid(796da652b47de45db82625f0cebef0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b11c0583ecc2f8e35de7bd0b7e88a93') in 0.012783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_2.asset
+  artifactKey: Guid(1fc573344df1745c3ad5d9043899e8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_2.asset using Guid(1fc573344df1745c3ad5d9043899e8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb47e52fd9bbdc20fced2f82bc99066') in 0.017226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000631 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_9.asset
+  artifactKey: Guid(4d37167b92ca74a4cab5e17e699473dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_9.asset using Guid(4d37167b92ca74a4cab5e17e699473dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf157782db76aeed52da1b2f440566c') in 0.013540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_1.asset
+  artifactKey: Guid(edd3ad2c235a94effa026adbf43a2357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_1.asset using Guid(edd3ad2c235a94effa026adbf43a2357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533d0b518cd8d6d0e3be8d9eba4c0b00') in 0.013865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000701 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_15.asset
+  artifactKey: Guid(1da0990cb72a5426497dffcd6b45315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_15.asset using Guid(1da0990cb72a5426497dffcd6b45315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fb8d70355c68a52a96f0c95ff38123') in 0.011227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_26.asset
+  artifactKey: Guid(df82f5baa42f74759984b7d8fd4dd9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_26.asset using Guid(df82f5baa42f74759984b7d8fd4dd9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9ef39da68cfba251932f4270d18e2a') in 0.018309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_17.asset
+  artifactKey: Guid(0051f285af7d346eab78efaa024df699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_17.asset using Guid(0051f285af7d346eab78efaa024df699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ff407532fc0d04076134bd9dd03ceb') in 0.023553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_18.asset
+  artifactKey: Guid(3d8fd053b076c48e9ba4dc65ad113d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_18.asset using Guid(3d8fd053b076c48e9ba4dc65ad113d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be00be31f13adb49be12cee0358bdfde') in 0.012949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_7.asset
+  artifactKey: Guid(4679c8b00e77a4f4e85dad3925140f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_7.asset using Guid(4679c8b00e77a4f4e85dad3925140f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8b85933d95a5ddc9e415785c150e3c') in 0.011330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_24.asset
+  artifactKey: Guid(5470a7d0a866f435ab060f69db330db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_24.asset using Guid(5470a7d0a866f435ab060f69db330db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dcde0e4f04a0d1b262d942ec0ab2803') in 0.010626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_8.asset
+  artifactKey: Guid(5c675921b5e8f47ab8d4fe9375fefc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_8.asset using Guid(5c675921b5e8f47ab8d4fe9375fefc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c4620a78d354b3403c25fff2c1c94f') in 0.012980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_29.asset
+  artifactKey: Guid(337c54702d8a9458c9aa167de6f86ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_29.asset using Guid(337c54702d8a9458c9aa167de6f86ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936ce7b5686142926fc3d78f12a585db') in 0.010917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003157 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_5.asset
+  artifactKey: Guid(06f832680b520495fb1c899803046b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_5.asset using Guid(06f832680b520495fb1c899803046b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ff628147fbb150e9c9a4e8afcd39e2') in 0.010976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_14.asset
+  artifactKey: Guid(3d8088ea03c77483f8557e00ffebbcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_14.asset using Guid(3d8088ea03c77483f8557e00ffebbcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf50d8846f3256e7ae880523f91ae4cd') in 0.013197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000974 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_6.asset
+  artifactKey: Guid(ffe47a4cb794546c7ac6af9a8a7b43d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_6.asset using Guid(ffe47a4cb794546c7ac6af9a8a7b43d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4fab6c426860887651d2c433fa2fb9') in 0.013222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_19.asset
+  artifactKey: Guid(e9ae82854a4b349c58d49b5c0ca10941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_19.asset using Guid(e9ae82854a4b349c58d49b5c0ca10941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163dcb0ac111e280dd2575908664fd49') in 0.013851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003034 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_3.asset
+  artifactKey: Guid(05ed8e3b87d06427981dc0487aefebba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_3.asset using Guid(05ed8e3b87d06427981dc0487aefebba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5a72d87ca5896d834b696a452bad6f') in 0.012241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_20.asset
+  artifactKey: Guid(f7f3a24342ba24cbe87f7254e30543a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_20.asset using Guid(f7f3a24342ba24cbe87f7254e30543a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ef9f7a1920270e62d1eae78a3cd437') in 0.013593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_4.asset
+  artifactKey: Guid(02e289cab951b40d19ac13faaa37549d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_4.asset using Guid(02e289cab951b40d19ac13faaa37549d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c3f71a8abcc3ed809937f7a955b3d3') in 0.013654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_22.asset
+  artifactKey: Guid(59805dd0bd0664918b075e20cae1e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_22.asset using Guid(59805dd0bd0664918b075e20cae1e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18cf1bc4c48e30a2189498aa4c89ebe0') in 0.011226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_21.asset
+  artifactKey: Guid(abc663fb730304b1186f370c687c15fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_21.asset using Guid(abc663fb730304b1186f370c687c15fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2f4d88d2fd28b633c929fc430a5117') in 0.016536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_23.asset
+  artifactKey: Guid(c2770c34372ec49d29b9b843a0e5bb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_23.asset using Guid(c2770c34372ec49d29b9b843a0e5bb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855d47ddd461212cdabb90039b70db21') in 0.013004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_25.asset
+  artifactKey: Guid(8f09756800a7348e1a39f633fad13ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_25.asset using Guid(8f09756800a7348e1a39f633fad13ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a455e5bad498d53014818aacca86fc96') in 0.012052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_10.asset
+  artifactKey: Guid(abaf2582f75564fdfb92191e08360ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_10.asset using Guid(abaf2582f75564fdfb92191e08360ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3485cf5696f7a3e0027b4831a89dfd') in 0.011992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000678 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_12.asset
+  artifactKey: Guid(371f405ef202c416cb43f8f8227f03c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_12.asset using Guid(371f405ef202c416cb43f8f8227f03c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa367646417bf4d6452861695e89e755') in 0.012141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_28.asset
+  artifactKey: Guid(ac3af4ee9d5bb47b4a6de6fba8dd2d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_28.asset using Guid(ac3af4ee9d5bb47b4a6de6fba8dd2d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aebe7e8f90f69f87cea808226fa4d9c') in 0.012748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_16.asset
+  artifactKey: Guid(695258680976d456182b8420c594809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_16.asset using Guid(695258680976d456182b8420c594809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91ab88aa68c7d0ec30b9fb72ea75a05') in 0.032981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 263.588144 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_30.asset
+  artifactKey: Guid(f9fe7c780290043ecbb9684167cc0f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_30.asset using Guid(f9fe7c780290043ecbb9684167cc0f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7deaf51970e36bb37645d4cccfb71748') in 0.014478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_32.asset
+  artifactKey: Guid(d1da5abd4c91e48ca86bfaa99e400ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_32.asset using Guid(d1da5abd4c91e48ca86bfaa99e400ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdad4810f775f5d004f65be86c19d18') in 0.013206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_35.asset
+  artifactKey: Guid(9120b7b15e03546479ca8422e43ad77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_35.asset using Guid(9120b7b15e03546479ca8422e43ad77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167052a3369965e9f222f8b1f07d22d3') in 0.019248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007945 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_34.asset
+  artifactKey: Guid(94a78c2f0b7cf4761aa4ba62ff652514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_34.asset using Guid(94a78c2f0b7cf4761aa4ba62ff652514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad23f235295314bfc3564cfdce5eb87') in 0.022146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_33.asset
+  artifactKey: Guid(6a3fd50a96a93490e84168bb3a80a3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_33.asset using Guid(6a3fd50a96a93490e84168bb3a80a3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a8320ed7398f53d73c2bf9d734274a') in 0.026252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.027717 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_31.asset
+  artifactKey: Guid(478b26d4bc8b14ed0b785d0c25756a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_31.asset using Guid(478b26d4bc8b14ed0b785d0c25756a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3eb0f78d39c6b3b03415a22f1f8d679') in 0.096109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.710572 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_36.asset
+  artifactKey: Guid(3c37d319be91a453e9d15541c87941af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_36.asset using Guid(3c37d319be91a453e9d15541c87941af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07f46daf1da9c016df032cdfe80264f') in 0.010722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000611 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_37.asset
+  artifactKey: Guid(feb543dc37b004e3fb75f195f7c7bba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_37.asset using Guid(feb543dc37b004e3fb75f195f7c7bba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8d1547f799db761aa8e987ed3ee7ca1') in 0.037779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_38.asset
+  artifactKey: Guid(e9fa8064974354c8c8160dcaea013cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_38.asset using Guid(e9fa8064974354c8c8160dcaea013cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd04b6f8b676543dddb50bd13c82eb5') in 0.014192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002558 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_41.asset
+  artifactKey: Guid(8fbda36ff96d542359a117e30a5167f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_41.asset using Guid(8fbda36ff96d542359a117e30a5167f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d29f45e17a16581cf35f9b78430f08') in 0.011485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001876 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_39.asset
+  artifactKey: Guid(e473f5e7c8ab64223885d96047954f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_39.asset using Guid(e473f5e7c8ab64223885d96047954f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15276c0c5232acd55e6525b5a7655bee') in 0.010254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_40.asset
+  artifactKey: Guid(9ac5c6e136cfd48dbabef55844acf93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_40.asset using Guid(9ac5c6e136cfd48dbabef55844acf93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bdc1bfc0e5441eb2b209ee6666b0eb') in 0.014783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.288218 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_42.asset
+  artifactKey: Guid(b4bfe2d8e658145fbb64bbe7e7ff8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_42.asset using Guid(b4bfe2d8e658145fbb64bbe7e7ff8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7969cd068eac8211d853aa9dd7d803c4') in 0.016985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.019329 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_44.asset
+  artifactKey: Guid(e070c3aac6f6641a587e75c28a06726e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_44.asset using Guid(e070c3aac6f6641a587e75c28a06726e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edf48d2ef13ef06eb5e4f46755f32d6') in 0.024237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005632 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_47.asset
+  artifactKey: Guid(46959458e54574d0a9def617b9420f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_47.asset using Guid(46959458e54574d0a9def617b9420f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2482c2ebaba408f73e3e50ca74f83f22') in 0.015802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001706 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_49.asset
+  artifactKey: Guid(a42dfcfb63fe64ff7b7357e8838abc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_49.asset using Guid(a42dfcfb63fe64ff7b7357e8838abc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68efec3d3d48828f8492842b1fbe6fa') in 0.016615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001096 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_52.asset
+  artifactKey: Guid(24b384a26a57d453599be1ce865d16c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_52.asset using Guid(24b384a26a57d453599be1ce865d16c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be68809c5443b5bf03e3217f37ec6d03') in 0.095890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_51.asset
+  artifactKey: Guid(e8e529d547f9b4775b466b1131ab9399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_51.asset using Guid(e8e529d547f9b4775b466b1131ab9399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c073f122089fce30b0814fb36ef5bf') in 0.017939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_50.asset
+  artifactKey: Guid(ebad97b124c36452686e1ea793c5eac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_50.asset using Guid(ebad97b124c36452686e1ea793c5eac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c53ac81d950f37e4f40936c886ba2b') in 0.059948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_48.asset
+  artifactKey: Guid(c7b43aa45e30b4a518b5ac656940047f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_48.asset using Guid(c7b43aa45e30b4a518b5ac656940047f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af283a5ab82265ab1e462d29dd51327') in 0.036036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Tiles/SupermarketBackground/SupermarketBackground.prefab
+  artifactKey: Guid(8bc9c2992b81e4ad9bd5541e6411eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/SupermarketBackground.prefab using Guid(8bc9c2992b81e4ad9bd5541e6411eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e46bec289f418de57ad9ff4a8603b2') in 0.065515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000758 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_43.asset
+  artifactKey: Guid(f6a6d20ce7ee74493812b8cf47730ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_43.asset using Guid(f6a6d20ce7ee74493812b8cf47730ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796f5ba9a871a79de37169c4bca400a0') in 0.033985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_45.asset
+  artifactKey: Guid(1db0773c06fa74217ab067529b0dcd57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_45.asset using Guid(1db0773c06fa74217ab067529b0dcd57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305df1b8bb2e26d3293de053043c6a10') in 0.026594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_46.asset
+  artifactKey: Guid(2811437d770af467291d9f1daf9fc8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32_46.asset using Guid(2811437d770af467291d9f1daf9fc8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db1557b66bc07a9c9e057af0433213f') in 0.024690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.102625 seconds.
+  path: Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png
+  artifactKey: Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/SupermarketBackground/Supermarket_2_32x32.png using Guid(96fb1778824654e3ab1b36dbee4fa3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1af7435ed4e31162aba4d77724a9bd8') in 0.233903 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005233 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-13 02:23:46.159 Unity[34932:1668911] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000ecd490 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.407 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1408ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1138ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (434ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (395ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2193 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.4 MB.
+System memory in use after: 224.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2684.
+Total: 3.815605 ms (FindLiveObjects: 0.217152 ms CreateObjectMapping: 0.174435 ms MarkObjects: 3.206971 ms  DeleteObjects: 0.215836 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001607 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-13 02:24:07.606 Unity[34932:1668911] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000ebd9d0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.262 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1262ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1073ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (383ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (136ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2193 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.6 MB.
+System memory in use after: 224.6 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2686.
+Total: 13.159244 ms (FindLiveObjects: 1.268674 ms CreateObjectMapping: 0.383419 ms MarkObjects: 11.143352 ms  DeleteObjects: 0.361924 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005983 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-13 02:25:18.517 Unity[34932:1668911] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000edd6c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.584 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1585ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1351ms)
+			LoadAssemblies (175ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (378ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (436ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (178ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2193 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.8 MB.
+System memory in use after: 224.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2688.
+Total: 3.464981 ms (FindLiveObjects: 0.164003 ms CreateObjectMapping: 0.080197 ms MarkObjects: 3.101691 ms  DeleteObjects: 0.118134 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-13 02:26:01.569 Unity[34932:1668911] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000e82760 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.409 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1409ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1210ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (436ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (457ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (153ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2193 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 225.0 MB.
+System memory in use after: 225.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2690.
+Total: 3.270650 ms (FindLiveObjects: 0.170348 ms CreateObjectMapping: 0.086617 ms MarkObjects: 2.894841 ms  DeleteObjects: 0.117961 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
