@@ -9,6 +9,13 @@ public class BossHealth : MonoBehaviour
     public bool isInvulnerable = false;
 
     public bool isDead = false;
+    private Renderer renderer;
+
+     // Start is called before the first frame update
+    void Start()
+    {
+       renderer = GetComponent<Renderer>();
+    }
 
     public void TakeDamage(int damage)
     {
@@ -17,6 +24,8 @@ public class BossHealth : MonoBehaviour
 
         health -= damage;
 
+        StartCoroutine(Flashing());
+
         if (health <= 200)
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
@@ -24,6 +33,18 @@ public class BossHealth : MonoBehaviour
 
         if (health <= 0)
             StartCoroutine(Die());
+    }
+
+    IEnumerator Flashing()
+    {
+        for (var n = 0; n < 2; n++)
+        {
+            renderer.enabled = true;
+            yield return new WaitForSeconds(.1f);
+            renderer.enabled = false;
+            yield return new WaitForSeconds(.1f);
+        }
+        renderer.enabled = true;
     }
 
     IEnumerator Die()
