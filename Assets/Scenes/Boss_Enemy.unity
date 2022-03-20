@@ -15772,7 +15772,7 @@ MonoBehaviour:
   maxRange: 5
   minRange: 2
   attackDamage: 5
-  enragedAttackDamage: 40
+  enragedAttackDamage: 20
   attackOffset: {x: 0.5, y: 0.5, z: 0}
   attackMask:
     serializedVersion: 2

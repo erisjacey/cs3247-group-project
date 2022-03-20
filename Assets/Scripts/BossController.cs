@@ -61,7 +61,7 @@ public class BossController : MonoBehaviour
                 }
                 else
                 {
-                    EnragedAttackPlayer();
+                    myAnim.SetBool("isWithinRange", true); // attack player
                 }
             }
             else
@@ -76,7 +76,7 @@ public class BossController : MonoBehaviour
                 }
                 else if (Vector3.Distance(target.position, transform.position) < minRange)
                 {
-                    myAnim.SetBool("isWithinRange", true);
+                    myAnim.SetBool("isWithinRange", true); // attack player
                 }
             }
         }
@@ -117,10 +117,22 @@ public class BossController : MonoBehaviour
     }
     public void EnragedAttackPlayer()
     {
-        myAnim.SetBool("isWithinRange", true);
+        //myAnim.SetBool("isWithinRange", true);
         myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-        // damage player NEED TO UPDATE
+
+        float faceUp = myAnim.GetFloat("moveY") / Mathf.Abs(myAnim.GetFloat("moveY"));
+        float faceRight = myAnim.GetFloat("moveX") / Mathf.Abs(myAnim.GetFloat("moveX"));
+
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x * faceRight;
+        pos += transform.up * attackOffset.y * faceUp;
+
+        Collider2D colInfo = Physics2D.OverlapCircle(pos, minRange, attackMask);
+        if (colInfo != null)
+        {
+            colInfo.GetComponent<HealthManager>().HurtPlayer(enragedAttackDamage);
+        }
     }
 
     public void GoHome()
