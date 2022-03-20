@@ -32,6 +32,28 @@
      place a LevelExit at the desired location and place a SpawnPoint gameobject at the location you want to spawn player at (in new map)
      Add to the SpawnPoint to the PlayerLocationManager's SpawnLocations, then input the right index into LevelExit
 
+# Template Scene Hierarchy
+[Scene_Name]
+* Cameras
+   * Main Camera
+   * Follow Camera
+   * Boundary
+* Tilemaps
+    * Props
+      * Props Containers
+      * Prop Items
+      * Prop Items 2
+      * Prop Items 3
+   * Background
+   * Walls
+* Player
+* PlayerLocationManager
+   * [SM*_*]
+* Canvas
+   * Health bar
+* EventSystem
+* AudioManager
+* ...
 
 # Folder Hierarchy-ish
 
