@@ -31,6 +31,10 @@
      Note: To add a transition to a new level
      place a LevelExit at the desired location and place a SpawnPoint gameobject at the location you want to spawn player at (in new map)
      Add to the SpawnPoint to the PlayerLocationManager's SpawnLocations, then input the right index into LevelExit
+   * Scenes
+      * Supermarket 1 -> Main map
+      * Supermarket 2 -> Fake boss level
+      * Supermarket 3 -> Bozz level
 
 # Template Scene Hierarchy
 [Scene_Name]
