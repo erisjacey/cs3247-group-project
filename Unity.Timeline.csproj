@@ -70,8 +70,8 @@
      <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Scripting/PlayableTrack.cs" />
      <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Animation/ICurvesOwner.cs" />
      <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Audio/AudioClipProperties.cs" />
-     <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Playables/BasicScriptPlayable.cs" />
      <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/AssetUpgrade/TrackUpgrade.cs" />
+     <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Playables/BasicScriptPlayable.cs" />
      <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Animation/AnimationTrack.cs" />
      <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Extensions/TrackExtensions.cs" />
      <Compile Include="Library/PackageCache/com.unity.timeline@1.4.8/Runtime/Evaluation/IntervalTree.cs" />
@@ -346,6 +346,9 @@
     </Reference>
     <Reference Include="unityplastic">
         <HintPath>/Users/huitinglee/Github/cs3247-group-project/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>/Users/huitinglee/Github/cs3247-group-project/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>/Users/huitinglee/Github/cs3247-group-project/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
