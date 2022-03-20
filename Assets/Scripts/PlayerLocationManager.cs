@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLocationManager : MonoBehaviour
 {
-    [SerializeField] int locationIndex = 0;
+    [SerializeField] int locationIndex = -1;
     [SerializeField] List<GameObject> spawnLocations = new List<GameObject>();
     
+    // Singleton pattern for PlayerLocationManager
     private void Awake() 
     {
         int locationManagerCount = FindObjectsOfType<PlayerLocationManager>().Length;
@@ -32,6 +33,9 @@ public class PlayerLocationManager : MonoBehaviour
     {
         // Debug.Log("OnSceneLoaded: " + scene.name);
         // Debug.Log(mode);
+
+        // If locationIndex is not set, do not adjust player location
+        if (locationIndex < 0) return;
 
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
         player.transform.position = spawnLocations[locationIndex].transform.position;

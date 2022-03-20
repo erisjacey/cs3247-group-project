@@ -26,6 +26,11 @@
       * 15 Health System
       * 17 Hurt Flash
 * [Eris] 20/3/22: Add audio manager, assets for menu theme/player hurt
+* [Huiting/Kerwin] 21/3/22: Laid out map for Supermarket levels and level to level transition
+   * Set up level to level transition
+     Note: To add a transition to a new level
+     place a LevelExit at the desired location and place a SpawnPoint gameobject at the location you want to spawn player at (in new map)
+     Add to the SpawnPoint to the PlayerLocationManager's SpawnLocations, then input the right index into LevelExit
 
 
 # Folder Hierarchy-ish
@@ -66,6 +71,8 @@
       * GuardHealth
       * HealthManager
       * HurtPlayer
+      * LevelExit
+      * PlayerLocationManager
    * Sounds
       * MenuTheme
       * PlayerHurt
