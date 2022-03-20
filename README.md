@@ -17,11 +17,14 @@
       * Follow camera is confined within the tilemap
    * **IMPT NOTE for everyone!!**: Removed all library and temp files from the repo and added .gitignore
       * Do not commit your own temp or library files and remove them if they are in your commits
-
 * [Zx] 17/3/22: Set up Enemy movement, path-finding, Collision
-
 * [Germaine] 16/3/22: Set up basic boss enemy movement, animations and enraged mode based on health
    * Dealing damage to player is not implemented yet
+* [Eris] 20/3/22: Set up player health system, hurt player mechanic/animation
+   * [Tutorial levels completed:](https://www.youtube.com/watch?v=BfgyI1RkVo4&list=PLLtCXwcEVtulmgxqM_cA8hjIWkSNMWuie&index=1)
+      * 14 Hurt Player
+      * 15 Health System
+      * 17 Hurt Flash
 
 
 # Folder Hierarchy-ish
@@ -54,6 +57,10 @@
       * PlayerController
       * BossController
       * BossHealth
+      * GuardAI
+      * GuardHealth
+      * HealthManager
+      * HurtPlayer
    * Boss_Enrage [State Machine Script]
    * Boss_Move [State Machine Script]
 * ...
