@@ -6,6 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
+    public HealthBar healthBar;
 
     private bool flashActive;
     [SerializeField]
@@ -18,7 +19,9 @@ public class HealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-	playerSprite = GetComponent<SpriteRenderer>();        
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+	    playerSprite = GetComponent<SpriteRenderer>();        
     }
 
     // Update is called once per frame
@@ -47,12 +50,14 @@ public class HealthManager : MonoBehaviour
     public void HurtPlayer(int damageToGive)
     {
         currentHealth -= damageToGive;
-	flashActive = true;
+        healthBar.SetHealth(currentHealth);
+
+	    flashActive = true;
         flashCounter = flashLength;
 
         if (currentHealth <= 0)
         {
-	    gameObject.SetActive(false);
-	}
+	        gameObject.SetActive(false);
+	    }
     }
 }
