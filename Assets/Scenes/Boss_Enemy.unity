@@ -9179,11 +9179,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931899805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.25, y: -7.12, z: 0}
+  m_LocalPosition: {x: 0.5, y: -6.92, z: 0}
   m_LocalScale: {x: 0.29392627, y: 0.29392627, z: 0.29392627}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &969248422
 PrefabInstance:
@@ -9194,7 +9194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 86448391707573026, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 86448391707573026, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15748,11 +15748,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884397428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.25, y: -7.12, z: 0}
+  m_LocalPosition: {x: 0.5, y: -6.92, z: 0}
   m_LocalScale: {x: 0.29392627, y: 0.29392627, z: 0.29392627}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1884397433
 MonoBehaviour:
@@ -15771,6 +15771,12 @@ MonoBehaviour:
   enragedSpeed: 3
   maxRange: 5
   minRange: 2
+  attackDamage: 5
+  enragedAttackDamage: 40
+  attackOffset: {x: 0.5, y: 0.5, z: 0}
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &1884397434
 Animator:
   serializedVersion: 3
