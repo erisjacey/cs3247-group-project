@@ -223,8 +223,8 @@ GameObject:
   - component: {fileID: 141505682}
   - component: {fileID: 141505686}
   - component: {fileID: 141505687}
-  - component: {fileID: 141505688}
   - component: {fileID: 141505684}
+  - component: {fileID: 141505688}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -268,7 +268,7 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 0.6
-  pickNextWaypointDist: 0.25
+  pickNextWaypointDist: 0.2
   endReachedDistance: 0.1
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
@@ -375,8 +375,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &141505688
-CapsuleCollider2D:
+--- !u!61 &141505688
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -388,9 +388,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027044296, y: -0.22987938}
-  m_Size: {x: 0.82453537, y: 1.3515797}
-  m_Direction: 0
+  m_Offset: {x: 0.016118959, y: -0.8}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4519777, y: 0.28072035}
+  m_EdgeRadius: 0
 --- !u!1 &164640928
 GameObject:
   m_ObjectHideFlags: 0
@@ -6053,7 +6063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880544658}
   - component: {fileID: 880544657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemaps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
