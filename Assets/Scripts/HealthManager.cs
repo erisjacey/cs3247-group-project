@@ -49,15 +49,16 @@ public class HealthManager : MonoBehaviour
 
     public void HurtPlayer(int damageToGive)
     {
+        FindObjectOfType<AudioManager>().Play("PlayerHurt");
         currentHealth -= damageToGive;
         healthBar.SetHealth(currentHealth);
 
-	    flashActive = true;
+	flashActive = true;
         flashCounter = flashLength;
 
         if (currentHealth <= 0)
         {
 	        gameObject.SetActive(false);
-	    }
+	}
     }
 }
