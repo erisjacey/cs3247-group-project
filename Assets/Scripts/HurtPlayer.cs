@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class HurtPlayer : MonoBehaviour
 {
-    private float waitToLoad = 2f;
-    private bool reloading;
-
     [SerializeField]
     private int damageToGive = 10;
 
@@ -20,24 +17,14 @@ public class HurtPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (reloading)
-        {
-            waitToLoad -= Time.deltaTime;
-            if (waitToLoad <= 0)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-        }*/        
+    
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.tag == "Player")
         {
-            //Destroy(other.gameObject);
-            //other.gameObject.SetActive(false);
             other.gameObject.GetComponent<HealthManager>().HurtPlayer(damageToGive);
-	    //reloading = true;
         }
     }
 }

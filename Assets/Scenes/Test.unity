@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d0ef2dbbd31474eb6c4e4ee24d5672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageToGive: 10
 --- !u!1 &164640928
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,8 +507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90108bb8c53387c449a65c2d2e0450b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 50
+  currentHealth: 5000
   maxHealth: 50
+  flashLength: 1
+  blinkLength: 16
 --- !u!1 &213808192
 GameObject:
   m_ObjectHideFlags: 0
