@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 141505682}
   - component: {fileID: 141505686}
   - component: {fileID: 141505684}
+  - component: {fileID: 141505689}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -14020,6 +14021,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 86448391707573028, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 86448391707573038, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -14027,6 +14032,10 @@ PrefabInstance:
     - target: {fileID: 86448391707573038, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 86448391707573038, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc4905f9c5254d8981719f1328d114b, type: 3}

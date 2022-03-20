@@ -6,8 +6,8 @@ public class BossController : MonoBehaviour
 {
     private Animator myAnim;
     private Transform target;
-    private float counter = 0;
-    private float tickInterval = 1;
+    //private float counter = 0;
+    //private float tickInterval = 1;
 
     public Transform homePos;
     [SerializeField]
@@ -18,6 +18,12 @@ public class BossController : MonoBehaviour
     private float maxRange;    
     [SerializeField]
     private float minRange;
+
+    public int attackDamage = 20;
+    public int enragedAttackDamage = 40;
+
+    public Vector3 attackOffset;
+    public LayerMask attackMask;
 
     // Start is called before the first frame update
     void Start()
@@ -34,15 +40,15 @@ public class BossController : MonoBehaviour
             return;
         }
 
-        if (counter < tickInterval)
-        {
-            counter += Time.deltaTime;
-        }
-        else
-        {
-            GetComponent<BossHealth>().TakeDamage(10);
-            counter = 0;
-        }
+        //if (counter < tickInterval)
+        //{
+        //    counter += Time.deltaTime;
+        //}
+        //else
+        //{
+        //    GetComponent<BossHealth>().TakeDamage(10);
+        //    counter = 0;
+        //}
         myAnim.SetBool("isWithinRange", false);
 
         if (!myAnim.GetBool("isEnraging"))
@@ -55,7 +61,7 @@ public class BossController : MonoBehaviour
                 }
                 else
                 {
-                    EnragedAttackPlayer();
+                    myAnim.SetBool("isWithinRange", true); // attack player
                 }
             }
             else
@@ -70,7 +76,7 @@ public class BossController : MonoBehaviour
                 }
                 else if (Vector3.Distance(target.position, transform.position) < minRange)
                 {
-                    AttackPlayer();
+                    myAnim.SetBool("isWithinRange", true); // attack player
                 }
             }
         }
@@ -92,17 +98,41 @@ public class BossController : MonoBehaviour
 
     public void AttackPlayer()
     {
-        myAnim.SetBool("isWithinRange", true);
+        //myAnim.SetBool("isWithinRange", true);
         myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-        // damage player NEED TO UPDATE
+
+        float faceUp = myAnim.GetFloat("moveY") / Mathf.Abs(myAnim.GetFloat("moveY"));
+        float faceRight = myAnim.GetFloat("moveX") / Mathf.Abs(myAnim.GetFloat("moveX"));
+
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x * faceRight;
+        pos += transform.up * attackOffset.y * faceUp;
+
+        Collider2D colInfo = Physics2D.OverlapCircle(pos, minRange, attackMask);
+        if (colInfo != null)
+        {
+            colInfo.GetComponent<HealthManager>().HurtPlayer(attackDamage);
+        }
     }
     public void EnragedAttackPlayer()
     {
-        myAnim.SetBool("isWithinRange", true);
+        //myAnim.SetBool("isWithinRange", true);
         myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-        // damage player NEED TO UPDATE
+
+        float faceUp = myAnim.GetFloat("moveY") / Mathf.Abs(myAnim.GetFloat("moveY"));
+        float faceRight = myAnim.GetFloat("moveX") / Mathf.Abs(myAnim.GetFloat("moveX"));
+
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x * faceRight;
+        pos += transform.up * attackOffset.y * faceUp;
+
+        Collider2D colInfo = Physics2D.OverlapCircle(pos, minRange, attackMask);
+        if (colInfo != null)
+        {
+            colInfo.GetComponent<HealthManager>().HurtPlayer(enragedAttackDamage);
+        }
     }
 
     public void GoHome()

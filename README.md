@@ -17,11 +17,15 @@
       * Follow camera is confined within the tilemap
    * **IMPT NOTE for everyone!!**: Removed all library and temp files from the repo and added .gitignore
       * Do not commit your own temp or library files and remove them if they are in your commits
-
 * [Zx] 17/3/22: Set up Enemy movement, path-finding, Collision
-
 * [Germaine] 16/3/22: Set up basic boss enemy movement, animations and enraged mode based on health
    * Dealing damage to player is not implemented yet
+* [Eris] 20/3/22: Set up player health system, hurt player mechanic/animation
+   * [Tutorial levels completed:](https://www.youtube.com/watch?v=BfgyI1RkVo4&list=PLLtCXwcEVtulmgxqM_cA8hjIWkSNMWuie&index=1)
+      * 14 Hurt Player
+      * 15 Health System
+      * 17 Hurt Flash
+* [Eris] 20/3/22: Add audio manager, assets for menu theme/player hurt
 
 
 # Folder Hierarchy-ish
@@ -47,13 +51,24 @@
          * Tiles, Tileset and Sprite...
    * Prefabs
    * Scenes
+      * Audio
       * Test
       * Boss_Enemy
    * Scripts
+      * Audio
+         * AudioManager
+         * Sound
       * CameraController
       * PlayerController
       * BossController
       * BossHealth
+      * GuardAI
+      * GuardHealth
+      * HealthManager
+      * HurtPlayer
+   * Sounds
+      * MenuTheme
+      * PlayerHurt
    * Boss_Enrage [State Machine Script]
    * Boss_Move [State Machine Script]
 * ...
@@ -63,9 +78,14 @@
 ### Tutorials
 
 * Used [this tutorial](https://www.youtube.com/watch?v=BfgyI1RkVo4&list=PLLtCXwcEVtulmgxqM_cA8hjIWkSNMWuie&index=1) for setting up the project
+* Used [this tutorial](https://www.youtube.com/watch?v=6OT43pvUyfY) for setting up audio and for audio manager script
 
 ### Assets
 
 * [8-direction top down character - Gamekrazzy](https://gamekrazzy.itch.io/8-direction-top-down-character)
 * [Modern Tilesets](https://limezu.itch.io/moderninteriors)
 * [8-direction top down Boss Enemy](https://e-bros-assets.itch.io/top-down-enemy-animated-8-directions)
+* [Music loop bundle - Tallbeard Studios](https://tallbeard.itch.io/music-loop-bundle)
+   * Ludum Dare 32 - Track Five (MenuTheme)
+* [SFX Pack v1 - Mythril Age](https://mythril-age.itch.io/mythril-age-sfx-pack-v1)
+   * Sound 1 (PlayerHurt)
