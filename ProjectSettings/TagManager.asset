@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Environment
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - Player
   - Background
+  - Environment
   - Interactables
-  - 
   - 
   - 
   - 
@@ -54,5 +55,5 @@ TagManager:
     uniqueID: 393872623
     locked: 0
   - name: Interactables
-    uniqueID: 3528066681
+    uniqueID: 3626049123
     locked: 0
