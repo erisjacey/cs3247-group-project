@@ -5,7 +5,9 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
     [SerializeField]
-    public int health = 250;
+    public int health = 200;
+    public int maxHealth = 200;
+    public float rageThreshold = 0.5f;
     public bool isInvulnerable = false;
 
     public bool isDead = false;
@@ -22,17 +24,24 @@ public class BossHealth : MonoBehaviour
         if (isInvulnerable)
             return;
 
+        //audioManager.Play("BossHurt");
         health -= damage;
 
         StartCoroutine(Flashing());
 
-        if (health <= 200)
+        if (health <= (rageThreshold * maxHealth) && !GetComponent<Animator>().GetBool("isEnraged"))
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
+            FindObjectOfType<AudioManager>().Play("BossRage");
         }
-
-        if (health <= 0)
+        else if (health <= 0)
+        {
             StartCoroutine(Die());
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("BossHurt");
+        }
     }
 
     IEnumerator Flashing()
@@ -51,6 +60,7 @@ public class BossHealth : MonoBehaviour
     {
         isDead = true;
         GetComponent<Animator>().Play("Death");
+        FindObjectOfType<AudioManager>().Play("BossDie");
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }

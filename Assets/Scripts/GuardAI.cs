@@ -1,13 +1,13 @@
 using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 namespace Pathfinding
 {
 	public class GuardAI : VersionedMonoBehaviour
 	{
 		/// <summary>Target points to move to in order</summary>
 		public Transform[] targets;
-		public Transform player;
+		private Transform player;
 		public bool isStationary;
 		/// <summary>Time in seconds to wait at each target</summary>
 		public float delay = 0;
@@ -30,6 +30,7 @@ namespace Pathfinding
 			agent = GetComponent<IAstarAI>();
 			index = Random.Range(0, targets.Length);
 			animator = GetComponentInChildren<Animator>();
+			player = GameObject.FindGameObjectWithTag("Player").transform;
 		}
 
 		/// <summary>Update is called once per frame</summary>
@@ -45,11 +46,11 @@ namespace Pathfinding
 				FollowPlayer();
 			}
 			else
-			{	
+			{
 				if (isStationary)
-                {
+				{
 					animator.SetBool("patrolling", false);
-                }
+				}
 				Patrol();
 			}
 		}
@@ -64,11 +65,11 @@ namespace Pathfinding
 		}
 
 		void Patrol()
-		{	
+		{
 			if (targets.Length == 0 || playerInRange) return;
 			bool search = false;
 			if (agent.reachedEndOfPath && !agent.pathPending && float.IsPositiveInfinity(switchTime))
-			{	
+			{
 				animator.SetBool("patrolling", false);
 				switchTime = Time.time + delay;
 			}
@@ -88,11 +89,11 @@ namespace Pathfinding
 		}
 
 		void OnCollisionEnter2D(Collision2D other)
-		{   
+		{
 			Debug.Log("hit detected");
 			// to be replace with weapon
 			if (other.gameObject.tag == "Player")
-			{	
+			{
 				/*
 				Vector2 difference = transform.position - other.transform.position;
 				transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);

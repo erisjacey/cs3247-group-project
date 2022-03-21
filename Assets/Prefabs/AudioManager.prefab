@@ -63,3 +63,39 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: EnemyHurt
+    clip: {fileID: 8300000, guid: fb465bf1a9115064ea9602e0f50cc322, type: 3}
+    volume: 0.3
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BossHurt
+    clip: {fileID: 8300000, guid: fb465bf1a9115064ea9602e0f50cc322, type: 3}
+    volume: 0.3
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BossRage
+    clip: {fileID: 8300000, guid: fb465bf1a9115064ea9602e0f50cc322, type: 3}
+    volume: 0.3
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BossDie
+    clip: {fileID: 8300000, guid: fb465bf1a9115064ea9602e0f50cc322, type: 3}
+    volume: 0.3
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}

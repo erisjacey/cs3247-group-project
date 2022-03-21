@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CanvasSingleton : MonoBehaviour
+public class GameSessionSingleton : MonoBehaviour
 {
     // Singleton pattern for PlayerLocationManager
     private void Awake() 
     {
-        int canvasCount = FindObjectsOfType<CanvasSingleton>().Length;
+        int gameSessionCount = FindObjectsOfType<GameSessionSingleton>().Length;
 
-        if (canvasCount > 1)
+        if (gameSessionCount > 1)
         {
             gameObject.SetActive(false);
             Destroy(gameObject);
