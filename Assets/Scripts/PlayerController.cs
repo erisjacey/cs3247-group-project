@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     private Animator myAnim;
 
     [SerializeField] float walkSpeed = 5f;
+    private float attackTime = 0.25f;
+    private float attackCounter = 0.25f;
+    private bool isAttacking;
 
     // Start is called before the first frame update
     void Start()
@@ -33,5 +36,29 @@ public class PlayerController : MonoBehaviour
 	        myAnim.SetFloat("lastMoveX", horizontalInput);
             myAnim.SetFloat("lastMoveY", verticalInput);
         }
+                if(isAttacking)
+        {   
+            myRB.velocity = Vector2.zero;
+            attackCounter-= Time.deltaTime;
+            if(attackCounter <= 0 )
+            {
+                myAnim.SetBool("isAttacking", false);
+                isAttacking = false;
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            attackCounter = attackTime;
+            myAnim.SetBool("isAttacking",true);
+            isAttacking = true;
+	    if (Mathf.Abs(horizontalInput) == 1 || Mathf.Abs(verticalInput) == 1)
+        {
+	        myAnim.SetFloat("lastMoveX", horizontalInput);
+            myAnim.SetFloat("lastMoveY", verticalInput);
+        }
+
+        }
+
     }
 }
