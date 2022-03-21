@@ -8,6 +8,7 @@ namespace Pathfinding
 		/// <summary>Target points to move to in order</summary>
 		public Transform[] targets;
 		public Transform player;
+		public bool isStationary;
 		/// <summary>Time in seconds to wait at each target</summary>
 		public float delay = 0;
 
@@ -44,7 +45,11 @@ namespace Pathfinding
 				FollowPlayer();
 			}
 			else
-			{
+			{	
+				if (isStationary)
+                {
+					animator.SetBool("patrolling", false);
+                }
 				Patrol();
 			}
 		}
@@ -87,9 +92,11 @@ namespace Pathfinding
 			Debug.Log("hit detected");
 			// to be replace with weapon
 			if (other.gameObject.tag == "Player")
-			{
+			{	
+				/*
 				Vector2 difference = transform.position - other.transform.position;
 				transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+				*/
 			}
 		}
 	}

@@ -300,6 +300,7 @@ MonoBehaviour:
   - {fileID: 801457012}
   - {fileID: 1111934727}
   player: {fileID: 784101883}
+  isStationary: 0
   delay: 1
   maxRange: 5
   minRange: 0.5
@@ -5866,11 +5867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7667834383440628819, guid: fbdcc5268011f4f22abf8699e351a93d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.90374
+      value: -6.566513
       objectReference: {fileID: 0}
     - target: {fileID: 7667834383440628819, guid: fbdcc5268011f4f22abf8699e351a93d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.970538
+      value: -5.965437
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbdcc5268011f4f22abf8699e351a93d, type: 3}
