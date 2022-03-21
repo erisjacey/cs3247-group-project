@@ -118,6 +118,8 @@
       * PlayerController
       * BossController
       * BossHealth
+      * EnemyHealthManager
+      * HurtEnemy
       * GuardAI
       * GuardHealth
       * HealthBar
@@ -147,4 +149,5 @@
 * [Music loop bundle - Tallbeard Studios](https://tallbeard.itch.io/music-loop-bundle)
    * Ludum Dare 32 - Track Five (MenuTheme)
 * [SFX Pack v1 - Mythril Age](https://mythril-age.itch.io/mythril-age-sfx-pack-v1)
-   * Sound 1 (PlayerHurt)
+   * Sound 1 (EnemyHurt)
+   * Sound 86 (PlayerHurt)
