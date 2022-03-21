@@ -33,27 +33,26 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FindObjectsOfType<PlayerController>().Length > 0)
-        {
-            player = FindObjectOfType<PlayerController>().gameObject;
-            playerSprite = player.GetComponent<SpriteRenderer>();   
-        }  
+        if (FindObjectsOfType<PlayerController>().Length <= 0) return;
+
+        player = FindObjectOfType<PlayerController>().gameObject;
+        playerSprite = player.GetComponent<SpriteRenderer>();   
 
         if (flashActive)
         {
             if ((int)(100 * flashCounter / blinkLength) % 2 == 0)
             {
-            playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 0f);
+                playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 0f);
             }
             else
             {
-            playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
+                playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
             }
 
             if (flashCounter <= 0)
             {
-            playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
-            flashActive = false;
+                playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
+                flashActive = false;
             }
             flashCounter -= Time.deltaTime;
         }

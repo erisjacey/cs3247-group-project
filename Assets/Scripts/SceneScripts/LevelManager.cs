@@ -23,8 +23,9 @@ public class LevelManager : MonoBehaviour
 
     public void RestartGame()
     {
-        GetComponent<UIManager>().ToggleDeathPanel();
+        GetComponent<UIManager>().CloseDeathPanel();
         GetComponentInChildren<HealthManager>().ResetHealth();
         FindObjectOfType<PlayerLocationManager>().SetLocationIndex(5);
+        Time.timeScale = 1f;
     }
 }
