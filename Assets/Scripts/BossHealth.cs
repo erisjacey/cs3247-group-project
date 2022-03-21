@@ -5,7 +5,9 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
     [SerializeField]
-    public int health = 250;
+    public int health = 200;
+    public int maxHealth = 200;
+    public float rageThreshold = 0.5f;
     public bool isInvulnerable = false;
 
     public bool isDead = false;
@@ -23,11 +25,12 @@ public class BossHealth : MonoBehaviour
             return;
 
         health -= damage;
-
+	Debug.LogWarning(rageThreshold * maxHealth);
         StartCoroutine(Flashing());
 
-        if (health <= 200)
+        if (health <= (rageThreshold * maxHealth))
         {
+	    Debug.LogWarning("Rage");
             GetComponent<Animator>().SetBool("isEnraged", true);
         }
 
