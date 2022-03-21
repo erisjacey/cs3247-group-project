@@ -45,4 +45,9 @@ public class UIManager : MonoBehaviour
     {
         deathPanel.SetActive(!deathPanel.activeSelf);
     }
+
+    public void CloseDeathPanel()
+    {
+        deathPanel.SetActive(false);
+    }
 }
