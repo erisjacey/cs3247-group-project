@@ -50,7 +50,7 @@ public class EnemyHealthManager : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("EnemyHurt");
         currentHealth -= damageToGive;
 
-	flashActive = true;
+	    flashActive = true;
         flashCounter = flashLength;
 
         if (currentHealth <= 0)
