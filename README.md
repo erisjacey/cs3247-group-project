@@ -31,6 +31,7 @@
 * More mechanics (dash, shield, etc.)
 * Expansion of supermarket
 * More maps! (fear - classroom, anger - house)
+* More sounds!
 
 # Changelog
 
