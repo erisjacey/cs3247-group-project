@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - FakeBoss
+  - Boss
   layers:
   - Default
   - TransparentFX

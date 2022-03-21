@@ -25,6 +25,11 @@ public class HurtEnemy : MonoBehaviour
 	    EnemyHealthManager eHealthMan;
             eHealthMan = other.gameObject.GetComponent<EnemyHealthManager>();
             eHealthMan.HurtEnemy(damageToGive);
+	} else if (other.tag == "Boss")
+	{
+	    BossHealth bossHealth;
+            bossHealth = other.gameObject.GetComponent<BossHealth>();
+            bossHealth.TakeDamage(damageToGive);
 	}
 
     if (other.tag == "FakeBoss")
