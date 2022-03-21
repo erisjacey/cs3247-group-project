@@ -33,8 +33,11 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        player = FindObjectOfType<PlayerController>().gameObject;
-	    playerSprite = player.GetComponent<SpriteRenderer>();     
+        if (FindObjectsOfType<PlayerController>().Length > 0)
+        {
+            player = FindObjectOfType<PlayerController>().gameObject;
+            playerSprite = player.GetComponent<SpriteRenderer>();   
+        }  
 
         if (flashActive)
         {
@@ -80,5 +83,10 @@ public class HealthManager : MonoBehaviour
 
         LevelManager.instance.GameOver();
         player.SetActive(false);
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = 100;
     }
 }

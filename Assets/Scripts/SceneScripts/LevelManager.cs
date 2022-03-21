@@ -20,4 +20,10 @@ public class LevelManager : MonoBehaviour
             ui.ToggleDeathPanel();
         }
     }
+
+    public void RestartGame()
+    {
+        GetComponent<UIManager>().ToggleDeathPanel();
+        GetComponentInChildren<HealthManager>().ResetHealth();
+    }
 }
