@@ -27568,17 +27568,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: accfd9dc6f25ef74887b0c84fcc9b7f9, type: 3}
---- !u!114 &1005479749 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1267755254474529107, guid: 192c6b6aae0ed4d76932606608878c02, type: 3}
-  m_PrefabInstance: {fileID: 942873028}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56a653f233b94e843a13d310fd9aee02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1013518466 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3289384534166598135, guid: accfd9dc6f25ef74887b0c84fcc9b7f9, type: 3}
@@ -57872,10 +57861,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 969248424, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1005479749}
     - target: {fileID: 86448391707573026, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -57924,12 +57909,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 86448391707573038, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 969248424, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
 --- !u!1001 &329611559975175556
 PrefabInstance:
