@@ -18,6 +18,7 @@
    * **IMPT NOTE for everyone!!**: Removed all library and temp files from the repo and added .gitignore
       * Do not commit your own temp or library files and remove them if they are in your commits
 * [Zx] 17/3/22: Set up Enemy movement, path-finding, Collision
+	21/3/22: Set up Start Menu, Dead Menu, Pause Menu and Populate enemies in supermarket 1.
 * [Germaine] 16/3/22: Set up basic boss enemy movement, animations and enraged mode based on health
    * Enemy flash on receiving damage
    * Enraged mode features: player tracking regardless of distance, faster movement
