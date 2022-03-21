@@ -24,6 +24,11 @@ public class PlayerLocationManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Menu") Destroy(gameObject);
+    }
+
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -36,6 +41,8 @@ public class PlayerLocationManager : MonoBehaviour
 
         // If locationIndex is not set, do not adjust player location
         if (locationIndex < 0) return;
+
+        if (FindObjectsOfType<PlayerController>().Length == 0) return;
 
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
         player.transform.position = spawnLocations[locationIndex].transform.position;

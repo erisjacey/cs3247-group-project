@@ -28,23 +28,23 @@ public class HealthManager : MonoBehaviour
     void Update()
     {
         if (flashActive)
-	{
-	    if ((int)(100 * flashCounter / blinkLength) % 2 == 0)
-	    {
-		playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 0f);
-	    }
-	    else
-	    {
-		playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
-	    }
+        {
+            if ((int)(100 * flashCounter / blinkLength) % 2 == 0)
+            {
+            playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 0f);
+            }
+            else
+            {
+            playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
+            }
 
-	    if (flashCounter <= 0)
-	    {
-		playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
-		flashActive = false;
-	    }
-	    flashCounter -= Time.deltaTime;
-	}
+            if (flashCounter <= 0)
+            {
+            playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
+            flashActive = false;
+            }
+            flashCounter -= Time.deltaTime;
+        }
     }
 
     public void HurtPlayer(int damageToGive)
