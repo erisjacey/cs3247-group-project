@@ -19,12 +19,18 @@
       * Do not commit your own temp or library files and remove them if they are in your commits
 * [Zx] 17/3/22: Set up Enemy movement, path-finding, Collision
 * [Germaine] 16/3/22: Set up basic boss enemy movement, animations and enraged mode based on health
+   * Enemy flash on receiving damage
+   * Enraged mode features: player tracking regardless of distance, faster movement
    * Dealing damage to player is not implemented yet
 * [Eris] 20/3/22: Set up player health system, hurt player mechanic/animation
    * [Tutorial levels completed:](https://www.youtube.com/watch?v=BfgyI1RkVo4&list=PLLtCXwcEVtulmgxqM_cA8hjIWkSNMWuie&index=1)
       * 14 Hurt Player
       * 15 Health System
       * 17 Hurt Flash
+* [Germaine] 20/3/22: Add boss damage player and player UI health bar
+   * Set up boss enemy damaging player
+   * Enraged mode features: faster attacking speed, higher attack damage on player
+   * Include health bar for player on UI
 * [Eris] 20/3/22: Add audio manager, assets for menu theme/player hurt
 * [Huiting/Kerwin] 21/3/22: Laid out map for Supermarket levels and level to level transition
    * Set up level to level transition
