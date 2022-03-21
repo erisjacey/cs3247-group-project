@@ -58,7 +58,7 @@ public class FakeBossHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             chat.SetActive(true);
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 
