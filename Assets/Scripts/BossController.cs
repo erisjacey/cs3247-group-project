@@ -110,9 +110,9 @@ public class BossController : MonoBehaviour
         pos += transform.up * attackOffset.y * faceUp;
 
         Collider2D colInfo = Physics2D.OverlapCircle(pos, minRange, attackMask);
-        if (colInfo != null)
+        if (colInfo != null && colInfo.tag == "Player")
         {
-            colInfo.GetComponent<HealthManager>().HurtPlayer(attackDamage);
+            FindObjectOfType<HealthManager>().HurtPlayer(attackDamage);
         }
     }
     public void EnragedAttackPlayer()
@@ -129,9 +129,9 @@ public class BossController : MonoBehaviour
         pos += transform.up * attackOffset.y * faceUp;
 
         Collider2D colInfo = Physics2D.OverlapCircle(pos, minRange, attackMask);
-        if (colInfo != null)
+        if (colInfo != null && colInfo.tag == "Player")
         {
-            colInfo.GetComponent<HealthManager>().HurtPlayer(enragedAttackDamage);
+            FindObjectOfType<HealthManager>().HurtPlayer(enragedAttackDamage);
         }
     }
 

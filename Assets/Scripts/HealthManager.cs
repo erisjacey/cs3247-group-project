@@ -25,6 +25,7 @@ public class HealthManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>().gameObject;
 	    playerSprite = player.GetComponent<SpriteRenderer>();     
 
+        Debug.Log("starting with maxhealth: " + this.gameObject);
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);   
     }
@@ -53,6 +54,8 @@ public class HealthManager : MonoBehaviour
             }
             flashCounter -= Time.deltaTime;
         }
+
+        healthBar.SetHealth(currentHealth);
     }
 
     public void HurtPlayer(int damageToGive)
