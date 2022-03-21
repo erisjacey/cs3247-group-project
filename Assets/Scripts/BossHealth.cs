@@ -25,12 +25,11 @@ public class BossHealth : MonoBehaviour
             return;
 
         health -= damage;
-	Debug.LogWarning(rageThreshold * maxHealth);
+
         StartCoroutine(Flashing());
 
         if (health <= (rageThreshold * maxHealth))
         {
-	    Debug.LogWarning("Rage");
             GetComponent<Animator>().SetBool("isEnraged", true);
         }
 
