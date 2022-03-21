@@ -1,9 +1,17 @@
 # About
 
+### Instructions
+
+[insert text here]
+
 ### Welcome to Upside Down!
 
 * 2D top-down dungeon crawler
 * Optimised for FHD 1920x1080 resolution
+
+### Story (WIP)
+
+[insert text here]
 
 ### Controls
 
@@ -31,6 +39,7 @@
 * More mechanics (dash, shield, etc.)
 * Expansion of supermarket
 * More maps! (fear - classroom, anger - house)
+* More enemy types!
 * More sounds!
 
 # Changelog
