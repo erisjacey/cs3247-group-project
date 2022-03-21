@@ -25,5 +25,6 @@ public class LevelManager : MonoBehaviour
     {
         GetComponent<UIManager>().ToggleDeathPanel();
         GetComponentInChildren<HealthManager>().ResetHealth();
+        FindObjectOfType<PlayerLocationManager>().SetLocationIndex(5);
     }
 }
