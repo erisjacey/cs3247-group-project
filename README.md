@@ -41,6 +41,13 @@
       * Supermarket 1 -> Main map
       * Supermarket 2 -> Fake boss level
       * Supermarket 3 -> Bozz level
+* [Germaine] 21/3/22: Modifications to player attack
+   * Player attack control is now 'Space' key
+   * Animations played for 8-dir:
+      * SlashUp: Up and NE 
+      * SlashRight: Right and SE
+      * SlashDown: Down and SW
+      * SlashLeft: Left and NW 
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -70,9 +77,17 @@
 * Assets
    * Animations
       * Boss
-         * ...
+         * Spawn
+         * Idle
+         * Death
+         * Enraging
+         * [Attack___]
+         * [EnragedAttack___]
+         * [Walk___]
+         * [EnragedWalk___]
       * [Idle___]
       * [Walk___]
+      * [Slash___]
    * Art
       * TopDownCharacter
          * Character
@@ -80,6 +95,8 @@
          * Weapon
             * ...
       * GhostBoss
+         * ...
+      * HealthBar
          * ...
    * Tiles
       * SupermarketProps
@@ -91,6 +108,7 @@
       * Audio
       * Test
       * Boss_Enemy
+      * Player_Attack_Creation
    * Scripts
       * Audio
          * AudioManager
@@ -101,6 +119,7 @@
       * BossHealth
       * GuardAI
       * GuardHealth
+      * HealthBar
       * HealthManager
       * HurtPlayer
       * LevelExit
