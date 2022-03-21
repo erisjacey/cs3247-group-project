@@ -1,9 +1,5 @@
 # About
 
-### Instructions
-
-[insert text here]
-
 ### Welcome to Upside Down!
 
 * 2D top-down dungeon crawler
@@ -11,7 +7,10 @@
 
 ### Story (WIP)
 
-[insert text here]
+Benjamin Parker is a depressed man who is emotionally damaged from his bad life experiences. 
+He is too sad to wake up unless he overcomes all his inner demons. 
+Despite all that, he still has a ray of hope in him, equipping him with the power to fight and face his inner demons. (Missing animation for that, Coming Soon!)
+In the first level, Benjamin is facing his childhood fear of being lost in a huge supermarket.
 
 ### Controls
 
@@ -38,6 +37,7 @@
 * Game victory screen upon beating boss
 * More mechanics (dash, shield, etc.)
 * Expansion of supermarket
+* More health collectibles!
 * More maps! (fear - classroom, anger - house)
 * More enemy types!
 * More sounds!
