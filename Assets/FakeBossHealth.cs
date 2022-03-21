@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealthManager : MonoBehaviour
+public class FakeBossHealth : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
@@ -13,11 +13,14 @@ public class EnemyHealthManager : MonoBehaviour
     [SerializeField]
     private float blinkLength = 0f;
     private SpriteRenderer enemySprite;
+    [SerializeField] GameObject chat;
+    bool showText = false;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-	    enemySprite = GetComponent<SpriteRenderer>();  
+        enemySprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -39,22 +42,27 @@ public class EnemyHealthManager : MonoBehaviour
                 enemySprite.color = new Color(enemySprite.color.r, enemySprite.color.g, enemySprite.color.b, 1f);
                 flashActive = false;
             }
-                flashCounter -= Time.deltaTime;
+            flashCounter -= Time.deltaTime;
         }
+
     }
 
-    public void HurtEnemy(int damageToGive)
+    public void HurtFakeBoss(int damageToGive)
     {
         FindObjectOfType<AudioManager>().Play("EnemyHurt");
         currentHealth -= damageToGive;
 
-	    flashActive = true;
+        flashActive = true;
         flashCounter = flashLength;
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
-	    }
+            chat.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
+
+
+
 
 }

@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959dd849851881146923e096b1b379cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 25
-  maxHealth: 25
+  currentHealth: 15
+  maxHealth: 15
   flashLength: 0.5
   blinkLength: 0.5
 --- !u!212 &3289384534166598133
@@ -169,7 +169,7 @@ MonoBehaviour:
   radius: 0.8
   height: 1.6
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 4
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d0ef2dbbd31474eb6c4e4ee24d5672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 10
+  damageToGive: 5
 --- !u!50 &9190078806515727618
 Rigidbody2D:
   serializedVersion: 4
