@@ -12,11 +12,13 @@ public class BossHealth : MonoBehaviour
 
     public bool isDead = false;
     private Renderer renderer;
+    private AudioManager audioManager;
 
      // Start is called before the first frame update
     void Start()
     {
        renderer = GetComponent<Renderer>();
+       audioManager = FindObjectOfType<AudioManager>();
     }
 
     public void TakeDamage(int damage)
@@ -24,13 +26,15 @@ public class BossHealth : MonoBehaviour
         if (isInvulnerable)
             return;
 
+        audioManager.Play("BossHurt");
         health -= damage;
 
         StartCoroutine(Flashing());
 
-        if (health <= (rageThreshold * maxHealth))
+        if (health <= (rageThreshold * maxHealth) && !GetComponent<Animator>().GetBool("isEnraged"))
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
+            audioManager.Play("BossRage");
         }
 
         if (health <= 0)
@@ -53,6 +57,7 @@ public class BossHealth : MonoBehaviour
     {
         isDead = true;
         GetComponent<Animator>().Play("Death");
+        audioManager.Play("BossDie");
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }
