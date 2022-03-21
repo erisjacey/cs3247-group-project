@@ -1,3 +1,37 @@
+# About
+
+### Welcome to Upside Down!
+
+* 2D top-down dungeon crawler
+* Optimised for FHD 1920x1080 resolution
+
+### Controls
+
+* Move - WASD/arrow-keys
+* Attack - Spacebar
+
+### Flow
+
+1. Main menu -> tutorial room
+1. Tutorial room -> main supermarket room
+1. Main supermarket room -> fake boss room / actual boss room
+1. Actual boss room
+
+### Objective
+
+* Navigate through the maze-like structure of the supermarket
+* Beat any enemy guard that tries to attack you before you get swarmed by multiple guards
+* Reach the boss (the manifestation of anxiety itself)
+* Beat the boss
+
+### Coming soon
+
+* General game polish
+* Game victory screen upon beating boss
+* More mechanics (dash, shield, etc.)
+* Expansion of supermarket
+* More maps! (fear - classroom, anger - house)
+
 # Changelog
 
 * [Eris] 6/3/22: Set up character movement, animation, idle, camera follow
@@ -7,6 +41,7 @@
       * 03 Animation
       * 04 Idle & Face Correct
       * 06 Camera Follow (excluding parts related to tilemaps)
+* [Lucas] 9/3/22: Add player attack, interaction with enemy
 * [Huiting] 13/3/22: Set up supermarket tileset, replace camera follow with cinemachine camera (plus confiner)
    * Setup background tileset for supermarket
    * Setup tileset for supermarket props
