@@ -6,27 +6,35 @@ public class HealthManager : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
-    public HealthBar healthBar;
 
+    private HealthBar healthBar;
     private bool flashActive;
     [SerializeField]
     private float flashLength = 0f;
     private float flashCounter = 0f;
     [SerializeField]
     private float blinkLength = 0f;
+
+    private GameObject player;
     private SpriteRenderer playerSprite;
 
     // Start is called before the first frame update
     void Start()
     {
+        healthBar = GetComponent<HealthBar>();
+        player = FindObjectOfType<PlayerController>().gameObject;
+	    playerSprite = player.GetComponent<SpriteRenderer>();     
+
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-	    playerSprite = GetComponent<SpriteRenderer>();        
+        healthBar.SetMaxHealth(maxHealth);   
     }
 
     // Update is called once per frame
     void Update()
     {
+        player = FindObjectOfType<PlayerController>().gameObject;
+	    playerSprite = player.GetComponent<SpriteRenderer>();     
+
         if (flashActive)
         {
             if ((int)(100 * flashCounter / blinkLength) % 2 == 0)
@@ -53,7 +61,7 @@ public class HealthManager : MonoBehaviour
         currentHealth -= damageToGive;
         healthBar.SetHealth(currentHealth);
 
-	flashActive = true;
+	    flashActive = true;
         flashCounter = flashLength;
 
         if (currentHealth <= 0)
@@ -64,7 +72,10 @@ public class HealthManager : MonoBehaviour
 
     private void PlayerDie()
     {
+        player = FindObjectOfType<PlayerController>().gameObject;
+	    playerSprite = player.GetComponent<SpriteRenderer>();  
+
         LevelManager.instance.GameOver();
-        gameObject.SetActive(false);
+        player.SetActive(false);
     }
 }
