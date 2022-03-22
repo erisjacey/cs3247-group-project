@@ -16,6 +16,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 
 * Move - WASD/arrow-keys
 * Attack - Spacebar
+* Escape - Pause/Resume
 
 ### Flow
 
