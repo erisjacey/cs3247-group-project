@@ -21,6 +21,6 @@ public class StateManager : MonoBehaviour
     {   
         // index 0 represents the main menu
         SceneManager.LoadScene(0);
-        Time.timeScale = 1f;
+        FindObjectOfType<LevelManager>().RestartGame();
     }
 }
