@@ -80,7 +80,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationIndex: -1
+  locationName: 
   spawnLocations:
+  - {fileID: 1486774801172459260}
+  - {fileID: 1486774801358487247}
+  - {fileID: 1486774800874655394}
+  - {fileID: 1486774801407994828}
+  - {fileID: 1486774799384041118}
+  - {fileID: 4337625363925283993}
+  testSpawnLocations:
   - {fileID: 1486774801172459260}
   - {fileID: 1486774801358487247}
   - {fileID: 1486774800874655394}

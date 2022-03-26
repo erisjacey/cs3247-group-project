@@ -24,7 +24,6 @@ public class HealthManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>().gameObject;
 	    playerSprite = player.GetComponent<SpriteRenderer>();     
 
-        Debug.Log("starting with maxhealth: " + this.gameObject);
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);   
     }

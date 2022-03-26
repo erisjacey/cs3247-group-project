@@ -20,9 +20,4 @@ public class GameSessionSingleton : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
-    void Update()
-    {
-        if (SceneManager.GetActiveScene().name == "Menu") Destroy(gameObject);
-    }
 }

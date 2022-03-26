@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerLocationManager : MonoBehaviour
 {
-    [SerializeField] int locationIndex = -1;
-    [SerializeField] List<GameObject> spawnLocations = new List<GameObject>();
+    [SerializeField] string locationName = "";
+    [SerializeField] GameObject[] testSpawnLocations;
 
     void OnEnable()
     {
@@ -18,22 +19,23 @@ public class PlayerLocationManager : MonoBehaviour
         // Debug.Log("OnSceneLoaded: " + scene.name);
         // Debug.Log(mode);
 
-        // If locationIndex is not set, do not adjust player location
-        if (locationIndex < 0) return;
-        if (SceneManager.GetActiveScene().name == "Menu") {
-            locationIndex = -1;
+        // If locationName is not set, do not adjust player location
+        if (locationName == "") return;
+
+        if (SceneManager.GetActiveScene().name == "Menu") 
+        {
+            locationName = "";
             return;
         }
         if (FindObjectsOfType<PlayerController>().Length == 0) return;
 
-        Debug.Log("loaded player at: " + locationIndex);
+        GameObject newLocation = Array.Find(testSpawnLocations, item => item.name == locationName);
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
-        player.transform.position = spawnLocations[locationIndex].transform.position;
+        player.transform.position = newLocation.transform.position;
     }
 
-
-    public void SetLocationIndex(int newIndex)
+    public void SetLocation(string newLocation)
     {
-        locationIndex = newIndex;
+        locationName = newLocation;
     }
 }

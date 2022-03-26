@@ -6,26 +6,37 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
 
+    UIManager uiManager;
+
     private void Awake()
     {
         if (LevelManager.instance == null) instance = this;
         else Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        uiManager = GetComponent<UIManager>();
+    }
+
     public void GameOver()
     {
-        UIManager ui = GetComponent<UIManager>();
-        if (ui != null)
+        if (uiManager != null)
         {
-            ui.ToggleDeathPanel();
+            uiManager.ToggleDeathPanel();
         }
     }
 
     public void RestartGame()
     {
-        GetComponent<UIManager>().CloseDeathPanel();
+        if (uiManager != null)
+        {
+            uiManager.CloseDeathPanel();
+            uiManager.Resume();
+        }
+
         GetComponentInChildren<HealthManager>().ResetHealth();
-        FindObjectOfType<PlayerLocationManager>().SetLocationIndex(5);
+        GetComponentInChildren<PlayerLocationManager>().SetLocation("Tutorial");
         Time.timeScale = 1f;
     }
 }

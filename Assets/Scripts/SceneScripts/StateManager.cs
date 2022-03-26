@@ -13,7 +13,6 @@ public class StateManager : MonoBehaviour
 
     public void Exit()
     {
-        Debug.Log("Quit");
         Application.Quit();
     }
 
@@ -21,6 +20,7 @@ public class StateManager : MonoBehaviour
     {   
         // index 0 represents the main menu
         SceneManager.LoadScene(0);
+
         FindObjectOfType<LevelManager>().RestartGame();
     }
 }

@@ -7,7 +7,7 @@ public class LevelExit : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 0f;
     [SerializeField] string nextLevel;
-    [SerializeField] int nextLocationIndex;
+    [SerializeField] string nextLocationName;
 
     PlayerLocationManager locationManager;
 
@@ -27,7 +27,7 @@ public class LevelExit : MonoBehaviour
         yield return new WaitForSecondsRealtime(levelLoadDelay);
         SceneManager.LoadScene(nextLevel);
 
-        locationManager.SetLocationIndex(nextLocationIndex);
+        locationManager.SetLocation(nextLocationName);
     }
 
     IEnumerator LoadNextScene() 

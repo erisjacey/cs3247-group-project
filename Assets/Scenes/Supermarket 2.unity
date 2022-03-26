@@ -3918,6 +3918,10 @@ PrefabInstance:
       value: 37.5
       objectReference: {fileID: 0}
     - target: {fileID: 329611560884081497, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
+      propertyPath: nextLocationName
+      value: SM1-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 329611560884081497, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
       propertyPath: nextLocationIndex
       value: 1
       objectReference: {fileID: 0}
