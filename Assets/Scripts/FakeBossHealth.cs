@@ -14,7 +14,6 @@ public class FakeBossHealth : MonoBehaviour
 
     private float flashCounter = 0f;
     private SpriteRenderer enemySprite;
-    bool showText = false;
 
     // Start is called before the first frame update
     void Start()

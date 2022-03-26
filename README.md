@@ -113,15 +113,25 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * Prop Items
       * Prop Items 2
       * Prop Items 3
+      * Foreground
    * Background
    * Walls
 * Player
-* PlayerLocationManager
-   * [SM*_*]
-* Canvas
-   * Health bar
-* EventSystem
-* AudioManager
+* LevelExits
+   * ...
+* GameSession
+  * AudioManager
+  * PlayerLocationManager
+     * [SM*_*]
+  * LevelCanvas
+     * HealthBar
+     * Panel (Background)
+     * DeathPanel
+     * PauseMenu
+  * EventSystem
+* PathFinding
+* Enemies
+   * ...
 * ...
 
 # Folder Hierarchy-ish
