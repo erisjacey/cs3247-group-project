@@ -95,6 +95,11 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * SlashRight: Right and SE
       * SlashDown: Down and SW
       * SlashLeft: Left and NW 
+* [Huiting/Kerwin] 22/3/22: Added enemy knockback and adjusted camera boundaries
+   * Changed AI speed and removed school prefabs
+* [Huiting] 26/3/22: Adjusted tilemap colliders and UI fonts
+   * Added a bit more of a 3D effect for some objects
+   * Added a new [font](https://www.dafont.com/vcr-osd-mono.font) and adjusted UI scenes
 
 # Template Scene Hierarchy
 [Scene_Name]
