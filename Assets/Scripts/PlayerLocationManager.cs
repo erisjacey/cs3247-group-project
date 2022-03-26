@@ -7,22 +7,6 @@ public class PlayerLocationManager : MonoBehaviour
 {
     [SerializeField] int locationIndex = -1;
     [SerializeField] List<GameObject> spawnLocations = new List<GameObject>();
-    
-    // Singleton pattern for PlayerLocationManager
-    private void Awake() 
-    {
-        int locationManagerCount = FindObjectsOfType<PlayerLocationManager>().Length;
-
-        if (locationManagerCount > 1)
-        {
-            gameObject.SetActive(false);
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-    }
 
     void OnEnable()
     {
@@ -36,10 +20,13 @@ public class PlayerLocationManager : MonoBehaviour
 
         // If locationIndex is not set, do not adjust player location
         if (locationIndex < 0) return;
-        if (SceneManager.GetActiveScene().name == "Menu") return;
-
+        if (SceneManager.GetActiveScene().name == "Menu") {
+            locationIndex = -1;
+            return;
+        }
         if (FindObjectsOfType<PlayerController>().Length == 0) return;
 
+        Debug.Log("loaded player at: " + locationIndex);
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
         player.transform.position = spawnLocations[locationIndex].transform.position;
     }
