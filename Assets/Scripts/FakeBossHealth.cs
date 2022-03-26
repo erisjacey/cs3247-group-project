@@ -7,13 +7,13 @@ public class FakeBossHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     private bool flashActive;
-    [SerializeField]
-    private float flashLength = 0f;
-    private float flashCounter = 0f;
-    [SerializeField]
-    private float blinkLength = 0f;
-    private SpriteRenderer enemySprite;
+
+    [SerializeField] private float flashLength = 0f;
+    [SerializeField] private float blinkLength = 0f;
     [SerializeField] GameObject chat;
+
+    private float flashCounter = 0f;
+    private SpriteRenderer enemySprite;
     bool showText = false;
 
     // Start is called before the first frame update

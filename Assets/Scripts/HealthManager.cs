@@ -9,11 +9,10 @@ public class HealthManager : MonoBehaviour
 
     private HealthBar healthBar;
     private bool flashActive;
-    [SerializeField]
-    private float flashLength = 0f;
+    
+    [SerializeField] private float flashLength = 0f;
     private float flashCounter = 0f;
-    [SerializeField]
-    private float blinkLength = 0f;
+    [SerializeField] private float blinkLength = 0f;
 
     private GameObject player;
     private SpriteRenderer playerSprite;

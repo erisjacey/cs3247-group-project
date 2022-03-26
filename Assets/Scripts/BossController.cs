@@ -9,19 +9,15 @@ public class BossController : MonoBehaviour
     //private float counter = 0;
     //private float tickInterval = 1;
 
-    public Transform homePos;
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private float enragedSpeed;
-    [SerializeField]
-    private float maxRange;    
-    [SerializeField]
-    private float minRange;
+    [SerializeField] private float speed;
+    [SerializeField] private float enragedSpeed;
+    [SerializeField] private float maxRange;    
+    [SerializeField] private float minRange;
 
     public int attackDamage = 20;
     public int enragedAttackDamage = 40;
 
+    public Transform homePos;
     public Vector3 attackOffset;
     public LayerMask attackMask;
 
