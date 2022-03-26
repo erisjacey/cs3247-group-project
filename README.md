@@ -100,6 +100,9 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * [Huiting] 26/3/22: Adjusted tilemap colliders and UI fonts
    * Added a bit more of a 3D effect for some objects
    * Added a new [font](https://www.dafont.com/vcr-osd-mono.font) and adjusted UI scenes
+   * Fixed flickering lines in tilemap
+   * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
+   * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
 
 # Template Scene Hierarchy
 [Scene_Name]
