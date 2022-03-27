@@ -11,12 +11,12 @@ public class BossHealth : MonoBehaviour
     public bool isInvulnerable = false;
 
     public bool isDead = false;
-    private Renderer renderer;
+    private Renderer bossRenderer;
 
      // Start is called before the first frame update
     void Start()
     {
-       renderer = GetComponent<Renderer>();
+       bossRenderer = GetComponent<Renderer>();
     }
 
     public void TakeDamage(int damage)
@@ -48,12 +48,12 @@ public class BossHealth : MonoBehaviour
     {
         for (var n = 0; n < 2; n++)
         {
-            renderer.enabled = true;
+            bossRenderer.enabled = true;
             yield return new WaitForSeconds(.1f);
-            renderer.enabled = false;
+            bossRenderer.enabled = false;
             yield return new WaitForSeconds(.1f);
         }
-        renderer.enabled = true;
+        bossRenderer.enabled = true;
     }
 
     IEnumerator Die()

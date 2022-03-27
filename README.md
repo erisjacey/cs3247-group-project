@@ -95,6 +95,14 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * SlashRight: Right and SE
       * SlashDown: Down and SW
       * SlashLeft: Left and NW 
+* [Huiting/Kerwin] 22/3/22: Added enemy knockback and adjusted camera boundaries
+   * Changed AI speed and removed school prefabs
+* [Huiting] 26/3/22: Adjusted tilemap colliders and UI fonts
+   * Added a bit more of a 3D effect for some objects
+   * Added a new [font](https://www.dafont.com/vcr-osd-mono.font) and adjusted UI scenes
+   * Fixed flickering lines in tilemap
+   * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
+   * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -108,15 +116,25 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * Prop Items
       * Prop Items 2
       * Prop Items 3
+      * Foreground
    * Background
    * Walls
 * Player
-* PlayerLocationManager
-   * [SM*_*]
-* Canvas
-   * Health bar
-* EventSystem
-* AudioManager
+* LevelExits
+   * ...
+* GameSession
+  * AudioManager
+  * PlayerLocationManager
+     * [SM*_*]
+  * LevelCanvas
+     * HealthBar
+     * Panel (Background)
+     * DeathPanel
+     * PauseMenu
+  * EventSystem
+* PathFinding
+* Enemies
+   * ...
 * ...
 
 # Folder Hierarchy-ish

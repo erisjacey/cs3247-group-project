@@ -10,18 +10,6 @@ public class GuardHealth : MonoBehaviour
     [SerializeField]
     private SpriteRenderer enemySprite;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-                
-    }
-
-    // Update is called once per frame
-    void Update()
-    {   
-
-    }
-
     public void TakesDamage(int damageToGive)
     {   
 
