@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D myRB;
     private Animator myAnim;
 
-    [SerializeField] float walkSpeed = 5f;
+    [SerializeField] public float walkSpeed = 5f;
 
     private float attackTime = .25f;
     private float attackCounter = .25f;
