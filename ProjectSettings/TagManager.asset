@@ -8,6 +8,8 @@ TagManager:
   - FakeBoss
   - Boss
   - MyWeapon
+  - Walls
+  - Hitbox
   layers:
   - Default
   - TransparentFX
