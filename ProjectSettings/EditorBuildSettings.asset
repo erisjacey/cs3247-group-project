@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss_Enemy.unity
     guid: 382d33b1c38564949b944a00f7fc95f1
+  - enabled: 1
+    path: Assets/Scenes/House 1.unity
+    guid: aa79e4d916ede4aae980271e13e61765
+  - enabled: 1
+    path: Assets/Scenes/House 2.unity
+    guid: ff65d9111b1ef46cb84d7af429910d3b
+  - enabled: 1
+    path: Assets/Scenes/House 3.unity
+    guid: d9bd9a350c3f3495cba392cb22fbf97c
   m_configObjects: {}

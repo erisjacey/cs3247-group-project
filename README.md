@@ -103,6 +103,8 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Fixed flickering lines in tilemap
    * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
    * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
+* [Huiting] 30/3/22 Added map for Level 3
+   * Fixed image processing for very large image files
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -164,9 +166,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * HealthBar
          * ...
    * Tiles
-      * SupermarketProps
-         * Tiles, Tileset and Sprite...
-      * SupermarketBackground
+      * [Tilename]
          * Tiles, Tileset and Sprite...
    * Prefabs
    * Scenes
