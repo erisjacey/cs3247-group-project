@@ -97,8 +97,7 @@ public class PlayerController : MonoBehaviour
                 isAttacking = false;
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             attackCounter = attackTime;
             myAnim.SetBool("isAttacking", true);
@@ -107,12 +106,21 @@ public class PlayerController : MonoBehaviour
     }
 
     void Staff()
-    {
-       
+    {    
+        myAnim.SetBool("isAttacking", false);
+        isAttacking = false; 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (timeBetweenShots <= 0)
         {
-            Instantiate(fireball, shotPoint.position, shotPoint.rotation);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Instantiate(fireball, shotPoint.position, shotPoint.rotation);
+                timeBetweenShots = startTimeBetweenShots;
+            }
+        }
+        else
+        {
+            timeBetweenShots -= Time.deltaTime;
         }
     }
 
