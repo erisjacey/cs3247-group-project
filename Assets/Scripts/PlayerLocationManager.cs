@@ -29,8 +29,12 @@ public class PlayerLocationManager : MonoBehaviour
         }
         if (FindObjectsOfType<PlayerController>().Length == 0) return;
 
-        GameObject newLocation = Array.Find(testSpawnLocations, item => item.name == locationName);
+        GameObject newLocation = Array.Find(testSpawnLocations, item => {
+            Debug.Log("matching " + locationName + " to " + item.name);
+            return item.name == locationName;
+        });
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
+        Debug.Log(newLocation);
         player.transform.position = newLocation.transform.position;
     }
 
