@@ -103,6 +103,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Fixed flickering lines in tilemap
    * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
    * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
+* [Eris] 30/3/22: Add player ranged attack, player invulnerability when damaged
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -150,15 +151,25 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
          * [EnragedAttack___]
          * [Walk___]
          * [EnragedWalk___]
-      * [Idle___]
-      * [Walk___]
-      * [Slash___]
+      * Player
+         * Attack
+            * ...
+         * Aura
+            * ...
+         * Movement
+            * ...
+      * Anxiety_Enemy
+         * ...
    * Art
       * TopDownCharacter
+         * Auras
+            * ... 
          * Character
             * ...
          * Weapon
             * ...
+         * Enemy
+            * ... 
       * GhostBoss
          * ...
       * HealthBar
@@ -169,6 +180,10 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * SupermarketBackground
          * Tiles, Tileset and Sprite...
    * Prefabs
+      * Player
+         * Player
+         * Fireball
+      * ...
    * Scenes
       * Audio
       * Test
@@ -178,8 +193,12 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * Audio
          * AudioManager
          * Sound
+      * Player
+         * PlayerController
+         * PlayerLocationManager
+         * HurtPlayer
+         * Fireball
       * CameraController
-      * PlayerController
       * BossController
       * BossHealth
       * EnemyHealthManager
@@ -188,9 +207,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * GuardHealth
       * HealthBar
       * HealthManager
-      * HurtPlayer
       * LevelExit
-      * PlayerLocationManager
    * Sounds
       * MenuTheme
       * PlayerHurt
@@ -215,3 +232,4 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * [SFX Pack v1 - Mythril Age](https://mythril-age.itch.io/mythril-age-sfx-pack-v1)
    * Sound 1 (EnemyHurt)
    * Sound 86 (PlayerHurt)
+* [Fireball - NYKNCK](https://nyknck.itch.io/fireball-animation)
