@@ -65,6 +65,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * Do not commit your own temp or library files and remove them if they are in your commits
 * [Zx] 17/3/22: Set up Enemy movement, path-finding, Collision
 	21/3/22: Set up Start Menu, Dead Menu, Pause Menu and Populate enemies in supermarket 1.
+	30/3/22: Develop Range Enemy for Fear Level and Skeleton Enemy for Anger Level.W
 * [Germaine] 16/3/22: Set up basic boss enemy movement, animations and enraged mode based on health
    * Enemy flash on receiving damage
    * Enraged mode features: player tracking regardless of distance, faster movement
