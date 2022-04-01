@@ -103,7 +103,11 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Fixed flickering lines in tilemap
    * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
    * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
-* [Eris] 30/3/22: Add player ranged attack, player invulnerability when damaged
+* [Eris] 30/3/22: Add/adjust various player mechanics
+   * Add player ranged attack
+   * Add player invulnerability when damaged
+   * Adjust player sword attack angle
+   * Add skill bar
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -174,6 +178,8 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
          * ...
       * HealthBar
          * ...
+      * SkillBar
+         * ...
    * Tiles
       * SupermarketProps
          * Tiles, Tileset and Sprite...
@@ -194,6 +200,9 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
          * AudioManager
          * Sound
       * Player
+         * Skills
+            * SkillManager
+            * Skill
          * PlayerController
          * PlayerLocationManager
          * HurtPlayer
