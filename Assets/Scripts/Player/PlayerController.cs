@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] public float walkSpeed = 5f;
 
-    public int currentWeapon;
+    private int currentSkill;
     private const int SWORD = 0;
     private const int STAFF = 1;
     private const int SHIELD = 2;
@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
@@ -57,19 +56,21 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            currentWeapon = SWORD;
+            currentSkill = SWORD;
+            FindObjectOfType<SkillManager>().SetActiveSkill(SWORD);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            currentWeapon = STAFF;
+            currentSkill = STAFF;
+            FindObjectOfType<SkillManager>().SetActiveSkill(STAFF);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            currentWeapon = SHIELD;
+            currentSkill = SHIELD;
+            FindObjectOfType<SkillManager>().SetActiveSkill(SHIELD);
         }
 
-
-        switch (currentWeapon)
+        switch (currentSkill)
         {
             case SWORD:
                 Sword();
