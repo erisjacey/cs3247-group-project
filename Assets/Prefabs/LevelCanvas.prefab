@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2292980023736617534}
   - component: {fileID: 7055516381575326776}
   - component: {fileID: 6949062191482457607}
+  - component: {fileID: 2910919061211455495}
   m_Layer: 5
   m_Name: Hope
   m_TagString: Untagged
@@ -75,6 +76,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2910919061211455495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67264631094213726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4cb4ce1490a794aa4eb195dc50c241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &458204671261878251
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7ceabf7e331624ca97fb7ac271c168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillBarId: 0
+  skillBarId: 1
 --- !u!1 &4417722887118628949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1018,7 @@ GameObject:
   - component: {fileID: 3393496968336503168}
   - component: {fileID: 1061837019557941233}
   - component: {fileID: 6311719521619792885}
+  - component: {fileID: 6663985393107036600}
   m_Layer: 5
   m_Name: Excitement
   m_TagString: Untagged
@@ -1071,6 +1085,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6663985393107036600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6406044337643964333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4cb4ce1490a794aa4eb195dc50c241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6991484552882570996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2884,6 +2910,7 @@ GameObject:
   - component: {fileID: 6368414318601997842}
   - component: {fileID: 8371374461019329366}
   - component: {fileID: 6295272650906006008}
+  - component: {fileID: 3505546317641352301}
   m_Layer: 5
   m_Name: Confidence
   m_TagString: Untagged
@@ -2951,3 +2978,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3505546317641352301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9023645981529419620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4cb4ce1490a794aa4eb195dc50c241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

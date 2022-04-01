@@ -7,6 +7,8 @@ public class SkillManager : MonoBehaviour
     public int skillBarId;
     private GameObject[] skillBars;
 
+    private int currentSkill;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,7 @@ public class SkillManager : MonoBehaviour
     public void SetActiveSkill(int id)
     {
         Debug.Log("Set active skill to " + id);
-        //skillBars[skillBarId].SetActiveSkill(id);
+        skillBars[skillBarId].GetComponent<Skill>().SetActiveSkill(id);
     }
 
     private void UnlockHope()
@@ -58,7 +60,7 @@ public class SkillManager : MonoBehaviour
     {
         for (int i = 0; i < skillBars.Length; i++)
         {
-            Debug.Log(skillBars[i].name);
+            //Debug.Log(skillBars[i].name);
             skillBars[i].SetActive(i == id);
         }
     }
