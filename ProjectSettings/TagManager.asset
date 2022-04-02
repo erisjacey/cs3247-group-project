@@ -9,6 +9,8 @@ TagManager:
   - Boss
   - MyWeapon
   - Orb
+  - Walls
+  - Hitbox
   layers:
   - Default
   - TransparentFX

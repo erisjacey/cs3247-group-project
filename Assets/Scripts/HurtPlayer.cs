@@ -15,4 +15,12 @@ public class HurtPlayer : MonoBehaviour
             FindObjectOfType<HealthManager>().HurtPlayer(damageToGive);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.tag == "Player")
+        {
+            FindObjectOfType<HealthManager>().HurtPlayer(damageToGive);
+        }
+    }
 }

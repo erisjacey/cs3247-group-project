@@ -52,8 +52,10 @@ public class EnemyHealthManager : MonoBehaviour
         flashCounter = flashLength;
 
         if (currentHealth <= 0)
-        {
-            Destroy(gameObject);
+        {   
+            Animator animator = GetComponentInChildren<Animator>();
+            animator.SetBool("isDead", true);
+            Destroy(gameObject, 0.3f);
 	    }
     }
 
