@@ -19794,6 +19794,7 @@ MonoBehaviour:
   quantity: 2
   priceText: {fileID: 2024186704}
   quantityText: {fileID: 658234426}
+  powerupEffect: {fileID: 11400000, guid: dbd496ba20c2046dfa1faf4ced4fb350, type: 2}
 --- !u!1 &1715504397
 GameObject:
   m_ObjectHideFlags: 0

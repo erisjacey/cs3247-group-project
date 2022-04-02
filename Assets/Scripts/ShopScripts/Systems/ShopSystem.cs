@@ -22,16 +22,17 @@ public class ShopSystem : MonoBehaviour
 		shopUI.SetActive(true);
 	}
 
-	public void BuyFromShop(ItemListing item)
+	public bool BuyFromShop(ItemListing item)
 	{
         if (playerMoneyValue - item.price < 0)
         {
-            return;
+            return false;
         }
 
 		playerMoneyValue -= item.price;
 		item.ReduceQuantity();
 		UpdateMoneyUI();
+		return true;
 	}
 
 	void UpdateMoneyUI()

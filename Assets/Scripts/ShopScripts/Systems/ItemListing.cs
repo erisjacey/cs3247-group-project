@@ -12,6 +12,8 @@ public class ItemListing : MonoBehaviour
 	public Text priceText;
 	public Text quantityText;
 
+	public PowerupEffect powerupEffect;
+
 	void Start()
     {
 		priceText.text = price.ToString();
@@ -28,7 +30,12 @@ public class ItemListing : MonoBehaviour
 	{
 		if (quantity > 0)
         {
-			shopSystem.BuyFromShop(this);
+			bool successPurchase = shopSystem.BuyFromShop(this);
+			if (successPurchase)
+            {
+				powerupEffect.Apply(GameObject.FindGameObjectWithTag("Player"));
+				Debug.Log("Applied buff " + powerupEffect);
+            }
         }
 	}
 
