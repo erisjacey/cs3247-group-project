@@ -9,11 +9,15 @@ public class ShopSystem : MonoBehaviour
 
 	[Header("UI")]
 	public GameObject shopUI;
+	public GameObject currencyCountUI;
+	public Text currencyCountText;
 	public Text playerMoney;
 
 	public void OpenShop()
 	{
 		shopOpen = true;
+		currencyCountUI.SetActive(false);
+		playerMoneyValue = FindObjectOfType<OrbPickup>().orbNum;
 		UpdateMoneyUI();
 		shopUI.SetActive(true);
 	}
@@ -37,16 +41,17 @@ public class ShopSystem : MonoBehaviour
 
 	public void CloseShop()
 	{
+		FindObjectOfType<OrbPickup>().SetNewOrbNum(playerMoneyValue);
+		currencyCountUI.SetActive(true);
 		shopUI.SetActive(false);
 		shopOpen = false;
 	}
 
 	void Update()
 	{
-		if (shopOpen && Input.GetKeyDown(KeyCode.P))
-		{
-			shopUI.SetActive(false);
-			shopOpen = false;
-		}
-	}
+        if (shopOpen && Input.GetKeyDown(KeyCode.P))
+        {
+            CloseShop();
+        }
+    }
 }

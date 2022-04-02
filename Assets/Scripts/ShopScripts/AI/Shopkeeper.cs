@@ -41,7 +41,7 @@ public class Shopkeeper : MonoBehaviour
 
     public bool StartTrade()
     {
-        if (!inRange)
+        if (!inRange || shopSystem.shopOpen)
         {
             return false;
         }
