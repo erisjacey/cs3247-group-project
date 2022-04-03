@@ -45,7 +45,8 @@ public class SkeletonAI : VersionedMonoBehaviour
                 playerInRange = true;
             }
 
-            if (isAttacking) {
+            if (isAttacking)
+            {
                 agent.isStopped = true;
                 attackDelay -= Time.deltaTime;
                 if (attackDelay <= 0)
@@ -115,9 +116,8 @@ public class SkeletonAI : VersionedMonoBehaviour
         private void OnTriggerEnter2D(Collider2D other){
             if (other.tag == "MyWeapon" && gameObject.tag != "Hitbox")
             {
-                Vector2 difference = transform.position - other.transform.position;
-                transform.position = new Vector2((transform.position.x + difference.x) / 3, (transform.position.y + difference.y) / 3);
-                
+                Vector3 knockback = (transform.position - other.transform.position).normalized;
+				transform.position += knockback;
             }
         }
         */
