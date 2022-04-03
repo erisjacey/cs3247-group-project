@@ -15,7 +15,8 @@ public class HurtEnemy : MonoBehaviour
             GameObject parentObj = otherObj.transform.parent.gameObject;
             eHealthMan = parentObj.GetComponent<EnemyHealthManager>();
             eHealthMan.HurtEnemy(damageToGive);
-        } else if (other.tag == "Boss")
+        } 
+        else if (other.tag == "Boss")
         {
             BossHealth bossHealth;
             bossHealth = other.gameObject.GetComponent<BossHealth>();

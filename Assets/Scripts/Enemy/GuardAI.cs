@@ -19,10 +19,9 @@ namespace Pathfinding
 		float switchTime = float.PositiveInfinity;
 		bool playerInRange = false;
 		Animator animator;
-		[SerializeField]
-		private float maxRange;
-		[SerializeField]
-		private float minRange;
+		[SerializeField] private float maxRange;
+		[SerializeField] private float minRange;
+		private Rigidbody2D myRigidbody;
 
 		protected override void Awake()
 		{
@@ -31,6 +30,7 @@ namespace Pathfinding
 			index = Random.Range(0, targets.Length);
 			animator = GetComponentInChildren<Animator>();
 			player = GameObject.FindGameObjectWithTag("Player").transform;
+			myRigidbody = gameObject.GetComponent<Rigidbody2D>();
 		}
 
 		/// <summary>Update is called once per frame</summary>
@@ -95,8 +95,8 @@ namespace Pathfinding
 			if (other.gameObject.tag == "Player")
 			{
 				
-				Vector2 difference = transform.position - other.transform.position;
-				transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+				Vector3 knockback = (transform.position - other.transform.position).normalized;
+				transform.position += knockback;
 				
 			}
 		}
@@ -105,9 +105,8 @@ namespace Pathfinding
 			if (other.tag == "MyWeapon")
 			{
 				
-				Vector2 difference = transform.position - other.transform.position;
-				transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
-				
+				Vector3 knockback = (transform.position - other.transform.position).normalized;
+				transform.position += knockback;
 			}
 		}
 	}
