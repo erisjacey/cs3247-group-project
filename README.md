@@ -96,16 +96,17 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * SlashRight: Right and SE
       * SlashDown: Down and SW
       * SlashLeft: Left and NW 
-* [Huiting/Kerwin] 22/3/22: Added enemy knockback and adjusted camera boundaries
+* [Kerwin] 22/3/22: Added enemy knockback and adjusted camera boundaries
    * Changed AI speed and removed school prefabs
+   * 31/3/22: Added boss room and shop room
 * [Huiting] 26/3/22: Adjusted tilemap colliders and UI fonts
-   * Added a bit more of a 3D effect for some objects
    * Added a new [font](https://www.dafont.com/vcr-osd-mono.font) and adjusted UI scenes
    * Fixed flickering lines in tilemap
    * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
    * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
-* [Huiting] 30/3/22 Added map for Level 3
-   * Fixed image processing for very large image files
+   * 30/3/22: Fixed image processing for very large image files
+   * Laid out map for level 3 house
+   * 3/4/22: Separated colliders for pathfinding and damage for Guard enemy classes
 
 # Template Scene Hierarchy
 [Scene_Name]
