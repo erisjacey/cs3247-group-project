@@ -98,6 +98,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * SlashLeft: Left and NW 
 * [Kerwin] 22/3/22: Added enemy knockback and adjusted camera boundaries
    * Changed AI speed and removed school prefabs
+   * Laid out map for classroom level
    * 31/3/22: Added boss room and shop room
 * [Huiting] 26/3/22: Adjusted tilemap colliders and UI fonts
    * Added a new [font](https://www.dafont.com/vcr-osd-mono.font) and adjusted UI scenes
