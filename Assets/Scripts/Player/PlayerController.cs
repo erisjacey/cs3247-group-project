@@ -17,14 +17,20 @@ public class PlayerController : MonoBehaviour
     private const int STAFF = 1;
     private const int SHIELD = 2;
 
-    private float attackTime = .25f;
-    private float attackCounter = .25f;
     private bool isAttacking;
 
+    // Sword
+    private float attackTime = .25f;
+    private float attackCounter = .25f;
+
+    // Staff
     public GameObject fireball;
     public Transform shotPoint;
     private float timeBetweenShots;
-    private float startTimeBetweenShots = .25f;
+    private float startTimeBetweenShots = .4f;
+
+    // Shield
+    
 
     // Start is called before the first frame update
     void Start()
@@ -56,18 +62,15 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            currentSkill = SWORD;
-            FindObjectOfType<SkillManager>().SetActiveSkill(SWORD);
+            changeCurrentSkill(SWORD);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            currentSkill = STAFF;
-            FindObjectOfType<SkillManager>().SetActiveSkill(STAFF);
+            changeCurrentSkill(STAFF);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            currentSkill = SHIELD;
-            FindObjectOfType<SkillManager>().SetActiveSkill(SHIELD);
+            changeCurrentSkill(SHIELD);
         }
 
         switch (currentSkill)
@@ -84,6 +87,13 @@ public class PlayerController : MonoBehaviour
             default:
                 break;
          }
+    }
+
+    private void changeCurrentSkill(int skill)
+    {
+        currentSkill = skill;
+        myAnim.SetFloat("currentSkill", (float)skill);
+        FindObjectOfType<SkillManager>().SetActiveSkill(skill);
     }
 
     void Sword()
@@ -108,25 +118,43 @@ public class PlayerController : MonoBehaviour
 
     void Staff()
     {    
-        myAnim.SetBool("isAttacking", false);
-        isAttacking = false; 
-
         if (timeBetweenShots <= 0)
         {
+            myAnim.SetBool("isAttacking", false);
+            isAttacking = false; 
             if (Input.GetKeyDown(KeyCode.Space))
-            {
+            {  
+                myAnim.SetBool("isAttacking", true);
+                isAttacking = true;
                 Instantiate(fireball, shotPoint.position, shotPoint.rotation);
                 timeBetweenShots = startTimeBetweenShots;
             }
         }
         else
         {
+            myRB.velocity = Vector2.zero;
             timeBetweenShots -= Time.deltaTime;
         }
     }
 
     void Shield()
     {
-
+        if (isAttacking)
+        {
+            myRB.velocity = Vector2.zero;
+            if (!Input.GetKey(KeyCode.Space))
+            {
+                FindObjectOfType<HealthManager>().LoseInvulnerability();
+                myAnim.SetBool("isAttacking", false);
+                isAttacking = false;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            FindObjectOfType<HealthManager>().BecomeInvulnerable(false);
+            attackCounter = attackTime;
+            myAnim.SetBool("isAttacking", true);
+            isAttacking = true;
+        }
     }
 }

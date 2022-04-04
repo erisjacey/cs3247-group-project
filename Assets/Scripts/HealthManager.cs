@@ -63,7 +63,7 @@ public class HealthManager : MonoBehaviour
     {
         if (!isInvulnerable)
         {
-            BecomeInvulnerable();
+            BecomeInvulnerable(true);
             FindObjectOfType<AudioManager>().Play("PlayerHurt");
             currentHealth -= damageToGive;
             healthBar.SetHealth(currentHealth);
@@ -75,15 +75,15 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    private void BecomeInvulnerable()
+    public void BecomeInvulnerable(bool flash)
     {
-        flashActive = true;
+        flashActive = flash;
         flashCounter = flashLength;
         isInvulnerable = true;
         player.GetComponent<Collider2D>().enabled = false;
     }
 
-    private void LoseInvulnerability()
+    public void LoseInvulnerability()
     {
         flashActive = false;
         isInvulnerable = false;
