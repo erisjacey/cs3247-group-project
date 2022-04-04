@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private float attackTime = .25f;
     private float attackCounter = .25f;
     private bool isAttacking;
+    private int numKeys;
 
     // Start is called before the first frame update
     void Start()
@@ -55,5 +56,20 @@ public class PlayerController : MonoBehaviour
             myAnim.SetBool("isAttacking", true);
             isAttacking = true;
         }
+    }
+
+    public int GetNumKeys() 
+    {
+        return numKeys;
+    }
+
+    public void AddKey() 
+    {
+        numKeys += 1;
+    }
+
+    public void UseKeys(int keysUsed) 
+    {
+        numKeys -= keysUsed;
     }
 }

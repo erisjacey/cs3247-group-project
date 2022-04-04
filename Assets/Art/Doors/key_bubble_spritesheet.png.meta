@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: fa558047ec541422a9788d0e7c138e99
+guid: 7ff8582b698f649d185c72986df98c99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3621004782242429422
-    second: animated_door_big_1_locked_32x32_0
+      213: 7930266741531419641
+    second: key_bubble_spritesheet_0
   - first:
-      213: -3282004410111068089
-    second: animated_door_big_1_locked_32x32_1
+      213: -6130012175255975401
+    second: key_bubble_spritesheet_1
   - first:
-      213: 1472354360841437838
-    second: animated_door_big_1_locked_32x32_2
+      213: -982307309746818686
+    second: key_bubble_spritesheet_2
   - first:
-      213: -1841162637113022938
-    second: animated_door_big_1_locked_32x32_3
-  - first:
-      213: 127139424828868391
-    second: animated_door_big_1_locked_32x32_4
+      213: -8454627159978859168
+    second: key_bubble_spritesheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,12 +115,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: animated_door_big_1_locked_32x32_0
+      name: key_bubble_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -132,19 +129,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2160370e55b9fbdc0800000000000000
-      internalID: -3621004782242429422
+      spriteID: 9f32317c597fd0e60800000000000000
+      internalID: 7930266741531419641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_door_big_1_locked_32x32_1
+      name: key_bubble_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 0
-        width: 32
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,40 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7487018b06af372d0800000000000000
-      internalID: -3282004410111068089
+      spriteID: 71a4c01a762ddeaa0800000000000000
+      internalID: -6130012175255975401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_door_big_1_locked_32x32_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8283758d7ade6410800000000000000
-      internalID: 1472354360841437838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animated_door_big_1_locked_32x32_3
+      name: key_bubble_spritesheet_2
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 32
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -195,19 +171,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62628212650e276e0800000000000000
-      internalID: -1841162637113022938
+      spriteID: 281754ec4b42e52f0800000000000000
+      internalID: -982307309746818686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animated_door_big_1_locked_32x32_4
+      name: key_bubble_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 0
-        width: 32
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -216,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7274fdd12a0b3c100800000000000000
-      internalID: 127139424828868391
+      spriteID: 065271d74612baa80800000000000000
+      internalID: -8454627159978859168
       vertices: []
       indices: 
       edges: []
