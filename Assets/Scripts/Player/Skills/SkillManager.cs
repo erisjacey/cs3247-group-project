@@ -7,8 +7,6 @@ public class SkillManager : MonoBehaviour
     public int skillBarId;
     private GameObject[] skillBars;
 
-    private int currentSkill;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +33,7 @@ public class SkillManager : MonoBehaviour
     public void SetActiveSkill(int id)
     {
         skillBars[skillBarId].GetComponent<Skill>().SetActiveSkill(id);
+        FindObjectOfType<AuraManager>().TriggerAura(id);
     }
 
     private void UnlockHope()
@@ -49,7 +48,7 @@ public class SkillManager : MonoBehaviour
         SetSkillBar(skillBarId);
     }
 
-    private void unlockConfidence()
+    private void UnlockConfidence()
     {
         skillBarId = 2;
         SetSkillBar(skillBarId);
