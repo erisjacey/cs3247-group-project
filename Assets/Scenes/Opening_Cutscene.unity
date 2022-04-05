@@ -3440,11 +3440,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1503662886 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 86448391707573029, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
-  m_PrefabInstance: {fileID: 903983936}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1763538646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,9 +3473,9 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -5533244565877829582, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
-    value: {fileID: 1503662886}
+    value: {fileID: 0}
   - key: {fileID: 2318142750709873238, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
-    value: {fileID: 1503662886}
+    value: {fileID: 0}
   - key: {fileID: 6144633172993335317, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
     value: {fileID: 131675633}
   - key: {fileID: 2392974614064639491, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
@@ -3496,9 +3491,9 @@ PlayableDirector:
   - key: {fileID: -2439975436159537991, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
     value: {fileID: 0}
   - key: {fileID: -8464077566172628260, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
-    value: {fileID: 1503662886}
+    value: {fileID: 1840251394}
   - key: {fileID: 4897538726307107703, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
-    value: {fileID: 1503662886}
+    value: {fileID: 1840251394}
   - key: {fileID: 5074064792764637742, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
     value: {fileID: 131675633}
   - key: {fileID: 7537787317922498963, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
@@ -3645,6 +3640,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!95 &1840251394 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -4806544509815365247, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
+  m_PrefabInstance: {fileID: 903983936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1982620192
 GameObject:
   m_ObjectHideFlags: 0

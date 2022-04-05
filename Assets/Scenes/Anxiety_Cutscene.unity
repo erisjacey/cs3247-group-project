@@ -9846,13 +9846,13 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -5533244565877829582, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
-    value: {fileID: 1922758911}
+    value: {fileID: 1563377800}
   - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: -6665771536481178775, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
-    value: {fileID: 1922758911}
+    value: {fileID: 1563377800}
   - key: {fileID: 724314382318135121, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
     value: {fileID: 962936189}
   - key: {fileID: -2537191616642822200, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
@@ -11747,6 +11747,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1563377800 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -4806544509815365247, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
+  m_PrefabInstance: {fileID: 1922758910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1576182871
 GameObject:
   m_ObjectHideFlags: 0
@@ -12161,11 +12166,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
---- !u!95 &1922758911 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 86448391707573029, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
-  m_PrefabInstance: {fileID: 1922758910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2061778941
 GameObject:
   m_ObjectHideFlags: 0
