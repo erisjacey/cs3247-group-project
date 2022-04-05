@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
 
     // Shield
     
-
     // Start is called before the first frame update
     void Start()
     {
@@ -50,10 +49,10 @@ public class PlayerController : MonoBehaviour
 
         myAnim.SetFloat("moveX", horizontalInput);
         myAnim.SetFloat("moveY", verticalInput);
-        
-	if (Mathf.Abs(horizontalInput) == 1 || Mathf.Abs(verticalInput) == 1)
+
+        if (Mathf.Abs(horizontalInput) == 1 || Mathf.Abs(verticalInput) == 1)
         {
-	    myAnim.SetFloat("lastMoveX", horizontalInput);
+            myAnim.SetFloat("lastMoveX", horizontalInput);
             myAnim.SetFloat("lastMoveY", verticalInput);
             shotPoint.transform.localPosition = new Vector3(horizontalInput * horizontalDistanceFromCentre, verticalInput * verticalDistanceFromCentre - 0.12f, 0.0f);
             float angle = Mathf.Rad2Deg * Mathf.Atan2(verticalInput, horizontalInput);

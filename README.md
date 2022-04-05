@@ -66,6 +66,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * Do not commit your own temp or library files and remove them if they are in your commits
 * [Zx] 17/3/22: Set up Enemy movement, path-finding, Collision
 	21/3/22: Set up Start Menu, Dead Menu, Pause Menu and Populate enemies in supermarket 1.
+	30/3/22: Develop Range Enemy for Fear Level and Skeleton Enemy for Anger Level.W
 * [Germaine] 16/3/22: Set up basic boss enemy movement, animations and enraged mode based on health
    * Enemy flash on receiving damage
    * Enraged mode features: player tracking regardless of distance, faster movement
@@ -96,14 +97,18 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * SlashRight: Right and SE
       * SlashDown: Down and SW
       * SlashLeft: Left and NW 
-* [Huiting/Kerwin] 22/3/22: Added enemy knockback and adjusted camera boundaries
+* [Kerwin] 22/3/22: Added enemy knockback and adjusted camera boundaries
    * Changed AI speed and removed school prefabs
+   * Laid out map for classroom level
+   * 31/3/22: Added boss room and shop room
 * [Huiting] 26/3/22: Adjusted tilemap colliders and UI fonts
-   * Added a bit more of a 3D effect for some objects
    * Added a new [font](https://www.dafont.com/vcr-osd-mono.font) and adjusted UI scenes
    * Fixed flickering lines in tilemap
    * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
    * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
+   * 30/3/22: Fixed image processing for very large image files
+   * Laid out map for level 3 house
+   * 3/4/22: Separated colliders for pathfinding and damage for Guard enemy classes
 * [Eris] 5/4/22: Add/adjust various player mechanics
    * Add player ranged attack (fireball) + shield
    * Add player invulnerability upon taking damage (lasts as long as flash active)
@@ -111,7 +116,6 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Add staff (fireball) and shield animations
    * Add particle effects (auras) when changing skills
    * 8-direction + staff cast
-
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -185,9 +189,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * SkillBar
          * ...
    * Tiles
-      * SupermarketProps
-         * Tiles, Tileset and Sprite...
-      * SupermarketBackground
+      * [Tilename]
          * Tiles, Tileset and Sprite...
    * Prefabs
       * Player
