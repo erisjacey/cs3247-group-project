@@ -17,6 +17,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * Move - WASD/arrow-keys
 * Attack - Spacebar
 * Escape - Pause/Resume
+* 1-3 - Switch between different skills
 
 ### Flow
 
@@ -103,11 +104,14 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Fixed flickering lines in tilemap
    * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
    * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
-* [Eris] 30/3/22: Add/adjust various player mechanics
-   * Add player ranged attack
-   * Add player invulnerability when damaged
-   * Adjust player sword attack angle
+* [Eris] 5/4/22: Add/adjust various player mechanics
+   * Add player ranged attack (fireball) + shield
+   * Add player invulnerability upon taking damage (lasts as long as flash active)
    * Add skill bar
+   * Add staff (fireball) and shield animations
+   * Add particle effects (auras) when changing skills
+   * 8-direction + staff cast
+
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -203,6 +207,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
          * Skills
             * SkillManager
             * Skill
+         * AuraManager
          * PlayerController
          * PlayerLocationManager
          * HurtPlayer
@@ -242,3 +247,5 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Sound 1 (EnemyHurt)
    * Sound 86 (PlayerHurt)
 * [Fireball - NYKNCK](https://nyknck.itch.io/fireball-animation)
+* [Pixel Art FX - SpiritWitchSpirit](https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx)
+* [Medieval weapons pack - PixelHole](https://pixelhole.itch.io/medieval-weapons-pack)
