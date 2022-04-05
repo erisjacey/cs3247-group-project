@@ -116,6 +116,9 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Add staff (fireball) and shield animations
    * Add particle effects (auras) when changing skills
    * 8-direction + staff cast
+* [Huiting] 5/4/22: Add door mechanic and keys
+   * Requires key to unlock
+   * Door can also be set to automatically re-lock itself after the player passes through
 
 # Template Scene Hierarchy
 [Scene_Name]
