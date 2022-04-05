@@ -9,6 +9,7 @@ public class HealthManager : MonoBehaviour
 
     private HealthBar healthBar;
     private bool flashActive;
+    private bool isInvulnerable;
     
     [SerializeField] private float flashLength = 0f;
     private float flashCounter = 0f;
@@ -22,7 +23,7 @@ public class HealthManager : MonoBehaviour
     {
         healthBar = GetComponent<HealthBar>();
         player = FindObjectOfType<PlayerController>().gameObject;
-	    playerSprite = player.GetComponent<SpriteRenderer>();     
+	playerSprite = player.GetComponent<SpriteRenderer>();     
 
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);   
@@ -50,7 +51,7 @@ public class HealthManager : MonoBehaviour
             if (flashCounter <= 0)
             {
                 playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
-                flashActive = false;
+                LoseInvulnerability();
             }
             flashCounter -= Time.deltaTime;
         }
@@ -60,17 +61,33 @@ public class HealthManager : MonoBehaviour
 
     public void HurtPlayer(int damageToGive)
     {
-        FindObjectOfType<AudioManager>().Play("PlayerHurt");
-        currentHealth -= damageToGive;
-        healthBar.SetHealth(currentHealth);
-
-	    flashActive = true;
-        flashCounter = flashLength;
+        if (!isInvulnerable)
+        {
+            BecomeInvulnerable(true);
+            FindObjectOfType<AudioManager>().Play("PlayerHurt");
+            currentHealth -= damageToGive;
+            healthBar.SetHealth(currentHealth);
+        }
 
         if (currentHealth <= 0)
         {
             PlayerDie();
-	    }
+        }
+    }
+
+    public void BecomeInvulnerable(bool flash)
+    {
+        flashActive = flash;
+        flashCounter = flashLength;
+        isInvulnerable = true;
+        player.GetComponent<Collider2D>().enabled = false;
+    }
+
+    public void LoseInvulnerability()
+    {
+        flashActive = false;
+        isInvulnerable = false;
+        player.GetComponent<Collider2D>().enabled = true;
     }
 
     private void PlayerDie()

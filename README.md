@@ -17,6 +17,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * Move - WASD/arrow-keys
 * Attack - Spacebar
 * Escape - Pause/Resume
+* 1-3 - Switch between different skills
 
 ### Flow
 
@@ -108,6 +109,13 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * 30/3/22: Fixed image processing for very large image files
    * Laid out map for level 3 house
    * 3/4/22: Separated colliders for pathfinding and damage for Guard enemy classes
+* [Eris] 5/4/22: Add/adjust various player mechanics
+   * Add player ranged attack (fireball) + shield
+   * Add player invulnerability upon taking damage (lasts as long as flash active)
+   * Add skill bar
+   * Add staff (fireball) and shield animations
+   * Add particle effects (auras) when changing skills
+   * 8-direction + staff cast
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -155,23 +163,39 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
          * [EnragedAttack___]
          * [Walk___]
          * [EnragedWalk___]
-      * [Idle___]
-      * [Walk___]
-      * [Slash___]
+      * Player
+         * Attack
+            * ...
+         * Aura
+            * ...
+         * Movement
+            * ...
+      * Anxiety_Enemy
+         * ...
    * Art
       * TopDownCharacter
+         * Auras
+            * ... 
          * Character
             * ...
          * Weapon
             * ...
+         * Enemy
+            * ... 
       * GhostBoss
          * ...
       * HealthBar
+         * ...
+      * SkillBar
          * ...
    * Tiles
       * [Tilename]
          * Tiles, Tileset and Sprite...
    * Prefabs
+      * Player
+         * Player
+         * Fireball
+      * ...
    * Scenes
       * Audio
       * Test
@@ -181,8 +205,16 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * Audio
          * AudioManager
          * Sound
+      * Player
+         * Skills
+            * SkillManager
+            * Skill
+         * AuraManager
+         * PlayerController
+         * PlayerLocationManager
+         * HurtPlayer
+         * Fireball
       * CameraController
-      * PlayerController
       * BossController
       * BossHealth
       * EnemyHealthManager
@@ -191,9 +223,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
       * GuardHealth
       * HealthBar
       * HealthManager
-      * HurtPlayer
       * LevelExit
-      * PlayerLocationManager
    * Sounds
       * MenuTheme
       * PlayerHurt
@@ -218,3 +248,6 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * [SFX Pack v1 - Mythril Age](https://mythril-age.itch.io/mythril-age-sfx-pack-v1)
    * Sound 1 (EnemyHurt)
    * Sound 86 (PlayerHurt)
+* [Fireball - NYKNCK](https://nyknck.itch.io/fireball-animation)
+* [Pixel Art FX - SpiritWitchSpirit](https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx)
+* [Medieval weapons pack - PixelHole](https://pixelhole.itch.io/medieval-weapons-pack)
