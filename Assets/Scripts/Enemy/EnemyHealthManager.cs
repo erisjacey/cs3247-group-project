@@ -13,11 +13,13 @@ public class EnemyHealthManager : MonoBehaviour
     private bool flashActive;
     private float flashCounter = 0f;
     private SpriteRenderer enemySprite;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-	    enemySprite = GetComponent<SpriteRenderer>();  
+	    enemySprite = GetComponentInChildren<SpriteRenderer>();  
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -44,8 +46,10 @@ public class EnemyHealthManager : MonoBehaviour
     }
 
     public void HurtEnemy(int damageToGive)
-    {
+    {   
+        
         FindObjectOfType<AudioManager>().Play("EnemyHurt");
+        StartCoroutine(Hurt());
         currentHealth -= damageToGive;
 
 	    flashActive = true;
@@ -53,10 +57,17 @@ public class EnemyHealthManager : MonoBehaviour
 
         if (currentHealth <= 0)
         {   
-            Animator animator = GetComponentInChildren<Animator>();
-            animator.SetBool("isDead", true);
+            animator.Play("Death");
             Destroy(gameObject, 0.3f);
 	    }
+    }
+
+    
+    IEnumerator Hurt()
+    {   
+        animator.SetBool("isHurting", true);
+        yield return new WaitForSeconds(0.25f);
+        animator.SetBool("isHurting", false);
     }
 
 }
