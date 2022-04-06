@@ -67,6 +67,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * [Zx] 17/3/22: Set up Enemy movement, path-finding, Collision
 	21/3/22: Set up Start Menu, Dead Menu, Pause Menu and Populate enemies in supermarket 1.
 	30/3/22: Develop Range Enemy for Fear Level and Skeleton Enemy for Anger Level.W
+	6/4/22: Develop Fear Boss and Anger Boss
 * [Germaine] 16/3/22: Set up basic boss enemy movement, animations and enraged mode based on health
    * Enemy flash on receiving damage
    * Enraged mode features: player tracking regardless of distance, faster movement
@@ -116,6 +117,13 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Add staff (fireball) and shield animations
    * Add particle effects (auras) when changing skills
    * 8-direction + staff cast
+* [Huiting] 5/4/22: Add door mechanic and keys
+   * Requires key to unlock
+   * Door can also be set to automatically re-lock itself after the player passes through
+* [Lucas] 6/4/22 Added cutscenes animations for
+   * Opening (therapist session)
+   * End of supermarket level
+   * End of classroom level
 
 # Template Scene Hierarchy
 [Scene_Name]
