@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3289384534166598133}
   - component: {fileID: 3289384534166598134}
   m_Layer: 6
-  m_Name: Guard
+  m_Name: GuardSprite
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

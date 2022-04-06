@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1715697184739292799}
   - component: {fileID: 3730737263368563168}
   m_Layer: 0
-  m_Name: newSkeleton
+  m_Name: NewSkeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,8 +254,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0032587051, y: 0.64197373}
-  m_Size: {x: 0.2849226, y: 1.2802525}
+  m_Offset: {x: 0.024850368, y: 0.56326866}
+  m_Size: {x: 0.3936119, y: 1.505127}
   m_Direction: 0
 --- !u!114 &5498380481009234946
 MonoBehaviour:
