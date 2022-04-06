@@ -124,6 +124,9 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Opening (therapist session)
    * End of supermarket level
    * End of classroom level
+* [Germaine] 6/4/22: Creation of shop and currency (orb) pickup
+   * Can pick up orbs, use to buy items in shop
+   * Have not implemented all item effects in shop yet 
 
 # Template Scene Hierarchy
 [Scene_Name]
