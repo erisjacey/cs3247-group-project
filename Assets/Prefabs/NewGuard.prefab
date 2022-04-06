@@ -144,7 +144,7 @@ MonoBehaviour:
   radius: 0.14
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 4.5
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -163,9 +163,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.25
+  slowdownDistance: 0.15
   pickNextWaypointDist: 0.25
-  endReachedDistance: 0.25
+  endReachedDistance: 0.15
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
