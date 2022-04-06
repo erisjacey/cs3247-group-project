@@ -1,116 +1,64 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-namespace Pathfinding
+using Pathfinding;
+
+public class GuardAI : MonoBehaviour
 {
-	public class GuardAI : VersionedMonoBehaviour
+	[SerializeField] private float maxRange;
+	[SerializeField] private float minRange;
+
+	private Transform player;
+	private bool playerInRange = false;
+	private Animator animator;
+	private Rigidbody2D myRigidbody;
+	private GuardPath path; 
+
+	void Start()
+    {
+		animator = GetComponentInChildren<Animator>();
+		player = GameObject.FindGameObjectWithTag("Player").transform;
+		myRigidbody = gameObject.GetComponentInChildren<Rigidbody2D>();
+		path = gameObject.GetComponentInChildren<GuardPath>();
+	}
+
+	void Update()
 	{
-		/// <summary>Target points to move to in order</summary>
-		public Transform[] targets;
-		private Transform player;
-		public bool isStationary;
-		/// <summary>Time in seconds to wait at each target</summary>
-		public float delay = 0;
-
-		/// <summary>Current target index</summary>
-		int index;
-
-		IAstarAI agent;
-		float switchTime = float.PositiveInfinity;
-		bool playerInRange = false;
-		Animator animator;
-		[SerializeField] private float maxRange;
-		[SerializeField] private float minRange;
-		private Rigidbody2D myRigidbody;
-
-		protected override void Awake()
+		if (Vector3.Distance(player.position, transform.position) <= maxRange && (Vector3.Distance(player.position, transform.position) > minRange))
 		{
-			base.Awake();
-			agent = GetComponent<IAstarAI>();
-			index = Random.Range(0, targets.Length);
-			animator = GetComponentInChildren<Animator>();
-			player = GameObject.FindGameObjectWithTag("Player").transform;
-			myRigidbody = gameObject.GetComponent<Rigidbody2D>();
-		}
-
-		/// <summary>Update is called once per frame</summary>
-		void Update()
-		{
-			if (Vector3.Distance(player.position, agent.position) <= maxRange && (Vector3.Distance(player.position, agent.position) > minRange))
-			{
-				playerInRange = true;
-			}
-
-			if (playerInRange)
-			{
-				FollowPlayer();
-			}
-			else
-			{
-				if (isStationary)
-				{
-					animator.SetBool("patrolling", false);
-				}
-				Patrol();
-			}
-		}
-
-		void FollowPlayer()
-		{
+			playerInRange = true;
 			animator.SetBool("playerInRange", true);
-			agent.destination = player.position;
-			animator.SetFloat("moveX", agent.desiredVelocity.x);
-			animator.SetFloat("moveY", agent.desiredVelocity.y);
-			agent.SearchPath();
 		}
 
-		void Patrol()
+		if (playerInRange)
 		{
-			if (targets.Length == 0 || playerInRange) return;
-			bool search = false;
-			if (agent.reachedEndOfPath && !agent.pathPending && float.IsPositiveInfinity(switchTime))
-			{
-				animator.SetBool("patrolling", false);
-				switchTime = Time.time + delay;
-			}
-
-			if (Time.time >= switchTime)
-			{
-				index = Random.Range(0, targets.Length);
-				search = true;
-				switchTime = float.PositiveInfinity;
-				animator.SetBool("patrolling", true);
-			}
-
-			agent.destination = targets[index].position;
-			animator.SetFloat("moveX", targets[index].position.x - agent.position.x);
-			animator.SetFloat("moveY", targets[index].position.y - agent.position.y);
-			if (search) agent.SearchPath();
+			FollowPlayer();
 		}
-
-		void OnCollisionEnter2D(Collision2D other)
+		else
 		{
-			Debug.Log("hit detected");
-			// to be replace with weapon
-			if (other.gameObject.tag == "Player")
-			{
-				
-				Vector3 knockback = (transform.position - other.transform.position).normalized;
-				transform.position += knockback;
-				
-			}
-		}
-
-		private void OnTriggerEnter2D(Collider2D other)
-		{
-			if (other.tag == "MyWeapon")
-			{
-				
-				Vector3 knockback = (transform.position - other.transform.position).normalized;
-				transform.position += knockback;
-			}
+			path.Patrol();
 		}
 	}
 
+	void FollowPlayer()
+	{	
+		animator.SetFloat("moveX", player.position.x - transform.position.x);
+		animator.SetFloat("moveY", player.position.y - transform.position.y);
+		path.SetPath();
+	}
 
+
+	private void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "MyWeapon")
+		{	
+			Vector3 knockback = (transform.position - other.transform.position).normalized / 1.2f;
+			transform.position += knockback;
+		} else if (other.tag == "Player") {
+			Vector3 knockback = (transform.position - other.transform.position).normalized;
+			transform.position += knockback;
+		}
+	}
 }
+
+
+

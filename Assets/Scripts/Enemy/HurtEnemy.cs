@@ -18,9 +18,14 @@ public class HurtEnemy : MonoBehaviour
         } 
         else if (other.tag == "Boss")
         {
-            BossHealth bossHealth;
-            bossHealth = other.gameObject.GetComponent<BossHealth>();
-            bossHealth.TakeDamage(damageToGive);
+            BossHealth bossHealth = other.gameObject.GetComponent<BossHealth>();
+            AngryPlayerHealth angryPlayerHealth = other.gameObject.GetComponentInChildren<AngryPlayerHealth>();
+            if (bossHealth != null) {
+                bossHealth.TakeDamage(damageToGive);
+            } else if (angryPlayerHealth != null) {
+                angryPlayerHealth.TakeDamage(damageToGive);
+            }
+
         }
 
         if (other.tag == "FakeBoss")

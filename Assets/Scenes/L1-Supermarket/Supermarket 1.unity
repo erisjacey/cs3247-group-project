@@ -40824,6 +40824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1048021726}
     m_Modifications:
+    - target: {fileID: 24393642097766032, guid: accfd9dc6f25ef74887b0c84fcc9b7f9, type: 3}
+      propertyPath: height
+      value: 0.77
+      objectReference: {fileID: 0}
     - target: {fileID: 1164940086545922715, guid: accfd9dc6f25ef74887b0c84fcc9b7f9, type: 3}
       propertyPath: targets.Array.data[0]
       value: 
@@ -40892,7 +40896,9 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9190078806515727618, guid: accfd9dc6f25ef74887b0c84fcc9b7f9, type: 3}
+    - {fileID: 6188970484585475021, guid: accfd9dc6f25ef74887b0c84fcc9b7f9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: accfd9dc6f25ef74887b0c84fcc9b7f9, type: 3}
 --- !u!4 &1714842150 stripped
 Transform:
@@ -47999,7 +48005,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48392,8 +48398,8 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e9fa8064974354c8c8160dcaea013cc8, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -3978368848156038756, guid: 3ec794e9bb1d24213a607959ace2daf7, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 1211969753346275757, guid: 3ec794e9bb1d24213a607959ace2daf7, type: 3}
   - m_RefCount: 2
@@ -48420,8 +48426,8 @@ Tilemap:
     m_Data: {fileID: -5990746149456117123, guid: 3ec794e9bb1d24213a607959ace2daf7, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 1906390833278319186, guid: 3ec794e9bb1d24213a607959ace2daf7, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -3978368848156038756, guid: 3ec794e9bb1d24213a607959ace2daf7, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 7183877902263428131, guid: 96fb1778824654e3ab1b36dbee4fa3cc, type: 3}
   - m_RefCount: 1
