@@ -61,17 +61,20 @@ public class PlayerController : MonoBehaviour
             shotPoint.transform.rotation = Quaternion.Euler(0.0f, 0.0f, angle);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (!isAttacking)
         {
-            changeCurrentSkill(SWORD);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            changeCurrentSkill(STAFF);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            changeCurrentSkill(SHIELD);
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                changeCurrentSkill(SWORD);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                changeCurrentSkill(STAFF);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                changeCurrentSkill(SHIELD);
+            }
         }
 
         switch (currentSkill)
