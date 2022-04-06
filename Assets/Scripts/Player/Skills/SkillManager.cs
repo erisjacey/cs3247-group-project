@@ -25,12 +25,6 @@ public class SkillManager : MonoBehaviour
         SetSkillBar(skillBarId);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     // Returns true if successful change, false otherwise
     public bool SetActiveSkill(int id)
     {

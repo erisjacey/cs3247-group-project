@@ -1,79 +1,79 @@
 fileFormatVersion: 2
-guid: efc4df7a5f4be424e91acab3bfd66897
+guid: 8cd065df5dd614ac592bbfd87fc029ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8534298975235434745
-    second: Bob_run_16x16_0
+      213: -1328022853690936856
+    second: Nurse_2_idle_anim_16x16_0
   - first:
-      213: -8026601986872249298
-    second: Bob_run_16x16_1
+      213: -5604145688141061728
+    second: Nurse_2_idle_anim_16x16_1
   - first:
-      213: -6969181364961333584
-    second: Bob_run_16x16_2
+      213: -5972670355592670671
+    second: Nurse_2_idle_anim_16x16_2
   - first:
-      213: -2864070070068593015
-    second: Bob_run_16x16_3
+      213: -8404610681533968576
+    second: Nurse_2_idle_anim_16x16_3
   - first:
-      213: 4553890876333312227
-    second: Bob_run_16x16_4
+      213: -1171293569559365995
+    second: Nurse_2_idle_anim_16x16_4
   - first:
-      213: 8296729118032106706
-    second: Bob_run_16x16_5
+      213: -8304690903521786333
+    second: Nurse_2_idle_anim_16x16_5
   - first:
-      213: -2085341842886001542
-    second: Bob_run_16x16_6
+      213: -6097263293642537975
+    second: Nurse_2_idle_anim_16x16_6
   - first:
-      213: 8384416167360633316
-    second: Bob_run_16x16_7
+      213: -1002883293360631772
+    second: Nurse_2_idle_anim_16x16_7
   - first:
-      213: 6469593095272595348
-    second: Bob_run_16x16_8
+      213: 179182827377276576
+    second: Nurse_2_idle_anim_16x16_8
   - first:
-      213: -8091061765958194309
-    second: Bob_run_16x16_9
+      213: 7681776488005388708
+    second: Nurse_2_idle_anim_16x16_9
   - first:
-      213: -1260930827348151630
-    second: Bob_run_16x16_10
+      213: -4725489565506764843
+    second: Nurse_2_idle_anim_16x16_10
   - first:
-      213: 6680481130296971727
-    second: Bob_run_16x16_11
+      213: -6469754884341171468
+    second: Nurse_2_idle_anim_16x16_11
   - first:
-      213: 8281626891566309041
-    second: Bob_run_16x16_12
+      213: -877400521432212863
+    second: Nurse_2_idle_anim_16x16_12
   - first:
-      213: -8391349898468976001
-    second: Bob_run_16x16_13
+      213: 3101186165247538882
+    second: Nurse_2_idle_anim_16x16_13
   - first:
-      213: -8900789253296354507
-    second: Bob_run_16x16_14
+      213: 2412835181313182904
+    second: Nurse_2_idle_anim_16x16_14
   - first:
-      213: 5300520169801445426
-    second: Bob_run_16x16_15
+      213: 2998321961582322743
+    second: Nurse_2_idle_anim_16x16_15
   - first:
-      213: -7997588783605489655
-    second: Bob_run_16x16_16
+      213: 3326352180146470453
+    second: Nurse_2_idle_anim_16x16_16
   - first:
-      213: 5510980710941924565
-    second: Bob_run_16x16_17
+      213: -543881153590786136
+    second: Nurse_2_idle_anim_16x16_17
   - first:
-      213: 4519850745487381617
-    second: Bob_run_16x16_18
+      213: -1773912147629114054
+    second: Nurse_2_idle_anim_16x16_18
   - first:
-      213: -1487156113865844369
-    second: Bob_run_16x16_19
+      213: -7282764684353019888
+    second: Nurse_2_idle_anim_16x16_19
   - first:
-      213: 3701767487750036478
-    second: Bob_run_16x16_20
+      213: -3919320710559949408
+    second: Nurse_2_idle_anim_16x16_20
   - first:
-      213: -6623587446281570848
-    second: Bob_run_16x16_21
+      213: -261701545260520915
+    second: Nurse_2_idle_anim_16x16_21
   - first:
-      213: 5219014061176227953
-    second: Bob_run_16x16_22
+      213: -827566569468472090
+    second: Nurse_2_idle_anim_16x16_22
   - first:
-      213: 6556225339597493529
-    second: Bob_run_16x16_23
+      213: 4263279402875832362
+    second: Nurse_2_idle_anim_16x16_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -151,7 +151,19 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -163,7 +175,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bob_run_16x16_0
+      name: Nurse_2_idle_anim_16x16_0
       rect:
         serializedVersion: 2
         x: 0
@@ -177,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7079c167c44109980800000000000000
-      internalID: -8534298975235434745
+      spriteID: 8e1b620304ae19de0800000000000000
+      internalID: -1328022853690936856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_1
+      name: Nurse_2_idle_anim_16x16_1
       rect:
         serializedVersion: 2
         x: 16
@@ -198,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e24f80b0508cb9090800000000000000
-      internalID: -8026601986872249298
+      spriteID: 0a1a0dc40331a32b0800000000000000
+      internalID: -5604145688141061728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_2
+      name: Nurse_2_idle_anim_16x16_2
       rect:
         serializedVersion: 2
         x: 32
@@ -219,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be253e097e784f90800000000000000
-      internalID: -6969181364961333584
+      spriteID: 1329466c4ffcc1da0800000000000000
+      internalID: -5972670355592670671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_3
+      name: Nurse_2_idle_anim_16x16_3
       rect:
         serializedVersion: 2
         x: 48
@@ -240,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98ebbbd1277c048d0800000000000000
-      internalID: -2864070070068593015
+      spriteID: 04fc6bb5d13dc5b80800000000000000
+      internalID: -8404610681533968576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_4
+      name: Nurse_2_idle_anim_16x16_4
       rect:
         serializedVersion: 2
         x: 64
@@ -261,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e84dbddf9ba23f30800000000000000
-      internalID: 4553890876333312227
+      spriteID: 596f6ba44babebfe0800000000000000
+      internalID: -1171293569559365995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_5
+      name: Nurse_2_idle_anim_16x16_5
       rect:
         serializedVersion: 2
         x: 80
@@ -282,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d491f5cc27e32370800000000000000
-      internalID: 8296729118032106706
+      spriteID: 3268a269f9fcfbc80800000000000000
+      internalID: -8304690903521786333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_6
+      name: Nurse_2_idle_anim_16x16_6
       rect:
         serializedVersion: 2
         x: 96
@@ -303,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7c758b74a06f03e0800000000000000
-      internalID: -2085341842886001542
+      spriteID: 9048860d65b226ba0800000000000000
+      internalID: -6097263293642537975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_7
+      name: Nurse_2_idle_anim_16x16_7
       rect:
         serializedVersion: 2
         x: 112
@@ -324,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e99298e41e6b5470800000000000000
-      internalID: 8384416167360633316
+      spriteID: 420d01c45fa0512f0800000000000000
+      internalID: -1002883293360631772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_8
+      name: Nurse_2_idle_anim_16x16_8
       rect:
         serializedVersion: 2
         x: 128
@@ -345,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49ffa0d84ac98c950800000000000000
-      internalID: 6469593095272595348
+      spriteID: 0a63ca705d59c7200800000000000000
+      internalID: 179182827377276576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_9
+      name: Nurse_2_idle_anim_16x16_9
       rect:
         serializedVersion: 2
         x: 144
@@ -366,14 +378,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7b21503136c6bf80800000000000000
-      internalID: -8091061765958194309
+      spriteID: 4a9428b14072b9a60800000000000000
+      internalID: 7681776488005388708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_10
+      name: Nurse_2_idle_anim_16x16_10
       rect:
         serializedVersion: 2
         x: 160
@@ -387,14 +399,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2f29dd716408ee0800000000000000
-      internalID: -1260930827348151630
+      spriteID: 5df7722e640bb6eb0800000000000000
+      internalID: -4725489565506764843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_11
+      name: Nurse_2_idle_anim_16x16_11
       rect:
         serializedVersion: 2
         x: 176
@@ -408,14 +420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc11d0c7136d5bc50800000000000000
-      internalID: 6680481130296971727
+      spriteID: 4fafefef530d636a0800000000000000
+      internalID: -6469754884341171468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_12
+      name: Nurse_2_idle_anim_16x16_12
       rect:
         serializedVersion: 2
         x: 192
@@ -429,14 +441,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bed12aa7cf3ee270800000000000000
-      internalID: 8281626891566309041
+      spriteID: 18a5a4adfd8d2d3f0800000000000000
+      internalID: -877400521432212863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_13
+      name: Nurse_2_idle_anim_16x16_13
       rect:
         serializedVersion: 2
         x: 208
@@ -450,14 +462,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7a1fb30abfeb8b80800000000000000
-      internalID: -8391349898468976001
+      spriteID: 2c67fe1f260a90b20800000000000000
+      internalID: 3101186165247538882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_14
+      name: Nurse_2_idle_anim_16x16_14
       rect:
         serializedVersion: 2
         x: 224
@@ -471,14 +483,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53b08a0255b0a7480800000000000000
-      internalID: -8900789253296354507
+      spriteID: 8bcccbb40dc1c7120800000000000000
+      internalID: 2412835181313182904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_15
+      name: Nurse_2_idle_anim_16x16_15
       rect:
         serializedVersion: 2
         x: 240
@@ -492,14 +504,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 230fec5d20b3f8940800000000000000
-      internalID: 5300520169801445426
+      spriteID: 734ed5230fd2c9920800000000000000
+      internalID: 2998321961582322743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_16
+      name: Nurse_2_idle_anim_16x16_16
       rect:
         serializedVersion: 2
         x: 256
@@ -513,14 +525,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 900eb85df5bd20190800000000000000
-      internalID: -7997588783605489655
+      spriteID: 53ef97f1fa3992e20800000000000000
+      internalID: 3326352180146470453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_17
+      name: Nurse_2_idle_anim_16x16_17
       rect:
         serializedVersion: 2
         x: 272
@@ -534,14 +546,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc19b712cfea7c40800000000000000
-      internalID: 5510980710941924565
+      spriteID: 8a70130f8feb378f0800000000000000
+      internalID: -543881153590786136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_18
+      name: Nurse_2_idle_anim_16x16_18
       rect:
         serializedVersion: 2
         x: 288
@@ -555,14 +567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1745f8a4e4cb9be30800000000000000
-      internalID: 4519850745487381617
+      spriteID: a3df0d1ec4cc167e0800000000000000
+      internalID: -1773912147629114054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_19
+      name: Nurse_2_idle_anim_16x16_19
       rect:
         serializedVersion: 2
         x: 304
@@ -576,14 +588,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f69d97bc46f8c5be0800000000000000
-      internalID: -1487156113865844369
+      spriteID: 010e066fa1c6eea90800000000000000
+      internalID: -7282764684353019888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_20
+      name: Nurse_2_idle_anim_16x16_20
       rect:
         serializedVersion: 2
         x: 320
@@ -597,14 +609,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb5e64dae15f5330800000000000000
-      internalID: 3701767487750036478
+      spriteID: 0ad1e364496cb99c0800000000000000
+      internalID: -3919320710559949408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_21
+      name: Nurse_2_idle_anim_16x16_21
       rect:
         serializedVersion: 2
         x: 336
@@ -618,14 +630,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e576a59f4a4414a0800000000000000
-      internalID: -6623587446281570848
+      spriteID: d2a6395c4df3e5cf0800000000000000
+      internalID: -261701545260520915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_22
+      name: Nurse_2_idle_anim_16x16_22
       rect:
         serializedVersion: 2
         x: 352
@@ -639,14 +651,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1788d2a13a9ad6840800000000000000
-      internalID: 5219014061176227953
+      spriteID: 6e4d7d6f694e384f0800000000000000
+      internalID: -827566569468472090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_run_16x16_23
+      name: Nurse_2_idle_anim_16x16_23
       rect:
         serializedVersion: 2
         x: 368
@@ -660,8 +672,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9159f12c5346cfa50800000000000000
-      internalID: 6556225339597493529
+      spriteID: a2847a277063a2b30800000000000000
+      internalID: 4263279402875832362
       vertices: []
       indices: 
       edges: []

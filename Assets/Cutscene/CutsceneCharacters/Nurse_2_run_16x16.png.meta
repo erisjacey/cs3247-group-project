@@ -1,79 +1,79 @@
 fileFormatVersion: 2
-guid: f91f48ad22ad1414c96b393829b47fa4
+guid: 6461450e7ea18492e9574132771303b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2765845521598013535
-    second: Molly_run_16x16_0
+      213: -8770574509046647914
+    second: Nurse_2_run_16x16_0
   - first:
-      213: -3104419608959876553
-    second: Molly_run_16x16_1
+      213: 2193219283348190885
+    second: Nurse_2_run_16x16_1
   - first:
-      213: 125709903314601636
-    second: Molly_run_16x16_2
+      213: 122288395718251446
+    second: Nurse_2_run_16x16_2
   - first:
-      213: 6144581780219233628
-    second: Molly_run_16x16_3
+      213: 4391798945597569815
+    second: Nurse_2_run_16x16_3
   - first:
-      213: -493346054151447827
-    second: Molly_run_16x16_4
+      213: 2855940197750083704
+    second: Nurse_2_run_16x16_4
   - first:
-      213: 3926454015515455616
-    second: Molly_run_16x16_5
+      213: -8541239209349944680
+    second: Nurse_2_run_16x16_5
   - first:
-      213: 1069890052640169407
-    second: Molly_run_16x16_6
+      213: 6451252158489333562
+    second: Nurse_2_run_16x16_6
   - first:
-      213: -3374919259429470515
-    second: Molly_run_16x16_7
+      213: 5923899030201341949
+    second: Nurse_2_run_16x16_7
   - first:
-      213: 5608813275591593643
-    second: Molly_run_16x16_8
+      213: 2901810914889899770
+    second: Nurse_2_run_16x16_8
   - first:
-      213: 948070660596154610
-    second: Molly_run_16x16_9
+      213: 986307066846331009
+    second: Nurse_2_run_16x16_9
   - first:
-      213: -8497018558952819454
-    second: Molly_run_16x16_10
+      213: 6031520957362535449
+    second: Nurse_2_run_16x16_10
   - first:
-      213: -6998598151783516195
-    second: Molly_run_16x16_11
+      213: 502636158898617675
+    second: Nurse_2_run_16x16_11
   - first:
-      213: -4795432399889562794
-    second: Molly_run_16x16_12
+      213: -5877485174980532603
+    second: Nurse_2_run_16x16_12
   - first:
-      213: 2964645210827502367
-    second: Molly_run_16x16_13
+      213: 5151564133102034599
+    second: Nurse_2_run_16x16_13
   - first:
-      213: -152030813274100520
-    second: Molly_run_16x16_14
+      213: -757268421106725764
+    second: Nurse_2_run_16x16_14
   - first:
-      213: 9220388892420921677
-    second: Molly_run_16x16_15
+      213: 4082011309989509031
+    second: Nurse_2_run_16x16_15
   - first:
-      213: -8373676992060404925
-    second: Molly_run_16x16_16
+      213: 8847091365339030426
+    second: Nurse_2_run_16x16_16
   - first:
-      213: -3003869221409667586
-    second: Molly_run_16x16_17
+      213: -2342041683298801878
+    second: Nurse_2_run_16x16_17
   - first:
-      213: -7535453597709944459
-    second: Molly_run_16x16_18
+      213: 3724587237438163668
+    second: Nurse_2_run_16x16_18
   - first:
-      213: 653690683635474832
-    second: Molly_run_16x16_19
+      213: 1555138732571287223
+    second: Nurse_2_run_16x16_19
   - first:
-      213: 2086619972655031568
-    second: Molly_run_16x16_20
+      213: -4650402021080460496
+    second: Nurse_2_run_16x16_20
   - first:
-      213: 5582558310442413301
-    second: Molly_run_16x16_21
+      213: 5004823291231973455
+    second: Nurse_2_run_16x16_21
   - first:
-      213: 236464213861939683
-    second: Molly_run_16x16_22
+      213: 1293942237092948348
+    second: Nurse_2_run_16x16_22
   - first:
-      213: 7673974899616536495
-    second: Molly_run_16x16_23
+      213: 3652791620268672992
+    second: Nurse_2_run_16x16_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -151,7 +151,19 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -163,7 +175,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Molly_run_16x16_0
+      name: Nurse_2_run_16x16_0
       rect:
         serializedVersion: 2
         x: 0
@@ -177,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f50647a09d1426620800000000000000
-      internalID: 2765845521598013535
+      spriteID: 693bd28d3f8a84680800000000000000
+      internalID: -8770574509046647914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_1
+      name: Nurse_2_run_16x16_1
       rect:
         serializedVersion: 2
         x: 16
@@ -198,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 732803640d2eae4d0800000000000000
-      internalID: -3104419608959876553
+      spriteID: 5a6718a6151ef6e10800000000000000
+      internalID: 2193219283348190885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_2
+      name: Nurse_2_run_16x16_2
       rect:
         serializedVersion: 2
         x: 32
@@ -219,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a6c0d3bd7c9eb100800000000000000
-      internalID: 125709903314601636
+      spriteID: 6b350f2e5a472b100800000000000000
+      internalID: 122288395718251446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_3
+      name: Nurse_2_run_16x16_3
       rect:
         serializedVersion: 2
         x: 48
@@ -240,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c550e4fd290f54550800000000000000
-      internalID: 6144581780219233628
+      spriteID: 71b374d4fddc2fc30800000000000000
+      internalID: 4391798945597569815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_4
+      name: Nurse_2_run_16x16_4
       rect:
         serializedVersion: 2
         x: 64
@@ -261,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea56faa0684729f0800000000000000
-      internalID: -493346054151447827
+      spriteID: 87017aa7a7652a720800000000000000
+      internalID: 2855940197750083704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_5
+      name: Nurse_2_run_16x16_5
       rect:
         serializedVersion: 2
         x: 80
@@ -282,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08074b5bf119d7630800000000000000
-      internalID: 3926454015515455616
+      spriteID: 89aee09413c677980800000000000000
+      internalID: -8541239209349944680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_6
+      name: Nurse_2_run_16x16_6
       rect:
         serializedVersion: 2
         x: 96
@@ -303,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd5758955309de00800000000000000
-      internalID: 1069890052640169407
+      spriteID: a3f8a3f68a3778950800000000000000
+      internalID: 6451252158489333562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_7
+      name: Nurse_2_run_16x16_7
       rect:
         serializedVersion: 2
         x: 112
@@ -324,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcef41c80d0e921d0800000000000000
-      internalID: -3374919259429470515
+      spriteID: df79e6428cae53250800000000000000
+      internalID: 5923899030201341949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_8
+      name: Nurse_2_run_16x16_8
       rect:
         serializedVersion: 2
         x: 128
@@ -345,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baec12715f186dd40800000000000000
-      internalID: 5608813275591593643
+      spriteID: afe1d5317ad454820800000000000000
+      internalID: 2901810914889899770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_9
+      name: Nurse_2_run_16x16_9
       rect:
         serializedVersion: 2
         x: 144
@@ -366,14 +378,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f0cdc22e39382d00800000000000000
-      internalID: 948070660596154610
+      spriteID: 18045d63d0110bd00800000000000000
+      internalID: 986307066846331009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_10
+      name: Nurse_2_run_16x16_10
       rect:
         serializedVersion: 2
         x: 160
@@ -387,14 +399,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20537b7c3a6841a80800000000000000
-      internalID: -8497018558952819454
+      spriteID: 91cfae6ba5444b350800000000000000
+      internalID: 6031520957362535449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_11
+      name: Nurse_2_run_16x16_11
       rect:
         serializedVersion: 2
         x: 176
@@ -408,14 +420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7fc35af0cffde90800000000000000
-      internalID: -6998598151783516195
+      spriteID: b4d3b666ce8b9f600800000000000000
+      internalID: 502636158898617675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_12
+      name: Nurse_2_run_16x16_12
       rect:
         serializedVersion: 2
         x: 192
@@ -429,14 +441,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6530f2cb3a3337db0800000000000000
-      internalID: -4795432399889562794
+      spriteID: 58629a4af5afe6ea0800000000000000
+      internalID: -5877485174980532603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_13
+      name: Nurse_2_run_16x16_13
       rect:
         serializedVersion: 2
         x: 208
@@ -450,14 +462,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f13bf64ac19842920800000000000000
-      internalID: 2964645210827502367
+      spriteID: 7ae903fe8480e7740800000000000000
+      internalID: 5151564133102034599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_14
+      name: Nurse_2_run_16x16_14
       rect:
         serializedVersion: 2
         x: 224
@@ -471,14 +483,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc22e3e7c0e3edf0800000000000000
-      internalID: -152030813274100520
+      spriteID: c7c00581264ad75f0800000000000000
+      internalID: -757268421106725764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_15
+      name: Nurse_2_run_16x16_15
       rect:
         serializedVersion: 2
         x: 240
@@ -492,14 +504,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49d4bf88d665ff70800000000000000
-      internalID: 9220388892420921677
+      spriteID: 7a73d05b8a736a830800000000000000
+      internalID: 4082011309989509031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_16
+      name: Nurse_2_run_16x16_16
       rect:
         serializedVersion: 2
         x: 256
@@ -513,14 +525,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34bc0603429bacb80800000000000000
-      internalID: -8373676992060404925
+      spriteID: a93657e09be27ca70800000000000000
+      internalID: 8847091365339030426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_17
+      name: Nurse_2_run_16x16_17
       rect:
         serializedVersion: 2
         x: 272
@@ -534,14 +546,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef5c52abbdc1056d0800000000000000
-      internalID: -3003869221409667586
+      spriteID: a2721d96f756f7fd0800000000000000
+      internalID: -2342041683298801878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_18
+      name: Nurse_2_run_16x16_18
       rect:
         serializedVersion: 2
         x: 288
@@ -555,14 +567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5793f0f90e0bc6790800000000000000
-      internalID: -7535453597709944459
+      spriteID: 4da8476db5460b330800000000000000
+      internalID: 3724587237438163668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_19
+      name: Nurse_2_run_16x16_19
       rect:
         serializedVersion: 2
         x: 304
@@ -576,14 +588,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 091231f9630621900800000000000000
-      internalID: 653690683635474832
+      spriteID: 7bedc531076f49510800000000000000
+      internalID: 1555138732571287223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_20
+      name: Nurse_2_run_16x16_20
       rect:
         serializedVersion: 2
         x: 320
@@ -597,14 +609,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015a65b4fc925fc10800000000000000
-      internalID: 2086619972655031568
+      spriteID: 0339dbe2004767fb0800000000000000
+      internalID: -4650402021080460496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_21
+      name: Nurse_2_run_16x16_21
       rect:
         serializedVersion: 2
         x: 336
@@ -618,14 +630,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc23d7a43b397d40800000000000000
-      internalID: 5582558310442413301
+      spriteID: f40bb754444b47540800000000000000
+      internalID: 5004823291231973455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_22
+      name: Nurse_2_run_16x16_22
       rect:
         serializedVersion: 2
         x: 352
@@ -639,14 +651,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e9355d13f6184300800000000000000
-      internalID: 236464213861939683
+      spriteID: c79acc9eb9105f110800000000000000
+      internalID: 1293942237092948348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Molly_run_16x16_23
+      name: Nurse_2_run_16x16_23
       rect:
         serializedVersion: 2
         x: 368
@@ -660,8 +672,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa758e2438f6f7a60800000000000000
-      internalID: 7673974899616536495
+      spriteID: 0e743a410a251b230800000000000000
+      internalID: 3652791620268672992
       vertices: []
       indices: 
       edges: []
