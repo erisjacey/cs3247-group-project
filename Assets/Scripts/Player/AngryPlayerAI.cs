@@ -25,8 +25,6 @@ public class AngryPlayerAI : MonoBehaviour
     private GameObject flame;
     [SerializeField]
     private GameObject explosion;
-    [SerializeField]
-    private Transform hide;
     
 
     private float yOffset = 0.4f;
