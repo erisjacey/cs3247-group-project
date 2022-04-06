@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1315483526475142438}
   - component: {fileID: 314049725354992637}
   m_Layer: 6
-  m_Name: suck
+  m_Name: Insult
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,4 +155,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c4829de93118db4396c95be5d371264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 10
+  damageToGive: 15
