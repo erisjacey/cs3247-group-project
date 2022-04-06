@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
+  fireball: {fileID: 0}
+  shotPoint: {fileID: 0}
 --- !u!50 &86448391707573025
 Rigidbody2D:
   serializedVersion: 4
@@ -262,7 +264,7 @@ GameObject:
   - component: {fileID: 7991464551034003467}
   m_Layer: 6
   m_Name: SlashUp
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,7 +545,7 @@ GameObject:
   - component: {fileID: 1045252288860573209}
   m_Layer: 6
   m_Name: SlashLeft
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -662,7 +664,7 @@ GameObject:
   - component: {fileID: 6762053025309690767}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -813,7 +815,7 @@ GameObject:
   - component: {fileID: 5259715517155344183}
   m_Layer: 6
   m_Name: SlashDown
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,7 +1016,7 @@ GameObject:
   - component: {fileID: 2837565404918051737}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1413,7 +1415,7 @@ GameObject:
   - component: {fileID: 4773510966533512881}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1648,7 +1650,7 @@ GameObject:
   - component: {fileID: 2437449899526932819}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1799,7 +1801,7 @@ GameObject:
   - component: {fileID: 7961129149102098314}
   m_Layer: 6
   m_Name: SlashRight
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
