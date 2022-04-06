@@ -8,8 +8,11 @@ TagManager:
   - FakeBoss
   - Boss
   - MyWeapon
+  - Orb
   - Walls
   - Hitbox
+  - Event
+  - Damageable
   layers:
   - Default
   - TransparentFX
@@ -22,6 +25,7 @@ TagManager:
   - Environment
   - Interactables
   - 
+  - Damageable
   - 
   - 
   - 
