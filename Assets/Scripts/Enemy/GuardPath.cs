@@ -72,6 +72,12 @@ namespace Pathfinding {
             return agent.desiredVelocity;
         }
 
+        public void Teleport(Vector3 position)
+        {
+            agent.Teleport(position, true);
+            DisableMove();
+        }
+
 
     }
 
