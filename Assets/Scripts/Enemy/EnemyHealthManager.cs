@@ -9,6 +9,7 @@ public class EnemyHealthManager : MonoBehaviour
     
     [SerializeField] private float flashLength = 0f;
     [SerializeField] private float blinkLength = 0f;
+    [SerializeField] private GameObject itemToDrop;
 
     private bool flashActive;
     private float flashCounter = 0f;
@@ -58,9 +59,18 @@ public class EnemyHealthManager : MonoBehaviour
         if (currentHealth <= 0)
         {   
             animator.Play("Death");
-            Destroy(gameObject, 0.3f);
+            Destroy(gameObject, 0.20f);
 	    }
     }
+
+    private void OnDestroy() 
+	{   
+        if (itemToDrop != null) 
+        {
+            Instantiate(itemToDrop, transform.position, transform.rotation);
+        }
+		
+	}
 
     
     IEnumerator Hurt()

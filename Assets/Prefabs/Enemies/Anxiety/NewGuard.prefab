@@ -163,9 +163,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.15
+  slowdownDistance: 0.4
   pickNextWaypointDist: 0.25
-  endReachedDistance: 0.15
+  endReachedDistance: 0.4
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e6c29e32504465faa943c537d8029b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRange: 5
+  maxRange: 7
   minRange: 0.5
 --- !u!114 &2618393533488539881
 MonoBehaviour:
@@ -218,6 +218,7 @@ MonoBehaviour:
   maxHealth: 15
   flashLength: 0.4
   blinkLength: 0.4
+  itemToDrop: {fileID: 0}
 --- !u!58 &6729246893780647322
 CircleCollider2D:
   m_ObjectHideFlags: 0

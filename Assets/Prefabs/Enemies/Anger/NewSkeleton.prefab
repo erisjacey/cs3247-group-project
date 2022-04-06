@@ -54,7 +54,7 @@ MonoBehaviour:
   attackDelay: 1.5
   attackTime: 1.5
   attackRange: 1.15
-  maxRange: 5
+  maxRange: 8
   minRange: 0.5
 --- !u!114 &2721958025559047795
 MonoBehaviour:
@@ -170,6 +170,7 @@ MonoBehaviour:
   maxHealth: 35
   flashLength: 0.25
   blinkLength: 0.25
+  itemToDrop: {fileID: 0}
 --- !u!50 &1715697184739292799
 Rigidbody2D:
   serializedVersion: 4

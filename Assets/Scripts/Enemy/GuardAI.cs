@@ -49,6 +49,7 @@ public class GuardAI : MonoBehaviour
 		path.SetPath();
 	}
 
+
 	public void Knockback(Vector3 knockback) {
 		transform.position += knockback;
 	}
