@@ -208,6 +208,8 @@ MonoBehaviour:
   targets: []
   isStationary: 1
   delay: 0.25
+  startingX: 0
+  startingY: 0
 --- !u!114 &3945091930858339341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,10 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d20bb35e0879584fb63992bc1822b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDelay: 1
-  attackTime: 1
-  attackRange: 6
-  maxRange: 7
+  attackDelay: 1.5
+  attackTime: 1.5
+  attackRange: 5
+  maxRange: 8
   minRange: 0.5
   projectile: {fileID: 506448806334500278, guid: 1de7bf0a080e93d448154e607b4acc92, type: 3}
   insults:

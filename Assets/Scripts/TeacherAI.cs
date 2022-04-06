@@ -74,7 +74,6 @@ public class TeacherAI : MonoBehaviour
 
         if (isRangeAttack) { 
             attackDelay -= Time.deltaTime;
-            animator.SetBool("isRangeAttack", false);
             if (attackDelay <= 0) {
                 isRangeAttack = false;
                 attackDelay = attackTime;
