@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
          }
     }
 
-    private void changeCurrentSkill(int skill)
+    public void changeCurrentSkill(int skill)
     {
         myAnim.SetFloat("currentSkill", (float)skill);
         if (currentSkill != skill)
