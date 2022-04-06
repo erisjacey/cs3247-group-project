@@ -31,11 +31,17 @@ public class SkillManager : MonoBehaviour
 
     }
 
-    public void SetActiveSkill(int id)
+    // Returns true if successful change, false otherwise
+    public bool SetActiveSkill(int id)
     {
+        if (id > skillBarId)
+        {
+            return false;
+        }
         activeSkill = id;
         skillBars[skillBarId].GetComponent<Skill>().SetActiveSkill(id);
         FindObjectOfType<AuraManager>().TriggerAura(id);
+        return true;
     }
 
     public int GetActiveSkill()
