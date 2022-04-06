@@ -152,12 +152,12 @@ public class PlayerController : MonoBehaviour
     {
         if (isAttacking)
         {
-            myRB.velocity = Vector2.zero;
             if (!Input.GetKey(KeyCode.Space))
             {
                 FindObjectOfType<HealthManager>().LoseInvulnerability();
                 myAnim.SetBool("isAttacking", false);
                 isAttacking = false;
+                walkSpeed *= 10;
             }
         }
         else if (Input.GetKeyDown(KeyCode.Space))
@@ -166,6 +166,7 @@ public class PlayerController : MonoBehaviour
             attackCounter = attackTime;
             myAnim.SetBool("isAttacking", true);
             isAttacking = true;
+            walkSpeed /= 10;
         }
     }
 
