@@ -14,6 +14,9 @@ namespace Pathfinding {
 		float switchTime = float.PositiveInfinity;
         Animator animator;
 
+        [SerializeField] private float startingX = 0f;
+	    [SerializeField] private float startingY = 0f;
+
         protected override void Awake()
 		{
 			base.Awake();
@@ -23,6 +26,9 @@ namespace Pathfinding {
             animator = GetComponentInChildren<Animator>();
             if (isStationary) {
                 animator.SetBool("patrolling", false);
+                animator.SetBool("isStationary", true);
+                animator.SetFloat("moveX", startingX);
+                animator.SetFloat("moveY", startingY);
             }
 		}
 

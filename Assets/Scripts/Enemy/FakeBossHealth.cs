@@ -19,7 +19,7 @@ public class FakeBossHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        enemySprite = GetComponent<SpriteRenderer>();
+        enemySprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
