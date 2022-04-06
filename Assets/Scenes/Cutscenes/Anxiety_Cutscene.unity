@@ -5858,6 +5858,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &615559326 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -4806544509815365247, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
+  m_PrefabInstance: {fileID: 1922758910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &753885801
 GameObject:
   m_ObjectHideFlags: 0
@@ -9210,8 +9215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 483375387}
-  transitionTime: 1
-  cutsceneTime: 8
+  transitionTime: 2
+  cutsceneTime: 10
 --- !u!4 &1073172130
 Transform:
   m_ObjectHideFlags: 0
@@ -9846,13 +9851,13 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -5533244565877829582, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
-    value: {fileID: 1922758911}
+    value: {fileID: 615559326}
   - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: -6665771536481178775, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
-    value: {fileID: 1922758911}
+    value: {fileID: 615559326}
   - key: {fileID: 724314382318135121, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
     value: {fileID: 962936189}
   - key: {fileID: -2537191616642822200, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
@@ -11981,7 +11986,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Gained !
+  m_Text: '<Player> gained a surge of excitement!
+
+    Acquired skill: Fireball'
 --- !u!222 &1881068788
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12161,11 +12168,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
---- !u!95 &1922758911 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 86448391707573029, guid: edc4905f9c5254d8981719f1328d114b, type: 3}
-  m_PrefabInstance: {fileID: 1922758910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2061778941
 GameObject:
   m_ObjectHideFlags: 0

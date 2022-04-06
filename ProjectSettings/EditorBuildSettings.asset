@@ -39,12 +39,12 @@ EditorBuildSettings:
     path: Assets/Scenes/L3-House/House 3.unity
     guid: d9bd9a350c3f3495cba392cb22fbf97c
   - enabled: 1
-    path: Assets/Scenes/Anxiety_Cutscene.unity
+    path: Assets/Scenes/Cutscenes/Anxiety_Cutscene.unity
     guid: 46b066397ef1047bab3e4812a086e6d5
   - enabled: 1
-    path: Assets/Scenes/Fear_cutscene.unity
+    path: Assets/Scenes/Cutscenes/Fear_cutscene.unity
     guid: dac064d2e38b14e309c21030256fe784
   - enabled: 1
-    path: Assets/Scenes/Opening_Cutscene.unity
+    path: Assets/Scenes/Cutscenes/Opening_Cutscene.unity
     guid: e6a57f55a723146cdaee92a4d12c9f89
   m_configObjects: {}
