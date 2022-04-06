@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
+        currentSkill = getCurrentSkill();
     }
 
     // Update is called once per frame
@@ -89,7 +90,7 @@ public class PlayerController : MonoBehaviour
          }
     }
 
-    public void changeCurrentSkill(int skill)
+    private void changeCurrentSkill(int skill)
     {
         myAnim.SetFloat("currentSkill", (float)skill);
         if (currentSkill != skill)
@@ -97,6 +98,13 @@ public class PlayerController : MonoBehaviour
             currentSkill = skill;
             FindObjectOfType<SkillManager>().SetActiveSkill(skill);
         }
+    }
+
+    private int getCurrentSkill()
+    {
+        int skill = FindObjectOfType<SkillManager>().GetActiveSkill();
+        myAnim.SetFloat("currentSkill", (float)skill);
+        return skill;
     }
 
     void Sword()
