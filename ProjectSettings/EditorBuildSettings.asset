@@ -21,8 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/L1-Supermarket/Supermarket 3.unity
     guid: 80ce620d1184d4e4281dd29fb8216799
   - enabled: 1
-    path: Assets/Scenes/TestScenes/Boss_Enemy.unity
-    guid: 382d33b1c38564949b944a00f7fc95f1
+    path: Assets/Scenes/L2-Classroom/Classroom.unity
+    guid: 8f3fb6731abea4c1d981065bda52f386
+  - enabled: 1
+    path: Assets/Scenes/L2-Classroom/ClassroomBoss.unity
+    guid: 23a561a0b01af4b8cb00b9daedd5a938
   - enabled: 1
     path: Assets/Scenes/L3-House/House 1.unity
     guid: aa79e4d916ede4aae980271e13e61765
@@ -32,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L3-House/House 3.unity
     guid: d9bd9a350c3f3495cba392cb22fbf97c
+  - enabled: 1
+    path: Assets/Scenes/Anxiety_Cutscene.unity
+    guid: 46b066397ef1047bab3e4812a086e6d5
+  - enabled: 1
+    path: Assets/Scenes/Fear_cutscene.unity
+    guid: dac064d2e38b14e309c21030256fe784
+  - enabled: 1
+    path: Assets/Scenes/Opening_Cutscene.unity
+    guid: e6a57f55a723146cdaee92a4d12c9f89
   m_configObjects: {}
