@@ -66,7 +66,7 @@ public class EnemyHealthManager : MonoBehaviour
     IEnumerator Hurt()
     {   
         animator.SetBool("isHurting", true);
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.2f);
         animator.SetBool("isHurting", false);
     }
 

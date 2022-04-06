@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c6ab1bf2e4243bcd38e00c0da441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDelay: 0.6
-  attackTime: 0.6
-  attackRange: 1.2
+  attackDelay: 1.5
+  attackTime: 1.5
+  attackRange: 1.15
   maxRange: 5
   minRange: 0.5
 --- !u!114 &2721958025559047795
@@ -101,7 +101,7 @@ MonoBehaviour:
   radius: 0.17
   height: 0.5
   canMove: 1
-  maxSpeed: 4.5
+  maxSpeed: 4.25
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -120,7 +120,7 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.6
+  slowdownDistance: 0.4
   pickNextWaypointDist: 0.25
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
@@ -167,10 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959dd849851881146923e096b1b379cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 20
-  maxHealth: 20
-  flashLength: 0
-  blinkLength: 0
+  currentHealth: 35
+  maxHealth: 35
+  flashLength: 0.25
+  blinkLength: 0.25
 --- !u!50 &1715697184739292799
 Rigidbody2D:
   serializedVersion: 4
@@ -183,8 +183,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 200
-  m_LinearDrag: 5
+  m_Mass: 1
+  m_LinearDrag: 200
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -221,6 +221,8 @@ MonoBehaviour:
   targets: []
   isStationary: 1
   delay: 0.25
+  startingX: 0
+  startingY: 0
 --- !u!1 &9005431328925373839
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8845938183151383560}
   - component: {fileID: 2653560909036911409}
+  - component: {fileID: 5498380481009234946}
   m_Layer: 0
   m_Name: Damageable
   m_TagString: Damageable
@@ -268,6 +271,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0032587051, y: 0.64197373}
   m_Size: {x: 0.2849226, y: 1.2802525}
   m_Direction: 0
+--- !u!114 &5498380481009234946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005431328925373839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fe52e871228ff4ab46e76112a15ab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1582292245618849455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,13 +318,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6106184281002940295, guid: 71997254ceccd22469d213657821ca56, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7550506227042967527, guid: 71997254ceccd22469d213657821ca56, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7550506227042967527, guid: 71997254ceccd22469d213657821ca56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7550506227042967527, guid: 71997254ceccd22469d213657821ca56, type: 3}
       propertyPath: m_LocalPosition.y

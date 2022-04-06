@@ -144,7 +144,7 @@ MonoBehaviour:
   radius: 0.14
   height: 2
   canMove: 1
-  maxSpeed: 4.5
+  maxSpeed: 4
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -214,10 +214,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959dd849851881146923e096b1b379cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 20
-  maxHealth: 20
-  flashLength: 0.5
-  blinkLength: 0.5
+  currentHealth: 15
+  maxHealth: 15
+  flashLength: 0.4
+  blinkLength: 0.4
 --- !u!58 &6729246893780647322
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -259,8 +259,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
-  m_LinearDrag: 5
+  m_Mass: 1
+  m_LinearDrag: 100
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
