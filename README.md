@@ -131,6 +131,10 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Populate levels with enemies and doors
    * Link cutscenes and conflicts with shop
    * ALOT of bug fixes: player going through wall when injured, pathfinding for enemies etcetc.
+* [Germaine] 7/4/22: Modification to player attack damage scripts, Creation of ambient fire for House maps
+   * Modified player attack damage scripts to differentiate melee/range attack (to create different powerups)
+   * Create ambient fire prefab for House maps
+   * Create powerup effect for ambient fire invulnerability (to be used for shop items)
 
 # Template Scene Hierarchy
 [Scene_Name]
