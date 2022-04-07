@@ -22,15 +22,20 @@ public class CutsceneManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel());
+        // StartCoroutine(LoadLevel());
+        int i = (SceneManager.GetActiveScene().buildIndex) + 1;
+        if (i == 17)
+        {
+            i = 0;
+        }
+        StartCoroutine(LoadLevel(i));
     }
 
-    IEnumerator LoadLevel()
+    IEnumerator LoadLevel(int i)
     {
         yield return new WaitForSecondsRealtime(cutsceneTime);
         transition.SetTrigger("start");
         yield return new WaitForSecondsRealtime(transitionTime);
-        int currentBuildIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentBuildIndex + 1);
+        SceneManager.LoadScene(i);
     }
 }

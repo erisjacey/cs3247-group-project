@@ -107,6 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fffe6f31a625e046bf131a9d9f3e06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  darkTint: {r: 0, g: 0, b: 0, a: 0.36}
+  redTint: {r: 0.39, g: 0.035, b: 0, a: 0.3}
   levelCanvas: {fileID: 8065584894373324955}
   deathPanel: {fileID: 9113401175497178182}
   exitMenu: {fileID: 9113401177202968583}

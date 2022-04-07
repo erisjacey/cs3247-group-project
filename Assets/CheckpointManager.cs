@@ -9,7 +9,7 @@ public class CheckpointManager : MonoBehaviour
     private const int FEAR = 1;
     private const int ANGER = 2;
 
-    private bool isTutorial = false;
+    private bool isTutorial = true;
     private int currentLevel = ANXIETY;
 
     void OnEnable()
@@ -20,14 +20,15 @@ public class CheckpointManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string currentScene = SceneManager.GetActiveScene().name;
-
         if (currentScene.Contains("Supermarket")) currentLevel = ANXIETY;
         if (currentScene.Contains("Classroom")) currentLevel = FEAR;
         if (currentScene.Contains("House")) currentLevel = ANGER;
 
     }
+
     public void LoadCheckpoint() 
     {
+        Debug.LogError(currentLevel);
         switch (currentLevel)
         {
             case ANXIETY:
