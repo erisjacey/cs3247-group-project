@@ -137,7 +137,7 @@ MonoBehaviour:
   maxRange: 7
   minRange: 0.5
   projectileForce: 1000
-  projectile: {fileID: 86180692175746711, guid: 14fb1a7afec23404e8ef2f43b7ee31e3, type: 3}
+  projectile: {fileID: 86180692175746711, guid: 645a3e6c0d90caf4d819aef1945a1369, type: 3}
 --- !u!114 &1331718178590392943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   maxHealth: 20
   flashLength: 0.25
   blinkLength: 0.25
-  itemToDrop: {fileID: 0}
+  itemToDrop: {fileID: 2226765317342298021, guid: 693d871032ccd244aa8dd3b485b275f7, type: 3}
 --- !u!114 &7008056867812633496
 MonoBehaviour:
   m_ObjectHideFlags: 0

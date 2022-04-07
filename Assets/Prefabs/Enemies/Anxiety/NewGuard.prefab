@@ -218,7 +218,7 @@ MonoBehaviour:
   maxHealth: 15
   flashLength: 0.4
   blinkLength: 0.4
-  itemToDrop: {fileID: 0}
+  itemToDrop: {fileID: 2226765317342298021, guid: 693d871032ccd244aa8dd3b485b275f7, type: 3}
 --- !u!58 &6729246893780647322
 CircleCollider2D:
   m_ObjectHideFlags: 0
