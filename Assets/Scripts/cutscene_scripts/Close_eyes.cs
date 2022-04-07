@@ -21,9 +21,11 @@ public class Close_eyes : MonoBehaviour
     {
         
     }
+    
     public void LoadNextLevel()
     {
         // StartCoroutine(LoadLevel(1));
+        Debug.Log(SceneManager.GetActiveScene().buildIndex);
         int i = (SceneManager.GetActiveScene().buildIndex) + 1;
         if (i == 18)
         {
