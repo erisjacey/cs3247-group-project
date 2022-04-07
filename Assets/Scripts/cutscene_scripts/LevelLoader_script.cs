@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutsceneManager : MonoBehaviour
+public class LevelLoader_script : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 3f;
     public float cutsceneTime;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,19 +22,19 @@ public class CutsceneManager : MonoBehaviour
     public void LoadNextLevel()
     {
         // StartCoroutine(LoadLevel());
-        int i = (SceneManager.GetActiveScene().buildIndex) + 1;
-        if (i == 17)
+        int i = (SceneManager.GetActiveScene().buildIndex)+1;
+        if(i==17)
         {
-            i = 0;
+            i =0;
         }
         StartCoroutine(LoadLevel(i));
     }
 
-    IEnumerator LoadLevel(int i)
+    IEnumerator LoadLevel(int levelIndex)
     {
         yield return new WaitForSecondsRealtime(cutsceneTime);
         transition.SetTrigger("start");
         yield return new WaitForSecondsRealtime(transitionTime);
-        SceneManager.LoadScene(i);
+        SceneManager.LoadScene(levelIndex);
     }
 }
