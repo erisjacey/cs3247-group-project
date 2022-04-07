@@ -31,9 +31,9 @@ public class EndingCutscene : MonoBehaviour
     IEnumerator run()
     {
         yield return new WaitForSecondsRealtime(timeTillMessageAppears);
-        textWriter.AddWriter(text1, "As <player> found closure...",0.05f,true);
+        textWriter.AddWriter(text1, "As Benjamin found closure...",0.05f,true);
         yield return new WaitForSecondsRealtime(messageInterval);
-        textWriter.AddWriter(text2, "<player> returned to his everyday life",0.05f,true);
+        textWriter.AddWriter(text2, "Benjamin returned to his everyday life",0.05f,true);
         yield return new WaitForSecondsRealtime(messageInterval);
         textWriter.AddWriter(text3, "brimming with optimism and positivity",0.05f,true);
         yield return new WaitForSecondsRealtime(messageInterval);
