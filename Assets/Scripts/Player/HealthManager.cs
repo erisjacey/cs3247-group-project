@@ -26,7 +26,8 @@ public class HealthManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        ResetHealth();
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene.Contains("Shop_Creation")) ResetHealth();
     }
 
     // Start is called before the first frame update
