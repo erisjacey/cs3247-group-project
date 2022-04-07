@@ -7,8 +7,11 @@ using UnityEngine.EventSystems;
 public class ShopManager : MonoBehaviour
 {
     public int[,] shopItems = new int[4, 4];
-    public int currency;
-    public Text shopOrbCount;
+    public bool shopOpen = false;
+    private int currency;
+
+    [SerializeField] GameObject shopUI;
+    [SerializeField] Text currencyUI;
 
     // Start is called before the first frame update
     void Start()
@@ -29,15 +32,28 @@ public class ShopManager : MonoBehaviour
         shopItems[3, 3] = 3;
     }
 
-    private void Update()
-    {
-        currency = FindObjectOfType<OrbPickup>().orbNum;
-        shopOrbCount.text = currency.ToString();
+    void Update()
+	{
+        currency = FindObjectOfType<OrbCounter>().GetOrbCount();
+        currencyUI.text = currency.ToString();
     }
+
+	public void OpenShop()
+	{
+		shopOpen = true;
+		shopUI.SetActive(true);
+	}
+
+	public void CloseShop()
+	{
+        shopOpen = false;
+		shopUI.SetActive(false);
+	}
 
     public void Buy()
     {
-        GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
+        EventSystem eventSystem = FindObjectOfType<EventSystem>();
+        GameObject ButtonRef = eventSystem.currentSelectedGameObject;
 
         if ((currency >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID]) && (shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID] > 0))
         {
@@ -51,8 +67,7 @@ public class ShopManager : MonoBehaviour
             ButtonRef.GetComponent<ButtonInfo>().powerupEffect.Apply(GameObject.FindGameObjectWithTag("Player"));
 
             // update UI data
-            shopOrbCount.text = currency.ToString();
-            FindObjectOfType<OrbPickup>().SetNewOrbNum(currency);
+            FindObjectOfType<OrbCounter>().SetCount(currency);
         }
     }
 }

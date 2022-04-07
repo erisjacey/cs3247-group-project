@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
 
 	public Sound[] sounds;
 
-	private const string MENU_THEME = "MenuTheme";
+	private const string MENU_THEME = "ClassroomBossTheme";
 
 	void Awake()
 	{
