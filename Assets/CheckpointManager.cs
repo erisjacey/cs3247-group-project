@@ -14,6 +14,7 @@ public class CheckpointManager : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.LogWarning("CheckpointManager");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -25,6 +26,8 @@ public class CheckpointManager : MonoBehaviour
         if (currentScene.Contains("House")) currentLevel = ANGER;
 
     }
+
+    public void Start
 
     public void LoadCheckpoint() 
     {

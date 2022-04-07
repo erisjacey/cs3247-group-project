@@ -35,6 +35,7 @@ public class LevelLoader_script : MonoBehaviour
         yield return new WaitForSecondsRealtime(cutsceneTime);
         transition.SetTrigger("start");
         yield return new WaitForSecondsRealtime(transitionTime);
+        FindObjectOfType<PlayerLocationManager>().SetLocation("");
         SceneManager.LoadScene(levelIndex);
     }
 }
