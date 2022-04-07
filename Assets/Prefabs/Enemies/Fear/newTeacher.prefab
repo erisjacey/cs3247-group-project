@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3945091930858339341}
   - component: {fileID: 7587980325526159426}
   m_Layer: 0
-  m_Name: NewTeacher
+  m_Name: newTeacher
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   projectile: {fileID: 506448806334500278, guid: 1de7bf0a080e93d448154e607b4acc92, type: 3}
   insults:
   - {fileID: 5356366392944324023, guid: c0568ce222c3e2a468587578903f87cb, type: 3}
-  - {fileID: 86180692175746711, guid: 14fb1a7afec23404e8ef2f43b7ee31e3, type: 3}
+  - {fileID: 86180692175746711, guid: 645a3e6c0d90caf4d819aef1945a1369, type: 3}
   - {fileID: 161361735007684668, guid: 21fc8bb0357d6a04eb69f15e1d83e1cc, type: 3}
   - {fileID: 8905896324141807640, guid: db70eec4ba7d6e04abff9bff33522e93, type: 3}
   - {fileID: 1828627298407126346, guid: edd7766fd5477f84eaa9bd58339dba8b, type: 3}
