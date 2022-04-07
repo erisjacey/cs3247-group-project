@@ -11,6 +11,7 @@ public class SpeedBuff : PowerupEffect
     public override void Apply(GameObject target) {
     	if (target.tag == "Player") {
     		FindObjectOfType<PlayerController>().walkSpeed += amount;
+            FindObjectOfType<PlayerStatsManager>().walkSpeed += amount;
     	}
     }
 }

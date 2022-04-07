@@ -9,8 +9,9 @@ public class IncreaseRangedAttack : PowerupEffect
     public int amount;
     public override void Apply(GameObject target){
     	if (target.tag == "Player") {
-    		// HurtEnemy.damageToGive += amount;
     		target.GetComponent<PlayerController>().fireballDamage += amount;
+            // HurtEnemy.damageToGive += amount;
+            FindObjectOfType<PlayerStatsManager>().fireballDamage += amount;
     	}
     }
 }
