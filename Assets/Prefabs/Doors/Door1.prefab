@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 640847644412464126}
   - component: {fileID: 640847644412464127}
   - component: {fileID: 640847644412464121}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: LeftDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 640847644496865184}
   - component: {fileID: 640847644496865187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UnlockUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 5897826789089919849}
   - component: {fileID: 640847644726959215}
   - component: {fileID: 5897826789089919848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 640847644849288025}
   - component: {fileID: 640847644849288030}
   - component: {fileID: 640847644849288028}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: RightDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 640847645440373490}
   - component: {fileID: 640847645440373261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8852782738283682764}
   - component: {fileID: 8808171144405858627}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: KeyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327310980394535868}
   - component: {fileID: 5253117997661618816}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: BossKeyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
