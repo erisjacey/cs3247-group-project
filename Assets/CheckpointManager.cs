@@ -21,7 +21,6 @@ public class CheckpointManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         UpdateCurrentLevel();
-
     }
 
     public void Start()
