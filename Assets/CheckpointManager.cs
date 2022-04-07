@@ -14,7 +14,6 @@ public class CheckpointManager : MonoBehaviour
 
     void OnEnable()
     {
-        Debug.LogWarning("CheckpointManager");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
