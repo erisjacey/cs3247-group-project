@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] Color darkTint = new Color(0f, 0f, 0f, 0.36f);
+    [SerializeField] Color redTint = new Color(0.39f, 0.035f, 0f, 0.3f);
 
     [SerializeField] GameObject levelCanvas;
     [SerializeField] GameObject deathPanel;
@@ -21,10 +24,11 @@ public class UIManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene().name == "Menu"
-            || SceneManager.GetActiveScene().name == "Opening_Cutscenes"
-            || SceneManager.GetActiveScene().name == "Anxiety_Cutscene"
-            || SceneManager.GetActiveScene().name == "Fear_cutscene") 
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "Menu"
+            || currentScene == "Opening_Cutscenes"
+            || currentScene == "Anxiety_Cutscene"
+            || currentScene == "Fear_cutscene") 
         {
             levelCanvas.SetActive(false);
             return;
@@ -32,6 +36,15 @@ public class UIManager : MonoBehaviour
         else
         {
             levelCanvas.SetActive(true);
+            Image img = levelCanvas.transform.Find("Panel").GetComponent<Image>();
+            if (currentScene.Contains("House"))
+            {
+                img.color = redTint;
+            } 
+            else 
+            {
+                img.color = darkTint;
+            }
         }
     }
 

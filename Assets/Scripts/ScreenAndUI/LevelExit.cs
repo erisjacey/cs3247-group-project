@@ -25,8 +25,6 @@ public class LevelExit : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(levelLoadDelay);
 
-        Debug.LogWarning(nextLevel);
-        Debug.LogWarning(nextLevel == "Shop");
         if (nextLevel == "Shop") 
         {
             FindObjectOfType<CheckpointManager>().LoadNextLevel();
