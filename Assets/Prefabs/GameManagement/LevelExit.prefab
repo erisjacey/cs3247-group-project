@@ -70,6 +70,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cfd4ba1687894eacbf02b083374225f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelLoadDelay: 2
-  levelExitSlowMoFactor: 0.2
+  levelLoadDelay: 0
   nextLevel: Supermarket 2
+  nextLocationName: 
