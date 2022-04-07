@@ -43,4 +43,5 @@ public class Message_Assistant : MonoBehaviour
         text4.enabled = false;
         textWriter.AddWriter(text5, "I CAN DO THIS",0.05f,true);
     }
+    
 }

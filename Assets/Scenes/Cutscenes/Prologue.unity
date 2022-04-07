@@ -211,8 +211,8 @@ Canvas:
   m_GameObject: {fileID: 146708637}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_RenderMode: 0
+  m_Camera: {fileID: 1764822741}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -282,7 +282,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 75
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
@@ -293,8 +293,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <player> has been feeling really down recently with many things in life
-    going wrong.
+  m_Text: 
 --- !u!222 &198580929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -420,6 +419,88 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &636890220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 636890222}
+  - component: {fileID: 636890221}
+  m_Layer: 0
+  m_Name: TimelineManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &636890221
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636890220}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: ca27afff72deb499cb2108921b80b81f, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -5533244565877829582, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2318142750709873238, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6144633172993335317, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2392974614064639491, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6665771536481178775, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 724314382318135121, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2537191616642822200, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4701017880124029429, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2439975436159537991, guid: ba9585d91016b40abb7a4433834cb7b2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8464077566172628260, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4897538726307107703, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5074064792764637742, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7537787317922498963, guid: a213e0bef94ab42079abbcd53e8e3a50, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4951366706391218905, guid: ca27afff72deb499cb2108921b80b81f, type: 2}
+    value: {fileID: 1507549798}
+  m_ExposedReferences:
+    m_References:
+    - df06948f7e394428480918e7c3c057b2: {fileID: 0}
+    - 502af1c22c0b6489a988c5fa0e55d5f1: {fileID: 0}
+    - e50a0ca74899240b3ab9de056005bb91: {fileID: 0}
+    - 274fc46ab33344599b103c48a162b7a9: {fileID: 0}
+    - 40a9fe8777dac40d28233acf3b4154a0: {fileID: 0}
+    - 5f5694325c5c0415ebe52ef82a910cbf: {fileID: 0}
+--- !u!4 &636890222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636890220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5285335, y: -2.460287, z: -0.39181596}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &726703649
 GameObject:
@@ -572,7 +653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 726703650}
   transitionTime: 2
-  cutsceneTime: 10
+  cutsceneTime: 13
 --- !u!4 &768790559
 Transform:
   m_ObjectHideFlags: 0
@@ -641,7 +722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textWriter: {fileID: 631253107}
   timeTillMessageAppears: 1
-  messageInterval: 0
+  messageInterval: 5
 --- !u!1 &1407479665
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +821,138 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1507549796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507549797}
+  - component: {fileID: 1507549798}
+  m_Layer: 5
+  m_Name: sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1507549797
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507549796}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1507549798
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507549796}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8cc28975a205a4e0689001569db744c0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1659947964
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,8 +1111,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thus <player> seeks the help of a local therapist who has been known for
-    her unorthodox methods...
+  m_Text: 
 --- !u!222 &1723145605
 CanvasRenderer:
   m_ObjectHideFlags: 0

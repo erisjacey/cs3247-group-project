@@ -13,7 +13,7 @@ public class Prologue : MonoBehaviour
 
     private void Awake(){
         text1 = transform.Find("Text1").GetComponent<Text>();
-        text1 = transform.Find("Text2").GetComponent<Text>();
+        text2 = transform.Find("Text2").GetComponent<Text>();
         
     }
     void Start()
