@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
     private bool isAttacking;
 
+    public bool isAmbientFirePain = true;
+
     // Sword
     private float attackTime = .25f;
     private float attackCounter = .25f;
