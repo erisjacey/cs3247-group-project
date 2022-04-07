@@ -21107,6 +21107,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461145474}
     m_Modifications:
+    - target: {fileID: 327310980394535868, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 327310980394535868, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 327310980394535868, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 640847644496865184, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6999998
+      objectReference: {fileID: 0}
     - target: {fileID: 640847644726959186, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
       propertyPath: m_Name
       value: Door1
@@ -21155,9 +21171,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1350206866743926727, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253117997661618816, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8661086664903615842, guid: c6c5ecaee3c964cefbfc68ac5767c298, type: 3}
     - target: {fileID: 5897826789089919848, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
       propertyPath: autoLock
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897826789089919848, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: isBossDoor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}

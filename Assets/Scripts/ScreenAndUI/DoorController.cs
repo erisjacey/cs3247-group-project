@@ -24,6 +24,8 @@ public class DoorController : MonoBehaviour
         uiAnimator = UI.GetComponent<Animator>();
 
         doorAreas = GetComponents<BoxCollider2D>();
+
+        if (isBossDoor) uiAnimator.SetFloat("isBossDoor", 1f);
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
@@ -34,7 +36,7 @@ public class DoorController : MonoBehaviour
         {
             KeyManager keyManager = FindObjectOfType<KeyManager>();
             int numKeys = isBossDoor ? keyManager.GetNumBossKeys() : keyManager.GetNumKeys();
-            if (keyManager.GetNumKeys() >= keysNeeded) 
+            if (numKeys >= keysNeeded) 
             {
                 if (frontFacing) 
                 {
