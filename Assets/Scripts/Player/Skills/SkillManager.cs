@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SkillManager : MonoBehaviour
 {
-    public int skillBarId;
+    private int skillBarId;
+    private int activeSkill;
     private GameObject[] skillBars;
 
     // Start is called before the first frame update
@@ -24,16 +25,22 @@ public class SkillManager : MonoBehaviour
         SetSkillBar(skillBarId);
     }
 
-    // Update is called once per frame
-    void Update()
+    // Returns true if successful change, false otherwise
+    public bool SetActiveSkill(int id)
     {
-
-    }
-
-    public void SetActiveSkill(int id)
-    {
+        if (id > skillBarId)
+        {
+            return false;
+        }
+        activeSkill = id;
         skillBars[skillBarId].GetComponent<Skill>().SetActiveSkill(id);
         FindObjectOfType<AuraManager>().TriggerAura(id);
+        return true;
+    }
+
+    public int GetActiveSkill()
+    {
+        return activeSkill;
     }
 
     private void UnlockHope()

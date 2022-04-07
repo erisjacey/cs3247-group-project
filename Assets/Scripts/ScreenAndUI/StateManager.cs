@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class StateManager : MonoBehaviour
 {
     public void Retry()
@@ -22,5 +23,19 @@ public class StateManager : MonoBehaviour
         SceneManager.LoadScene(0);
 
         FindObjectOfType<LevelManager>().RestartGame();
+    }
+
+    public void LoadNextLevel() 
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (currentScene == "Supermarket 3")
+        {
+            SceneManager.LoadScene("Anxiety_Cutscene");
+        } 
+        else if (currentScene == "Classroom")
+        {
+            SceneManager.LoadScene("Fear_Cutscene");
+        }
     }
 }

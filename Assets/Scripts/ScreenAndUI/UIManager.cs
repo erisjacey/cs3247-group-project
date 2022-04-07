@@ -21,7 +21,10 @@ public class UIManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene().name == "Menu") 
+        if (SceneManager.GetActiveScene().name == "Menu"
+            || SceneManager.GetActiveScene().name == "Opening_Cutscenes"
+            || SceneManager.GetActiveScene().name == "Anxiety_Cutscene"
+            || SceneManager.GetActiveScene().name == "Fear_cutscene") 
         {
             levelCanvas.SetActive(false);
             return;
