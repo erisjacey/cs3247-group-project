@@ -47,18 +47,21 @@ public class AudioManager : MonoBehaviour
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{	
 		string currentScene = SceneManager.GetActiveScene().name;
+		Debug.Log(currentScene);
+
 		if (currentScene.Contains("Menu")) Play(MENU_THEME);
                 else if (currentScene.Contains("Shop_Creation")) Play(THERAPY_ROOM_THEME);
 		else if (currentScene.Contains("Supermarket 1")) Play(SUPERMARKET_REGULAR_THEME);
 		else if (currentScene.Contains("Supermarket 2") || currentScene.Contains("Supermarket 3")) Play(SUPERMARKET_BOSS_THEME);
 		else if (String.Equals(currentScene, "Classroom")) Play(CLASSROOM_REGULAR_THEME);
-		else if (currentScene.Contains("Classroom Boss")) Play(CLASSROOM_BOSS_THEME);
+		else if (currentScene.Contains("ClassroomBoss")) Play(CLASSROOM_BOSS_THEME);
 		else if (currentScene.Contains("House 1") || currentScene.Contains("House 2")) Play(HOUSE_REGULAR_THEME);	
 		else if (currentScene.Contains("House 3")) Play(HOUSE_BOSS_THEME);
 	}
 
 	public void Play(string sound)
 	{
+
 		Sound s = Array.Find(sounds, item => item.name == sound);
 		if (s == null)
 		{
