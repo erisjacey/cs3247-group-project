@@ -9,8 +9,9 @@ public class IncreaseMeleeAttack: PowerupEffect
     public int amount;
     public override void Apply(GameObject target){
     	if (target.tag == "Player") {
-    		// HurtEnemy.damageToGive += amount;
     		target.GetComponent<PlayerController>().swordDamage += amount;
+            // HurtEnemy.damageToGive += amount;
+            FindObjectOfType<PlayerStatsManager>().swordDamage += amount;
     	}
     }
 }

@@ -41,6 +41,12 @@ public class PlayerController : MonoBehaviour
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         currentSkill = getCurrentSkill();
+
+        PlayerStatsManager playerStatsManager = FindObjectOfType<PlayerStatsManager>();
+        walkSpeed = playerStatsManager.walkSpeed;
+        isAmbientFirePain = playerStatsManager.isAmbientFirePain;
+        swordDamage = playerStatsManager.swordDamage;
+        fireballDamage = playerStatsManager.fireballDamage;
     }
 
     // Update is called once per frame
