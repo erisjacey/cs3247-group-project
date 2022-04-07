@@ -1,17 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SkillManager : MonoBehaviour
 {
-    private int skillBarId;
+    private int skillBarId = 0;
     private int activeSkill;
     private GameObject[] skillBars;
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene.Contains("Supermarket"))
+        {
+            UnlockHope();
+        }
+        else if (currentScene.Contains("Classroom"))
+        {
+            UnlockExcitement();
+        }
+        else if (currentScene.Contains("House"))
+        {
+            UnlockConfidence();
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        skillBarId = 2;
         Transform[] children = GetComponentsInChildren<Transform>();
         List<GameObject> childObjects = new List<GameObject>();
         foreach (Transform child in children)
