@@ -60,7 +60,7 @@ public class EnemyHealthManager : MonoBehaviour
         {   
             animator.Play("Death");
             DropItem();
-            Destroy(gameObject, 0.20f);
+            Destroy(gameObject, 0.10f);
 	    }
     }
 

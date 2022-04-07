@@ -136,7 +136,7 @@ MonoBehaviour:
   attackRange: 4.5
   maxRange: 7
   minRange: 0.5
-  projectileForce: 1000
+  projectileForce: 1200
   projectile: {fileID: 86180692175746711, guid: 645a3e6c0d90caf4d819aef1945a1369, type: 3}
 --- !u!114 &1331718178590392943
 MonoBehaviour:

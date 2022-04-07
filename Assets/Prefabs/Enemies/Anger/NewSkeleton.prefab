@@ -51,9 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c6ab1bf2e4243bcd38e00c0da441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDelay: 1.5
-  attackTime: 1.5
-  attackRange: 1.15
+  attackDelay: 1.2
+  attackTime: 1.2
+  attackRange: 1.1
   maxRange: 8
   minRange: 0.5
 --- !u!114 &2721958025559047795
@@ -277,6 +277,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2304438423290400215}
     m_Modifications:
+    - target: {fileID: 687894451253241800, guid: 2494e05de5036f544a8702c610b6896c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767668677219774992, guid: 2494e05de5036f544a8702c610b6896c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910671338589446693, guid: 2494e05de5036f544a8702c610b6896c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008971189754589380, guid: 2494e05de5036f544a8702c610b6896c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6106184281002940295, guid: 2494e05de5036f544a8702c610b6896c, type: 3}
       propertyPath: m_Offset.x
       value: 0
