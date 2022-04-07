@@ -13,12 +13,13 @@ public class HurtEnemy : MonoBehaviour
 
         if (currentGameObject == "HitBox")
         {
-            damageToGive = GetComponent<PlayerController>().swordDamage;
-        } else if (currentGameObject == "Fireball(Clone)")
-        {
-            damageToGive = GetComponent<PlayerController>().fireballDamage;
+            damageToGive = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().swordDamage;
         }
-        
+        else if (currentGameObject == "Fireball(Clone)")
+        {
+            damageToGive = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().fireballDamage;
+        }
+
         if (other.tag == "Damageable")
         {
             EnemyHealthManager eHealthMan;
@@ -31,6 +32,7 @@ public class HurtEnemy : MonoBehaviour
         {
             BossHealth bossHealth = other.gameObject.GetComponent<BossHealth>();
             AngryPlayerHealth angryPlayerHealth = other.gameObject.GetComponentInChildren<AngryPlayerHealth>();
+
             if (bossHealth != null) {
                 bossHealth.TakeDamage(damageToGive);
             } else if (angryPlayerHealth != null) {

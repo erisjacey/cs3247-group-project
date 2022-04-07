@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     public Transform shotPoint;
     private float timeBetweenShots;
     private float startTimeBetweenShots = .4f;
-    public int fireballDamage = 5;
+    public int fireballDamage = 10;
 
     // Shield
 
