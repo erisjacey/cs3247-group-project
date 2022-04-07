@@ -34,7 +34,6 @@ public class SkillManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        skillBarId = 0;
         Transform[] children = GetComponentsInChildren<Transform>();
         List<GameObject> childObjects = new List<GameObject>();
         foreach (Transform child in children)
