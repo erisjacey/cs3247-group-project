@@ -43,6 +43,7 @@ public class Close_eyes : MonoBehaviour
         yield return new WaitForSecondsRealtime(fromEyesCloseToEndLevel);
         transition.SetTrigger("start");
         yield return new WaitForSecondsRealtime(transitionTime);
+        FindObjectOfType<PlayerLocationManager>().SetLocation("");
         SceneManager.LoadScene(levelIndex);
     }
 }
