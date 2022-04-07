@@ -102,8 +102,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
+  swordDamage: 5
   fireball: {fileID: 7173227493805014228, guid: 97851c50f5e42d94fba017797238896b, type: 3}
   shotPoint: {fileID: 4542067422451055524}
+  fireballDamage: 10
 --- !u!50 &86448391707573025
 Rigidbody2D:
   serializedVersion: 4

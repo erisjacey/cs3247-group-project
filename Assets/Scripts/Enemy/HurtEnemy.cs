@@ -5,9 +5,21 @@ using UnityEngine;
 public class HurtEnemy : MonoBehaviour
 {
     public int damageToGive = 5;
+    private string currentGameObject;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        currentGameObject = gameObject.name;
+
+        if (currentGameObject == "HitBox")
+        {
+            damageToGive = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().swordDamage;
+        }
+        else if (currentGameObject == "Fireball(Clone)")
+        {
+            damageToGive = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().fireballDamage;
+        }
+
         if (other.tag == "Damageable")
         {
             EnemyHealthManager eHealthMan;
@@ -20,6 +32,7 @@ public class HurtEnemy : MonoBehaviour
         {
             BossHealth bossHealth = other.gameObject.GetComponent<BossHealth>();
             AngryPlayerHealth angryPlayerHealth = other.gameObject.GetComponentInChildren<AngryPlayerHealth>();
+
             if (bossHealth != null) {
                 bossHealth.TakeDamage(damageToGive);
             } else if (angryPlayerHealth != null) {
