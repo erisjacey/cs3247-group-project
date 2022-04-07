@@ -24,6 +24,15 @@ public class LevelExit : MonoBehaviour
     IEnumerator LoadScene() 
     {
         yield return new WaitForSecondsRealtime(levelLoadDelay);
+
+        Debug.LogWarning(nextLevel);
+        Debug.LogWarning(nextLevel == "Shop");
+        if (nextLevel == "Shop") 
+        {
+            FindObjectOfType<CheckpointManager>().LoadNextLevel();
+            yield break;
+        }
+
         SceneManager.LoadScene(nextLevel);
 
         locationManager.SetLocation(nextLocationName);

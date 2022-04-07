@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Opening_Cutscene");
+        SceneManager.LoadScene("Shop_Creation 1");
     }
 
     public void QuitGame()

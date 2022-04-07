@@ -8,7 +8,7 @@ public class StateManager : MonoBehaviour
     public void Retry()
     {   
         // index 1 represents start of supermarket
-        SceneManager.LoadScene(1);
+        FindObjectOfType<CheckpointManager>().LoadCheckpoint();
         FindObjectOfType<LevelManager>().RestartGame();
     }
 

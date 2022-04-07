@@ -58,17 +58,17 @@ public class FakeBossHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             chat.SetActive(true);
+            DropItem();
             Destroy(gameObject);
         }
     }
 
-    private void OnDestroy() 
+    private void DropItem() 
 	{   
         if (itemToDrop != null) 
         {
             Instantiate(itemToDrop, transform.position, transform.rotation);
         }
-		
 	}
 
 

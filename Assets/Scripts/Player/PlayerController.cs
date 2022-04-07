@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
                 break;
             default:
                 break;
-         }
+        }
     }
 
     private void changeCurrentSkill(int skill)
