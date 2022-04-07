@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class ShopManager : MonoBehaviour
 {
-    public int[,] shopItems = new int[4, 4];
+    public int[,] shopItems = new int[4, 9];
     public bool shopOpen = false;
     private int currency;
 
@@ -16,20 +16,50 @@ public class ShopManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // ItemID  
-        shopItems[1, 1] = 1;
-        shopItems[1, 2] = 2;
-        shopItems[1, 3] = 3;
+        // ----- ItemID ----- //
+        // First Scene
+        shopItems[1, 1] = 1; // Health +20
+        shopItems[1, 2] = 2; // Speed +2
 
-        // Price  
-        shopItems[2, 1] = 2;
-        shopItems[2, 2] = 4;
-        shopItems[2, 3] = 6;
+        // Second Scene
+        shopItems[1, 3] = 3; // Health +30
+        shopItems[1, 4] = 4; // Speed +2
+        shopItems[1, 5] = 5; // Melee Damage +5
 
-        // Quantity  
-        shopItems[3, 1] = 1;
-        shopItems[3, 2] = 2;
-        shopItems[3, 3] = 3;
+        // Third Scene
+        shopItems[1, 6] = 6; // Health +30
+        shopItems[1, 7] = 7; // Ranged Damage +10
+        shopItems[1, 8] = 8; // Fire Immunity
+
+        // ----- Price ----- //
+        // First Scene
+        shopItems[2, 1] = 8; // Health +20
+        shopItems[2, 2] = 5; // Speed +2
+
+        // Second Scene
+        shopItems[2, 3] = 10; // Health +30
+        shopItems[2, 4] = 5; // Speed +2
+        shopItems[2, 5] = 8; // Melee Damage +5
+
+        // Third Scene
+        shopItems[2, 6] = 10; // Health +30
+        shopItems[2, 7] = 10; // Ranged Damage +10
+        shopItems[2, 8] = 10; // Fire Immunity
+
+        // ----- Quantity ----- //  
+        // First Scene
+        shopItems[3, 1] = 1; // Health +20
+        shopItems[3, 2] = 1; // Speed +2
+
+        // Second Scene
+        shopItems[3, 3] = 1; // Health +30
+        shopItems[3, 4] = 2; // Speed +2
+        shopItems[3, 5] = 1; // Melee Damage +5
+
+        // Third Scene
+        shopItems[3, 6] = 1; // Health +30
+        shopItems[3, 7] = 1; // Ranged Damage +10
+        shopItems[3, 8] = 1; // Fire Immunity
     }
 
     void Update()
