@@ -20,14 +20,18 @@ public class CheckpointManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string currentScene = SceneManager.GetActiveScene().name;
+        Debug.LogError(currentScene);
 
         if (currentScene.Contains("Supermarket")) currentLevel = ANXIETY;
         if (currentScene.Contains("Classroom")) currentLevel = FEAR;
         if (currentScene.Contains("House")) currentLevel = ANGER;
 
+        Debug.LogError(currentLevel);
+
     }
     public void LoadCheckpoint() 
     {
+        Debug.LogError(currentLevel);
         switch (currentLevel)
         {
             case ANXIETY:
