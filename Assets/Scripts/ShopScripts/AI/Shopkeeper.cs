@@ -4,21 +4,20 @@ using UnityEngine;
 public class Shopkeeper : MonoBehaviour
 {
 	bool inRange = false;
-	public string playerTag;
 	public GameObject tooltip;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-		if (collision.transform.tag.Equals(playerTag))
-		{
+		if (other.tag == "Player") 
+        {
 			ChangeState(true);
 		}
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-		if (collision.transform.tag.Equals(playerTag))
-		{
+		if (other.tag == "Player") 
+        {
 			ChangeState(false);
 		}
     }
