@@ -27,7 +27,6 @@ public class CheckpointManager : MonoBehaviour
 
     }
 
-    public void Start
 
     public void LoadCheckpoint() 
     {
