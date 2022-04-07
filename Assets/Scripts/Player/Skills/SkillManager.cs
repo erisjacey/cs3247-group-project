@@ -7,7 +7,7 @@ public class SkillManager : MonoBehaviour
 {
     private int skillBarId = 0;
     private int activeSkill;
-    private GameObject[] skillBars;
+    [SerializeField] private GameObject[] skillBars = new GameObject[3];
 
     void OnEnable()
     {
@@ -37,17 +37,7 @@ public class SkillManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Transform[] children = GetComponentsInChildren<Transform>();
-        List<GameObject> childObjects = new List<GameObject>();
-        foreach (Transform child in children)
-        {
-            if (child.parent == transform)
-            {
-                childObjects.Add(child.gameObject);
-            }
-        }
-        skillBars = childObjects.ToArray();
-        SetSkillBar(skillBarId);
+        // SetSkillBar(skillBarId);
     }
 
     // Returns true if successful change, false otherwise
@@ -88,6 +78,8 @@ public class SkillManager : MonoBehaviour
 
     private void SetSkillBar(int id)
     {
+        if (skillBars.Length == 0) return;
+        
         for (int i = 0; i < skillBars.Length; i++)
         {
             skillBars[i].SetActive(i == id);
