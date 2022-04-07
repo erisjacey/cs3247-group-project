@@ -5,9 +5,20 @@ using UnityEngine;
 public class HurtEnemy : MonoBehaviour
 {
     public int damageToGive = 5;
+    private string currentGameObject;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        currentGameObject = gameObject.name;
+
+        if (currentGameObject == "HitBox")
+        {
+            damageToGive = GetComponent<PlayerController>().swordDamage;
+        } else if (currentGameObject == "Fireball(Clone)")
+        {
+            damageToGive = GetComponent<PlayerController>().fireballDamage;
+        }
+        
         if (other.tag == "Damageable")
         {
             EnemyHealthManager eHealthMan;
