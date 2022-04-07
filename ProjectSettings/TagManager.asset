@@ -8,8 +8,10 @@ TagManager:
   - FakeBoss
   - Boss
   - MyWeapon
+  - Orb
   - Walls
   - Hitbox
+  - Event
   - Damageable
   layers:
   - Default
@@ -22,6 +24,7 @@ TagManager:
   - Background
   - Environment
   - Interactables
+  - 
   - Damageable
   - Enemy
   - 
