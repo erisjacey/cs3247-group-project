@@ -57,6 +57,7 @@ public class AudioManager : MonoBehaviour
 
 	public void Play(string sound)
 	{
+		if (sound == currentTheme) return;
 
 		Sound s = Array.Find(sounds, item => item.name == sound);
 		if (s == null)
