@@ -20,14 +20,16 @@ public class CheckpointManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        string currentScene = SceneManager.GetActiveScene().name;
-        if (currentScene.Contains("Supermarket")) currentLevel = ANXIETY;
-        if (currentScene.Contains("Classroom")) currentLevel = FEAR;
-        if (currentScene.Contains("House")) currentLevel = ANGER;
+        UpdateCurrentLevel();
 
     }
 
     public void Start()
+    {
+        UpdateCurrentLevel();
+    }
+
+    void UpdateCurrentLevel()
     {
         string currentScene = SceneManager.GetActiveScene().name;
         if (currentScene.Contains("Supermarket")) currentLevel = ANXIETY;
@@ -41,12 +43,15 @@ public class CheckpointManager : MonoBehaviour
         switch (currentLevel)
         {
             case ANXIETY:
+                FindObjectOfType<HealthManager>().ResetHealth();
                 SceneManager.LoadScene("Shop_Creation 1");
                 break;
             case FEAR:
+                FindObjectOfType<HealthManager>().ResetHealth();
                 SceneManager.LoadScene("Shop_Creation 2");
                 break;
             case ANGER:
+                FindObjectOfType<HealthManager>().ResetHealth();
                 SceneManager.LoadScene("Shop_Creation 3");
                 break;
             default:
@@ -57,7 +62,7 @@ public class CheckpointManager : MonoBehaviour
     public void LoadNextLevel() 
     {
         string currentScene = SceneManager.GetActiveScene().name;
-
+        
         if (currentScene == "Shop_Creation 1")
         {
             if (isTutorial) 
