@@ -26,9 +26,8 @@ public class UIManager : MonoBehaviour
     {
         string currentScene = SceneManager.GetActiveScene().name;
         if (currentScene == "Menu"
-            || currentScene == "Opening_Cutscenes"
-            || currentScene == "Anxiety_Cutscene"
-            || currentScene == "Fear_cutscene") 
+            || currentScene == "Prologue"
+            || currentScene.Contains("Cutscene")) 
         {
             levelCanvas.SetActive(false);
             return;

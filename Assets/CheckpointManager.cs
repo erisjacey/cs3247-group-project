@@ -9,7 +9,7 @@ public class CheckpointManager : MonoBehaviour
     private const int FEAR = 1;
     private const int ANGER = 2;
 
-    private bool isTutorial = false;
+    private bool isTutorial = true;
     private int currentLevel = ANXIETY;
 
     void OnEnable()
