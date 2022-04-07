@@ -37,5 +37,9 @@ public class StateManager : MonoBehaviour
         {
             SceneManager.LoadScene("Fear_Cutscene");
         }
+        else if (currentScene == "House 3")
+        {
+            SceneManager.LoadScene("Anger_cutscene");
+        }
     }
 }

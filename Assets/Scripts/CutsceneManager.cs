@@ -24,7 +24,7 @@ public class CutsceneManager : MonoBehaviour
     {
         // StartCoroutine(LoadLevel());
         int i = (SceneManager.GetActiveScene().buildIndex) + 1;
-        if (i == 17)
+        if (i == 18)
         {
             i = 0;
         }

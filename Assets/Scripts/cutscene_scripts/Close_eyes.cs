@@ -23,7 +23,13 @@ public class Close_eyes : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex+1));
+        // StartCoroutine(LoadLevel(1));
+        int i = (SceneManager.GetActiveScene().buildIndex) + 1;
+        if (i == 18)
+        {
+            i = 0;
+        }
+        StartCoroutine(LoadLevel(i));
     }
 
     IEnumerator LoadLevel(int levelIndex)

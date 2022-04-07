@@ -22,10 +22,10 @@ public class LevelLoader_script : MonoBehaviour
     public void LoadNextLevel()
     {
         // StartCoroutine(LoadLevel());
-        int i = (SceneManager.GetActiveScene().buildIndex)+1;
-        if(i==18)
+        int i = (SceneManager.GetActiveScene().buildIndex) + 1;
+        if (i == 18)
         {
-            i =0;
+            i = 0;
         }
         StartCoroutine(LoadLevel(i));
     }

@@ -27,9 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/L1-Supermarket/Supermarket 3.unity
     guid: 80ce620d1184d4e4281dd29fb8216799
   - enabled: 1
-    path: Assets/Scenes/TestScenes/Boss_Enemy.unity
-    guid: 382d33b1c38564949b944a00f7fc95f1
-  - enabled: 1
     path: Assets/Scenes/Cutscenes/Anxiety_Cutscene.unity
     guid: 46b066397ef1047bab3e4812a086e6d5
   - enabled: 1
@@ -42,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/L2-Classroom/Classroom 2.unity
     guid: b2ca77c7e12f448f9937abfd438e4906
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Fear_cutscene.unity
+    path: Assets/Scenes/Cutscenes/Fear_Cutscene.unity
     guid: dac064d2e38b14e309c21030256fe784
   - enabled: 1
     path: Assets/Scenes/ShopCreationScenes/Shop_Creation 3.unity
