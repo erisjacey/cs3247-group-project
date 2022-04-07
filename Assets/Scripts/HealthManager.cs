@@ -60,17 +60,43 @@ public class HealthManager : MonoBehaviour
 
     public void HurtPlayer(int damageToGive)
     {
+<<<<<<< HEAD:Assets/Scripts/HealthManager.cs
         FindObjectOfType<AudioManager>().Play("PlayerHurt");
         currentHealth -= damageToGive;
         healthBar.SetHealth(currentHealth);
 
 	    flashActive = true;
         flashCounter = flashLength;
+=======
+        if (isInvulnerable) return;
+
+        BecomeInvulnerable(true);
+        FindObjectOfType<AudioManager>().Play("PlayerHurt");
+        currentHealth -= damageToGive;
+        healthBar.SetHealth(currentHealth);
+>>>>>>> main:Assets/Scripts/Player/HealthManager.cs
 
         if (currentHealth <= 0)
         {
             PlayerDie();
+<<<<<<< HEAD:Assets/Scripts/HealthManager.cs
 	    }
+=======
+        }
+    }
+
+    public void BecomeInvulnerable(bool flash)
+    {
+        flashActive = flash;
+        flashCounter = flashLength;
+        isInvulnerable = true;
+    }
+
+    public void LoseInvulnerability()
+    {
+        flashActive = false;
+        isInvulnerable = false;
+>>>>>>> main:Assets/Scripts/Player/HealthManager.cs
     }
 
     private void PlayerDie()

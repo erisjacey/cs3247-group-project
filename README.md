@@ -104,8 +104,35 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Fixed flickering lines in tilemap
    * Refactored AudioManager and PlayerLocationManager into a single persistent GameSession object
    * Updated PlayerLocationManager and LevelExit to work with location names instead of indexes
+<<<<<<< HEAD
 * [Huiting] 30/3/22 Added map for Level 3
    * Fixed image processing for very large image files
+=======
+   * 30/3/22: Fixed image processing for very large image files
+   * Laid out map for level 3 house
+   * 3/4/22: Separated colliders for pathfinding and damage for Guard enemy classes
+* [Eris] 5/4/22: Add/adjust various player mechanics
+   * Add player ranged attack (fireball) + shield
+   * Add player invulnerability upon taking damage (lasts as long as flash active)
+   * Add skill bar
+   * Add staff (fireball) and shield animations
+   * Add particle effects (auras) when changing skills
+   * 8-direction + staff cast
+* [Huiting] 5/4/22: Add door mechanic and keys
+   * Requires key to unlock
+   * Door can also be set to automatically re-lock itself after the player passes through
+* [Lucas] 6/4/22 Added cutscenes animations for
+   * Opening (therapist session)
+   * End of supermarket level
+   * End of classroom level
+* [Germaine] 6/4/22: Creation of shop and currency (orb) pickup
+   * Can pick up orbs, use to buy items in shop
+   * Have not implemented all item effects in shop yet 
+* [EVERYONE] 7/4/22: Integrate everything
+   * Populate levels with enemies and doors
+   * Link cutscenes and conflicts with shop
+   * ALOT of bug fixes: player going through wall when injured, pathfinding for enemies etcetc.
+>>>>>>> main
 
 # Template Scene Hierarchy
 [Scene_Name]

@@ -315,6 +315,7 @@ MonoBehaviour:
   isOpen: 0
   autoLock: 1
   UI: {fileID: 640847645440373491}
+  frontFacing: 1
 --- !u!1 &640847644849288029
 GameObject:
   m_ObjectHideFlags: 0

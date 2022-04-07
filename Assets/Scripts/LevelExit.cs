@@ -14,7 +14,6 @@ public class LevelExit : MonoBehaviour
     private void Start()
     {
         locationManager = FindObjectOfType<PlayerLocationManager>();
-        Debug.Log(locationManager);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -28,12 +27,5 @@ public class LevelExit : MonoBehaviour
         SceneManager.LoadScene(nextLevel);
 
         locationManager.SetLocation(nextLocationName);
-    }
-
-    IEnumerator LoadNextScene() 
-    {
-        yield return new WaitForSecondsRealtime(levelLoadDelay);
-        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 }

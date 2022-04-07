@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 86448391707573025}
   - component: {fileID: 86448391707573028}
   - component: {fileID: -4806544509815365247}
-  - component: {fileID: -3657630260911658132}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -171,20 +170,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-3657630260911658132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86448391707573038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a166dacf3ab21144941b2fbcf9719d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orbNum: 0
-  OrbTextUI: {fileID: 0}
 --- !u!1 &235690246055799022
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +378,7 @@ GameObject:
   - component: {fileID: 7991464551034003467}
   m_Layer: 6
   m_Name: SlashUp
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -512,7 +497,7 @@ GameObject:
   - component: {fileID: 7337666679521492750}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -745,7 +730,7 @@ GameObject:
   - component: {fileID: 8445875856863777597}
   m_Layer: 6
   m_Name: SlashDownLeft
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1026,7 +1011,7 @@ GameObject:
   - component: {fileID: 2818868546064855536}
   m_Layer: 6
   m_Name: SlashUpRight
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1145,7 +1130,7 @@ GameObject:
   - component: {fileID: 2727713022723424960}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1229,7 +1214,7 @@ Transform:
   m_GameObject: {fileID: 1666964846784096046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 9
@@ -1462,7 +1447,7 @@ GameObject:
   - component: {fileID: 6888213187332918878}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1531,7 +1516,7 @@ GameObject:
   - component: {fileID: 1045252288860573209}
   m_Layer: 6
   m_Name: SlashLeft
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1581,7 +1566,7 @@ Transform:
   m_GameObject: {fileID: 2234426199759196664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 5
@@ -1783,7 +1768,7 @@ Transform:
   m_GameObject: {fileID: 2603984645727494864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 4
@@ -2016,7 +2001,7 @@ GameObject:
   - component: {fileID: 3601053728361735194}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2167,7 +2152,7 @@ GameObject:
   - component: {fileID: 903520892855022983}
   m_Layer: 6
   m_Name: SlashDownRight
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2381,7 +2366,7 @@ GameObject:
   - component: {fileID: 5970220170584965749}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2648,7 +2633,7 @@ GameObject:
   - component: {fileID: 90105293626398118}
   m_Layer: 6
   m_Name: SlashDown
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3354,7 +3339,7 @@ GameObject:
   - component: {fileID: 4106666024129059816}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3602,7 +3587,7 @@ Transform:
   m_GameObject: {fileID: 6331771407429979183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 3
@@ -3671,7 +3656,7 @@ GameObject:
   - component: {fileID: 8276259519196214491}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4165,7 +4150,7 @@ Transform:
   m_GameObject: {fileID: 7053925518960027039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 11
@@ -4329,7 +4314,7 @@ Transform:
   m_GameObject: {fileID: 7259560785697021890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 2
@@ -4478,7 +4463,7 @@ GameObject:
   - component: {fileID: 1191069829603316176}
   m_Layer: 6
   m_Name: SlashUpLeft
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4774,7 +4759,7 @@ Transform:
   m_GameObject: {fileID: 7884119143983611656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 10
@@ -4856,7 +4841,7 @@ Transform:
   m_GameObject: {fileID: 7909131297650313778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 8
@@ -4938,7 +4923,7 @@ Transform:
   m_GameObject: {fileID: 8085369233943233342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 7
@@ -5087,7 +5072,7 @@ GameObject:
   - component: {fileID: 7961129149102098314}
   m_Layer: 6
   m_Name: SlashRight
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5370,7 +5355,7 @@ GameObject:
   - component: {fileID: 859747548556883805}
   m_Layer: 6
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5618,7 +5603,7 @@ Transform:
   m_GameObject: {fileID: 8953624942651837561}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6988669345821968004}
   m_RootOrder: 6
@@ -5715,7 +5700,7 @@ GameObject:
   - component: {fileID: 6262093705512006042}
   m_Layer: 6
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: MyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
