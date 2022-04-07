@@ -12,6 +12,7 @@ public class DoorController : MonoBehaviour
     private Animator uiAnimator;
     private Animator doorAnimator;
 
+    [SerializeField] public bool frontFacing;
     private BoxCollider2D[] doorAreas = new BoxCollider2D[2];
     private int exitPoint = -1;
 
@@ -33,8 +34,14 @@ public class DoorController : MonoBehaviour
             PlayerController player = other.GetComponent<PlayerController>();
             if (player.GetNumKeys() >= keysNeeded) 
             {
-                if (other.transform.position.y < transform.position.y) exitPoint = 1;
-                else exitPoint = 0;
+                if (frontFacing) 
+                {
+                    exitPoint = other.transform.position.y < transform.position.y ? 1 : 0;
+                }
+                else
+                {
+                    exitPoint = other.transform.position.x < transform.position.x ? 1 : 0;
+                }
 
                 StartCoroutine(UnlockDoor(player));
             }
@@ -65,7 +72,10 @@ public class DoorController : MonoBehaviour
     {
         uiAnimator.SetBool("playerInRange", false);
 
-        int exitingFrom = other.transform.position.y < transform.position.y ? 0 : 1;
+        int exitingFrom;
+        if (frontFacing) exitingFrom = other.transform.position.y < transform.position.y ? 0 : 1;
+        else exitingFrom = other.transform.position.x < transform.position.x ? 0 : 1;
+
         if (isOpen && exitingFrom == exitPoint) 
         {
             if (autoLock > 0) 

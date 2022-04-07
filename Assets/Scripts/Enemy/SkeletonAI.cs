@@ -17,6 +17,7 @@ public class SkeletonAI : MonoBehaviour
     [SerializeField]
     private float minRange;
 
+    private float yOffset;
     private Transform player;
     private GuardPath path;
     private bool playerInRange = false;
@@ -33,8 +34,9 @@ public class SkeletonAI : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (Vector3.Distance(player.position, transform.position) <= maxRange && (Vector3.Distance(player.position, transform.position) > minRange))
+    {   
+        Vector3 newPosition = new Vector3(transform.position.x, transform.position.y + yOffset, 0);
+        if (Vector3.Distance(player.position, newPosition) <= maxRange && (Vector3.Distance(player.position, newPosition) > minRange))
         {
             playerInRange = true;
             animator.SetBool("playerInRange", true);
@@ -52,7 +54,7 @@ public class SkeletonAI : MonoBehaviour
 
         if (playerInRange)
         {   
-            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+            float distanceToPlayer = Vector3.Distance(newPosition, player.position);
             if (distanceToPlayer < attackRange && !hasAttacked) {
                 StartCoroutine(Attack());
             } else {
@@ -68,17 +70,13 @@ public class SkeletonAI : MonoBehaviour
     void FollowPlayer()
     {
 		animator.SetFloat("moveX",  player.position.x - transform.position.x);
-		animator.SetFloat("moveY", player.position.y - transform.position.y);
+		animator.SetFloat("moveY", player.position.y - transform.position.y - yOffset);
         path.SetPath();
     }
 
     
-    private void OnTriggerEnter2D(Collider2D other){
-        if (other.tag == "MyWeapon")
-        {   
-            Vector3 knockback = (transform.position - other.transform.position).normalized / 3.5f;
-            transform.position += knockback;
-        }
+    public void Knockback(Vector3 knockback){
+        transform.position += knockback;
     }
 
     IEnumerator Attack()

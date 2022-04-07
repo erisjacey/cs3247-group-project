@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
+        currentSkill = getCurrentSkill();
     }
 
     // Update is called once per frame
@@ -60,17 +61,20 @@ public class PlayerController : MonoBehaviour
             shotPoint.transform.rotation = Quaternion.Euler(0.0f, 0.0f, angle);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (!isAttacking)
         {
-            changeCurrentSkill(SWORD);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            changeCurrentSkill(STAFF);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            changeCurrentSkill(SHIELD);
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                changeCurrentSkill(SWORD);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                changeCurrentSkill(STAFF);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                changeCurrentSkill(SHIELD);
+            }
         }
 
         switch (currentSkill)
@@ -91,12 +95,21 @@ public class PlayerController : MonoBehaviour
 
     private void changeCurrentSkill(int skill)
     {
-        myAnim.SetFloat("currentSkill", (float)skill);
         if (currentSkill != skill)
         {
-            currentSkill = skill;
-            FindObjectOfType<SkillManager>().SetActiveSkill(skill);
+            if (FindObjectOfType<SkillManager>().SetActiveSkill(skill))
+            {
+                currentSkill = skill;
+                myAnim.SetFloat("currentSkill", (float)skill);
+            }
         }
+    }
+
+    private int getCurrentSkill()
+    {
+        int skill = FindObjectOfType<SkillManager>().GetActiveSkill();
+        myAnim.SetFloat("currentSkill", (float)skill);
+        return skill;
     }
 
     void Sword()
@@ -144,12 +157,12 @@ public class PlayerController : MonoBehaviour
     {
         if (isAttacking)
         {
-            myRB.velocity = Vector2.zero;
             if (!Input.GetKey(KeyCode.Space))
             {
                 FindObjectOfType<HealthManager>().LoseInvulnerability();
                 myAnim.SetBool("isAttacking", false);
                 isAttacking = false;
+                walkSpeed *= 10;
             }
         }
         else if (Input.GetKeyDown(KeyCode.Space))
@@ -158,6 +171,7 @@ public class PlayerController : MonoBehaviour
             attackCounter = attackTime;
             myAnim.SetBool("isAttacking", true);
             isAttacking = true;
+            walkSpeed /= 10;
         }
     }
 

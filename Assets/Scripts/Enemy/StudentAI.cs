@@ -75,22 +75,8 @@ public class StudentAI : MonoBehaviour
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D other)
-	{
-		Debug.Log("hit detected");
-		if (other.gameObject.tag == "Player")
-		{
-			Vector3 knockback = (transform.position - other.transform.position).normalized / 2f;
-			transform.position += knockback;
-		}
-	}
-
-	private void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "MyWeapon")
-		{	
-			Vector3 knockback = (transform.position - other.transform.position).normalized / 1.2f;
-			transform.position += knockback;
-		}
+	public void Knockback(Vector3 knockback) {
+		transform.position += knockback;
 	}
 }
 

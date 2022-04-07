@@ -25,8 +25,6 @@ public class AngryPlayerAI : MonoBehaviour
     private GameObject flame;
     [SerializeField]
     private GameObject explosion;
-    [SerializeField]
-    private Transform hide;
     
 
     private float yOffset = 0.4f;
@@ -78,7 +76,7 @@ public class AngryPlayerAI : MonoBehaviour
         }
 
         if (Vector3.Distance(flameLastSpawn, newPosition) >= 1f) {
-            Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + 1.95f, 0);
+            Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + 1.45f, 0);
             GameObject trail = Instantiate(flame, spawnPosition, transform.rotation);
             flameLastSpawn = newPosition;
         }
