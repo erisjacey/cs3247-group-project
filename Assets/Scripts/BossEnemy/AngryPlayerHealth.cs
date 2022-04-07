@@ -70,5 +70,7 @@ public class AngryPlayerHealth : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("BossDie");
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
+
+        FindObjectOfType<StateManager>().LoadNextLevel();
     }
 }
