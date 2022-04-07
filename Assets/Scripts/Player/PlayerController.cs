@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     // Sword
     private float attackTime = .25f;
     private float attackCounter = .25f;
-    private int numKeys;
 
     // Staff
     public GameObject fireball;
@@ -173,20 +172,5 @@ public class PlayerController : MonoBehaviour
             isAttacking = true;
             walkSpeed /= 10;
         }
-    }
-
-    public int GetNumKeys() 
-    {
-        return numKeys;
-    }
-
-    public void AddKey() 
-    {
-        numKeys += 1;
-    }
-
-    public void UseKeys(int keysUsed) 
-    {
-        numKeys -= keysUsed;
     }
 }
