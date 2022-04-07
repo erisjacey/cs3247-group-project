@@ -19,18 +19,22 @@ public class PlayerController : MonoBehaviour
 
     private bool isAttacking;
 
+    public bool isAmbientFirePain = true;
+
     // Sword
     private float attackTime = .25f;
     private float attackCounter = .25f;
+    public int swordDamage = 5;
 
     // Staff
     public GameObject fireball;
     public Transform shotPoint;
     private float timeBetweenShots;
     private float startTimeBetweenShots = .4f;
+    public int fireballDamage = 10;
 
     // Shield
-    
+
     // Start is called before the first frame update
     void Start()
     {
