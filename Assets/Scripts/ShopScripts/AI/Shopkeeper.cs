@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class Shopkeeper : MonoBehaviour
 {
-	public ShopSystem shopSystem;
-
 	bool inRange = false;
 	public string playerTag;
 	public GameObject tooltip;
@@ -35,17 +33,15 @@ public class Shopkeeper : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            StartTrade();
+            ShopManager shopManager = FindObjectOfType<ShopManager>();
+            if (shopManager.shopOpen) 
+            {
+                shopManager.CloseShop();
+            }
+            else
+            {
+                if (inRange) shopManager.OpenShop();
+            }
         }
-    }
-
-    public bool StartTrade()
-    {
-        if (!inRange || shopSystem.shopOpen)
-        {
-            return false;
-        }
-        shopSystem.OpenShop();
-        return true;
     }
 }
