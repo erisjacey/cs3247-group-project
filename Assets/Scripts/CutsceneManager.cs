@@ -23,7 +23,6 @@ public class CutsceneManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-<<<<<<< HEAD:Assets/Scripts/cutscene_scripts/LevelLoader_script.cs
         // StartCoroutine(LoadLevel());
         int i = (SceneManager.GetActiveScene().buildIndex)+1;
         if(i==17)
@@ -31,17 +30,13 @@ public class CutsceneManager : MonoBehaviour
             i =0;
         }
         StartCoroutine(LoadLevel(i));
-=======
-        StartCoroutine(LoadLevel());
-        // StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex+1));
->>>>>>> main:Assets/Scripts/CutsceneManager.cs
     }
 
-    IEnumerator LoadLevel()
+    IEnumerator LoadLevel(int i)
     {
         yield return new WaitForSecondsRealtime(cutsceneTime);
         transition.SetTrigger("start");
         yield return new WaitForSecondsRealtime(transitionTime);
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene(i);
     }
 }
