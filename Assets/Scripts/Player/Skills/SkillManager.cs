@@ -17,15 +17,18 @@ public class SkillManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string currentScene = SceneManager.GetActiveScene().name;
-        if (currentScene.Contains("Supermarket"))
+        if (currentScene.Contains("Supermarket")
+            || currentScene.Contains("Shop_Creation 1"))
         {
             UnlockHope();
         }
-        else if (currentScene.Contains("Classroom"))
+        else if (currentScene.Contains("Classroom")
+            || currentScene.Contains("Shop_Creation 2"))
         {
             UnlockExcitement();
         }
-        else if (currentScene.Contains("House"))
+        else if (currentScene.Contains("House")
+            || currentScene.Contains("Shop_Creation 3"))
         {
             UnlockConfidence();
         }
