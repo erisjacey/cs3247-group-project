@@ -39,7 +39,7 @@ public class StateManager : MonoBehaviour
         }
         else if (currentScene == "House 3")
         {
-            SceneManager.LoadScene("Anger_cutscene");
+            SceneManager.LoadScene("Anger_Cutscene");
         }
     }
 }
