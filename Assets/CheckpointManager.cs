@@ -41,16 +41,16 @@ public class CheckpointManager : MonoBehaviour
         switch (currentLevel)
         {
             case ANXIETY:
-                FindObjectOfType<HealthManager>().ResetHealth();
                 SceneManager.LoadScene("Shop_Creation 1");
+                FindObjectOfType<HealthManager>().ResetHealth();
                 break;
             case FEAR:
-                FindObjectOfType<HealthManager>().ResetHealth();
                 SceneManager.LoadScene("Shop_Creation 2");
+                FindObjectOfType<HealthManager>().ResetHealth();
                 break;
             case ANGER:
-                FindObjectOfType<HealthManager>().ResetHealth();
                 SceneManager.LoadScene("Shop_Creation 3");
+                FindObjectOfType<HealthManager>().ResetHealth();
                 break;
             default:
                 break;

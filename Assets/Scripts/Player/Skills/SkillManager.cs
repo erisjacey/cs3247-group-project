@@ -79,10 +79,10 @@ public class SkillManager : MonoBehaviour
     private void SetSkillBar(int id)
     {
         if (skillBars.Length == 0) return;
-        
+
         for (int i = 0; i < skillBars.Length; i++)
         {
-            skillBars[i].SetActive(i == id);
+            if (skillBars[i]) skillBars[i].SetActive(i == id);
         }
     }
 }

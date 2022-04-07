@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -18,12 +19,22 @@ public class HealthManager : MonoBehaviour
     private GameObject player;
     private SpriteRenderer playerSprite;
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ResetHealth();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         healthBar = GetComponent<HealthBar>();
         player = FindObjectOfType<PlayerController>().gameObject;
-	playerSprite = player.GetComponent<SpriteRenderer>();     
+	    playerSprite = player.GetComponent<SpriteRenderer>();     
 
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);   
