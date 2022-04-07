@@ -27,6 +27,13 @@ public class CheckpointManager : MonoBehaviour
 
     }
 
+    public void Start()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene.Contains("Supermarket")) currentLevel = ANXIETY;
+        if (currentScene.Contains("Classroom")) currentLevel = FEAR;
+        if (currentScene.Contains("House")) currentLevel = ANGER;
+    }
 
     public void LoadCheckpoint() 
     {
@@ -51,13 +58,15 @@ public class CheckpointManager : MonoBehaviour
     {
         string currentScene = SceneManager.GetActiveScene().name;
 
-        if (isTutorial) 
+        if (currentScene == "Shop_Creation 1")
         {
-            isTutorial = false;
-            SceneManager.LoadScene("Opening_Cutscene");
-        }
-        else if (currentScene == "Shop_Creation 1")
-        {
+            if (isTutorial) 
+            {
+                isTutorial = false;
+                SceneManager.LoadScene("Opening_Cutscene");
+                FindObjectOfType<PlayerLocationManager>().SetLocation("");
+                return;
+            }
             currentLevel = ANXIETY;
             SceneManager.LoadScene("Supermarket 1");
         } 
