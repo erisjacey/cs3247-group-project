@@ -83,7 +83,7 @@ public class AudioManager : MonoBehaviour
 	{
 		if (String.IsNullOrEmpty(currentTheme)) return;
 		Sound s = Array.Find(sounds, item => item.name == currentTheme);
-		s.source.Stop();
+		if (s.source.enabled) s.source.Stop();
 	}		
 
 }
