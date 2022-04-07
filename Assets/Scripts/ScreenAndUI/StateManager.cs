@@ -33,7 +33,7 @@ public class StateManager : MonoBehaviour
         {
             SceneManager.LoadScene("Anxiety_Cutscene");
         } 
-        else if (currentScene == "Classroom")
+        else if (currentScene == "Classroom 2")
         {
             SceneManager.LoadScene("Fear_Cutscene");
         }

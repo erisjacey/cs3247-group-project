@@ -62,7 +62,7 @@ public class CheckpointManager : MonoBehaviour
         else if (currentScene == "Shop_Creation 2")
         {
             currentLevel = FEAR;
-            SceneManager.LoadScene("Classroom");
+            SceneManager.LoadScene("Classroom 1");
         }
         else if (currentScene == "Shop_Creation 3")
         {

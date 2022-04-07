@@ -49,8 +49,8 @@ public class AudioManager : MonoBehaviour
 		else if (currentScene.Contains("Cutscene") && !currentScene.Contains("Opening") && !currentScene.Contains("Prologue")) Play(SOMBER_THEME);
 		else if (currentScene.Contains("Supermarket 1")) Play(SUPERMARKET_REGULAR_THEME);
 		else if (currentScene.Contains("Supermarket 2") || currentScene.Contains("Supermarket 3")) Play(SUPERMARKET_BOSS_THEME);
-		else if (String.Equals(currentScene, "Classroom")) Play(CLASSROOM_REGULAR_THEME);
-		else if (currentScene.Contains("ClassroomBoss")) Play(CLASSROOM_BOSS_THEME);
+		else if (String.Equals(currentScene, "Classroom 1")) Play(CLASSROOM_REGULAR_THEME);
+		else if (currentScene.Contains("Classroom 2")) Play(CLASSROOM_BOSS_THEME);
 		else if (currentScene.Contains("House 1") || currentScene.Contains("House 2")) Play(HOUSE_REGULAR_THEME);	
 		else if (currentScene.Contains("House 3")) Play(HOUSE_BOSS_THEME);
 	}
