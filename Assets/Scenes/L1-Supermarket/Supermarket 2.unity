@@ -5650,6 +5650,7 @@ MonoBehaviour:
   flashLength: 0.5
   blinkLength: 0.5
   chat: {fileID: 620876237}
+  itemToDrop: {fileID: 8701238487987058524, guid: fc6b9c38613fc4fc4bf9bbc08b590cc7, type: 3}
 --- !u!1 &2098478645
 GameObject:
   m_ObjectHideFlags: 0
