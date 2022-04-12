@@ -6,7 +6,6 @@ public class DoorController : MonoBehaviour
 {
     [SerializeField] public int keysNeeded = 0;
     [SerializeField] private bool isOpen = false;
-    [SerializeField] private int autoLock = 0;
 
     [SerializeField] private GameObject UI;
     private Animator uiAnimator;
@@ -56,6 +55,12 @@ public class DoorController : MonoBehaviour
         }
     }
 
+    public void OpenDoor()
+    {
+        isOpen = true;
+        doorAnimator.SetBool("isOpen", isOpen);
+    }
+
     IEnumerator UnlockDoor(KeyManager keyManager)
     {
         uiAnimator.SetTrigger("unlockDoor");
@@ -81,21 +86,5 @@ public class DoorController : MonoBehaviour
         doorAnimator.SetBool("isOpen", isOpen);
     }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        uiAnimator.SetBool("playerInRange", false);
 
-        int exitingFrom;
-        if (frontFacing) exitingFrom = other.transform.position.y < transform.position.y ? 0 : 1;
-        else exitingFrom = other.transform.position.x < transform.position.x ? 0 : 1;
-
-        if (isOpen && exitingFrom == exitPoint) 
-        {
-            if (autoLock > 0) 
-            {
-                autoLock -= 1;
-                LockDoor();
-            }
-        }
-    }
 }

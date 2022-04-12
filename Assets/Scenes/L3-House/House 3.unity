@@ -1710,6 +1710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbf70ab8abc6a7459063f23f3e13e33, type: 3}
+--- !u!1 &313679907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1983153884617679241, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+  m_PrefabInstance: {fileID: 968432529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &340672371
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,6 +5200,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1059144437326098786, guid: dfbf70ab8abc6a7459063f23f3e13e33, type: 3}
   m_PrefabInstance: {fileID: 2120361962}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1213542607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 329611560884081502, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
+  m_PrefabInstance: {fileID: 329611559975175556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1213542608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213542607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c02c518818e8447bbebe753c107f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoadDelay: 0
+  nextLevel: House 1
+  nextLocationName: H1-3
+  boss: {fileID: 313679907}
 --- !u!4 &1223114600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1059144437326098786, guid: dfbf70ab8abc6a7459063f23f3e13e33, type: 3}
@@ -22412,7 +22438,8 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 329611560884081497, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
 --- !u!1001 &4622247723620883569
 PrefabInstance:
