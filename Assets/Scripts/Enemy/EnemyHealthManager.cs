@@ -48,8 +48,6 @@ public class EnemyHealthManager : MonoBehaviour
 
     public void HurtEnemy(int damageToGive)
     {   
-        
-        FindObjectOfType<AudioManager>().Play("EnemyHurt");
         StartCoroutine(Hurt());
         currentHealth -= damageToGive;
 
@@ -59,9 +57,14 @@ public class EnemyHealthManager : MonoBehaviour
         if (currentHealth <= 0)
         {   
             animator.Play("Death");
+            FindObjectOfType<AudioManager>().Play("EnemyDie");
             DropItem();
             Destroy(gameObject, 0.10f);
 	    }
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("EnemyHurt");
+        }
     }
 
     private void DropItem() 
@@ -69,6 +72,10 @@ public class EnemyHealthManager : MonoBehaviour
         if (itemToDrop != null) 
         {
             Instantiate(itemToDrop, transform.position, transform.rotation);
+            if (itemToDrop.tag == "KeyItem")
+            {
+                FindObjectOfType<AudioManager>().Play("ItemAppear");
+            }
         }
 		
 	}
