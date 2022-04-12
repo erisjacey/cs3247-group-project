@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelExit : MonoBehaviour
+public class BossLevelExit : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 0f;
     [SerializeField] string nextLevel;
     [SerializeField] string nextLocationName;
+    [SerializeField] GameObject boss;
 
     PlayerLocationManager locationManager;
+    
+    
 
     private void Start()
     {
@@ -18,7 +21,7 @@ public class LevelExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {   
-        if (other.tag == "Player")
+        if (other.tag == "Player" && boss == null)
         {
             StartCoroutine(LoadScene());
         }
