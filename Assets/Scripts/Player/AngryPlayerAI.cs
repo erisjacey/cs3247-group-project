@@ -35,9 +35,10 @@ public class AngryPlayerAI : MonoBehaviour
     private bool hasAttacked = false;
     private float lastAttackTime;
     private GuardPath path;
+    private AngryPlayerHealth health;
 
-    private int explosionTimes = 10;
-    private float rageAttackDelay = 0.35f;
+    private int explosionTimes = 20;
+    private float rageAttackDelay = 0.3f;
     private float lastExplosion = 0f;
 
     void Start()
@@ -46,7 +47,7 @@ public class AngryPlayerAI : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		path = gameObject.GetComponentInChildren<GuardPath>();
         flameLastSpawn = new Vector3(transform.position.x, transform.position.y + yOffset, 0);
-        
+        health = gameObject.GetComponentInChildren<AngryPlayerHealth>();
 	}
 
     // Update is called once per frame
@@ -66,10 +67,11 @@ public class AngryPlayerAI : MonoBehaviour
                     RageAttack();
                     explosionTimes -= 1;
                 } else {
-                    explosionTimes = 10;
+                    explosionTimes = 20;
                     path.EnableMove();
                     animator.SetBool("isEnraged", false);
                     animator.Play("Move");
+                    health.DisableInvulverable();
                 }
             } 
             return;
