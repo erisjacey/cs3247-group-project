@@ -14,17 +14,19 @@ public class AngryPlayerHealth : MonoBehaviour
     private Renderer bossRenderer;
     private Animator animator;
     private float lastRageTime = 0f;
-    private float rageAttackCoolDown = 20f;
+    private float rageAttackCoolDown = 12f;
+    private Collider2D Collider2D;
 
      // Start is called before the first frame update
     void Start()
     {
        bossRenderer = GetComponentInChildren<Renderer>();
        animator = GetComponentInChildren<Animator>();
+       Collider2D = GetComponentInChildren<Collider2D>();
     }
 
     public void TakeDamage(int damage)
-    {
+    {   
         if (isInvulnerable)
             return;
 
@@ -33,13 +35,13 @@ public class AngryPlayerHealth : MonoBehaviour
 
         StartCoroutine(Flashing());
 
-        if (health <= (rageThreshold * maxHealth) && !animator.GetBool("isEnraged"))
-        {   
-            if (lastRageTime == 0f || (lastRageTime + rageAttackCoolDown < Time.time)) {
-                animator.SetBool("isEnraged", true);
-                animator.Play("special_attack");
-                FindObjectOfType<AudioManager>().Play("BossRage");
-            }
+        if (health <= (rageThreshold * maxHealth) && !animator.GetBool("isEnraged") && (lastRageTime == 0f || lastRageTime + rageAttackCoolDown <= Time.time))
+        {        
+            animator.SetBool("isEnraged", true);
+            animator.Play("special_attack");
+            FindObjectOfType<AudioManager>().Play("BossRage");
+            lastRageTime = Time.time;
+            isInvulnerable = true;
         }
         else if (health <= 0)
         {
@@ -50,6 +52,12 @@ public class AngryPlayerHealth : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("BossHurt");
         }
     }
+
+    public void DisableInvulverable() {
+        isInvulnerable = false;
+    }
+
+
 
     IEnumerator Flashing()
     {

@@ -4713,7 +4713,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 461086130791420838, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: maxSpeed
-      value: 4.25
+      value: 4.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 787150494135703394, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+      propertyPath: attackTime
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 787150494135703394, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+      propertyPath: attackDelay
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 787150494135703394, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+      propertyPath: attackRange
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 957208718740103312, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: m_Size.x
@@ -4758,6 +4770,14 @@ PrefabInstance:
     - target: {fileID: 1983153884617679241, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: m_Name
       value: AngryPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032362842985303009, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032362842985303009, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+      propertyPath: m_LinearDrag
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 3300565160643789411, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: m_IsActive
