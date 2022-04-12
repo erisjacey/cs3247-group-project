@@ -14,7 +14,7 @@ public class ProjectileController : MonoBehaviour
         {
             FindObjectOfType<HealthManager>().HurtPlayer(damageToGive);
             Destroy(gameObject);
-        } else if (other.tag != "Enemy" && other.tag == "Walls") {
+        } else if (other.tag == "Walls") {
             Destroy(gameObject);
         }
     }
