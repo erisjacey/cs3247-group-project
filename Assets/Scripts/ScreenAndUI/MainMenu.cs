@@ -5,9 +5,19 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    public void PlayGame()
+    public void PlayLevelOne()
     {
-        SceneManager.LoadScene("Opening_Cutscene");
+        SceneManager.LoadScene("Prologue_Cutscene");
+    }
+
+    public void PlayLevelTwo()
+    {
+        SceneManager.LoadScene("Anxiety_Cutscene");
+    }
+
+    public void PlayLevelThree()
+    {
+        SceneManager.LoadScene("Fear_Cutscene");
     }
 
     public void QuitGame()

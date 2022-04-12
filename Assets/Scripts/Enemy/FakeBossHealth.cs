@@ -11,6 +11,7 @@ public class FakeBossHealth : MonoBehaviour
     [SerializeField] private float flashLength = 0f;
     [SerializeField] private float blinkLength = 0f;
     [SerializeField] GameObject chat;
+    [SerializeField] private GameObject itemToDrop;
 
     private float flashCounter = 0f;
     private SpriteRenderer enemySprite;
@@ -57,9 +58,19 @@ public class FakeBossHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             chat.SetActive(true);
+            DropItem();
             Destroy(gameObject);
         }
     }
+
+    private void DropItem() 
+	{   
+        if (itemToDrop != null) 
+        {
+            Instantiate(itemToDrop, transform.position, transform.rotation);
+        }
+	}
+
 
 
 

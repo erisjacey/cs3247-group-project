@@ -8,7 +8,7 @@ public class StateManager : MonoBehaviour
     public void Retry()
     {   
         // index 1 represents start of supermarket
-        SceneManager.LoadScene(1);
+        FindObjectOfType<CheckpointManager>().LoadCheckpoint();
         FindObjectOfType<LevelManager>().RestartGame();
     }
 
@@ -33,9 +33,13 @@ public class StateManager : MonoBehaviour
         {
             SceneManager.LoadScene("Anxiety_Cutscene");
         } 
-        else if (currentScene == "Classroom")
+        else if (currentScene == "Classroom 2")
         {
             SceneManager.LoadScene("Fear_Cutscene");
+        }
+        else if (currentScene == "House 3")
+        {
+            SceneManager.LoadScene("Anger_Cutscene");
         }
     }
 }

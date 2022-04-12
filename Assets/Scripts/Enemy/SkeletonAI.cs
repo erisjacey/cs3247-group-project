@@ -17,7 +17,7 @@ public class SkeletonAI : MonoBehaviour
     [SerializeField]
     private float minRange;
 
-    private float yOffset;
+    private float yOffset = 0.671f;
     private Transform player;
     private GuardPath path;
     private bool playerInRange = false;

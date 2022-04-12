@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour
     // Sword
     private float attackTime = .25f;
     private float attackCounter = .25f;
-    private int numKeys;
     public int swordDamage = 5;
 
     // Staff
@@ -42,6 +41,12 @@ public class PlayerController : MonoBehaviour
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         currentSkill = getCurrentSkill();
+
+        PlayerStatsManager playerStatsManager = FindObjectOfType<PlayerStatsManager>();
+        walkSpeed = playerStatsManager.walkSpeed;
+        isAmbientFirePain = playerStatsManager.isAmbientFirePain;
+        swordDamage = playerStatsManager.swordDamage;
+        fireballDamage = playerStatsManager.fireballDamage;
     }
 
     // Update is called once per frame
@@ -94,7 +99,7 @@ public class PlayerController : MonoBehaviour
                 break;
             default:
                 break;
-         }
+        }
     }
 
     private void changeCurrentSkill(int skill)
@@ -177,20 +182,5 @@ public class PlayerController : MonoBehaviour
             isAttacking = true;
             walkSpeed /= 10;
         }
-    }
-
-    public int GetNumKeys() 
-    {
-        return numKeys;
-    }
-
-    public void AddKey() 
-    {
-        numKeys += 1;
-    }
-
-    public void UseKeys(int keysUsed) 
-    {
-        numKeys -= keysUsed;
     }
 }

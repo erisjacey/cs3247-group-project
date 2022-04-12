@@ -12,6 +12,7 @@ public class DoorController : MonoBehaviour
     private Animator uiAnimator;
     private Animator doorAnimator;
 
+    [SerializeField] public bool isBossDoor;
     [SerializeField] public bool frontFacing;
     private BoxCollider2D[] doorAreas = new BoxCollider2D[2];
     private int exitPoint = -1;
@@ -23,6 +24,8 @@ public class DoorController : MonoBehaviour
         uiAnimator = UI.GetComponent<Animator>();
 
         doorAreas = GetComponents<BoxCollider2D>();
+
+        if (isBossDoor) uiAnimator.SetFloat("isBossDoor", 1f);
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
@@ -31,8 +34,9 @@ public class DoorController : MonoBehaviour
 
         if (other.tag == "Player") 
         {
-            PlayerController player = other.GetComponent<PlayerController>();
-            if (player.GetNumKeys() >= keysNeeded) 
+            KeyManager keyManager = FindObjectOfType<KeyManager>();
+            int numKeys = isBossDoor ? keyManager.GetNumBossKeys() : keyManager.GetNumKeys();
+            if (numKeys >= keysNeeded) 
             {
                 if (frontFacing) 
                 {
@@ -43,21 +47,30 @@ public class DoorController : MonoBehaviour
                     exitPoint = other.transform.position.x < transform.position.x ? 1 : 0;
                 }
 
-                StartCoroutine(UnlockDoor(player));
+                StartCoroutine(UnlockDoor(keyManager));
             }
             else
             {
-                // UI.transform.Find("keyUI").gameObject.SetActive(true);
                 uiAnimator.SetBool("playerInRange", true);
             }
         }
     }
 
-    IEnumerator UnlockDoor(PlayerController player)
+    IEnumerator UnlockDoor(KeyManager keyManager)
     {
         uiAnimator.SetTrigger("unlockDoor");
         yield return new WaitForSeconds(0.6f);
-        player.UseKeys(keysNeeded);
+
+        // Use keys
+        if (isBossDoor)
+        {
+            keyManager.UseBossKeys(keysNeeded);
+        }
+        else
+        {
+            keyManager.UseKeys(keysNeeded);
+        }
+
         isOpen = true;
         doorAnimator.SetBool("isOpen", isOpen);
     }

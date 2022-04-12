@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
         }
 
         GetComponentInChildren<HealthManager>().ResetHealth();
-        GetComponentInChildren<PlayerLocationManager>().SetLocation("Tutorial");
+        GetComponentInChildren<PlayerLocationManager>().SetLocation("Shop-2");
         Time.timeScale = 1f;
     }
 }

@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: c71a883b1dcb4b64699a5e4bc8e21ce4
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/Prologue_Cutscene.unity
+    guid: 8c7671333c8dc4434987f3789b41ff73
+  - enabled: 1
+    path: Assets/Scenes/ShopCreationScenes/Shop_Creation 1.unity
+    guid: 8bb1798758f25d248a992f24e9ec2a32
+  - enabled: 1
     path: Assets/Scenes/Cutscenes/Opening_Cutscene.unity
     guid: e6a57f55a723146cdaee92a4d12c9f89
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: b44ddf6caae2fac438114ea0a60effb6
   - enabled: 1
     path: Assets/Scenes/L1-Supermarket/Supermarket 1.unity
     guid: 9bdc799ba46f44510aaf9f1aae141f4a
@@ -27,14 +30,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/Anxiety_Cutscene.unity
     guid: 46b066397ef1047bab3e4812a086e6d5
   - enabled: 1
-    path: Assets/Scenes/L2-Classroom/Classroom.unity
+    path: Assets/Scenes/ShopCreationScenes/Shop_Creation 2.unity
+    guid: cef44f5179a5043a3bf189539189ba8c
+  - enabled: 1
+    path: Assets/Scenes/L2-Classroom/Classroom 1.unity
     guid: 8f3fb6731abea4c1d981065bda52f386
   - enabled: 1
-    path: Assets/Scenes/L2-Classroom/ClassroomBoss.unity
-    guid: 23a561a0b01af4b8cb00b9daedd5a938
+    path: Assets/Scenes/L2-Classroom/Classroom 2.unity
+    guid: b2ca77c7e12f448f9937abfd438e4906
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Fear_cutscene.unity
+    path: Assets/Scenes/Cutscenes/Fear_Cutscene.unity
     guid: dac064d2e38b14e309c21030256fe784
+  - enabled: 1
+    path: Assets/Scenes/ShopCreationScenes/Shop_Creation 3.unity
+    guid: 7165eb469880e497fbc04cddda336c21
   - enabled: 1
     path: Assets/Scenes/L3-House/House 1.unity
     guid: aa79e4d916ede4aae980271e13e61765
@@ -44,4 +53,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L3-House/House 3.unity
     guid: d9bd9a350c3f3495cba392cb22fbf97c
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Anger_cutscene.unity
+    guid: 1933c00810b764ae68c3f1db605e3612
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Ending_cutscene.unity
+    guid: ea7ecd29bbccb46e38595e662ac07cd4
   m_configObjects: {}

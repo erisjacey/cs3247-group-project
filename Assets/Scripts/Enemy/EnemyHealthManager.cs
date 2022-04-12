@@ -59,11 +59,12 @@ public class EnemyHealthManager : MonoBehaviour
         if (currentHealth <= 0)
         {   
             animator.Play("Death");
-            Destroy(gameObject, 0.20f);
+            DropItem();
+            Destroy(gameObject, 0.10f);
 	    }
     }
 
-    private void OnDestroy() 
+    private void DropItem() 
 	{   
         if (itemToDrop != null) 
         {

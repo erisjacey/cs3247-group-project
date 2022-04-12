@@ -28518,6 +28518,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2956447947231460765, guid: 1e742a5bef4cbd84ba43aa17f9274ebe, type: 3}
+      propertyPath: itemToDrop
+      value: 
+      objectReference: {fileID: 7382119441561283077, guid: 58b4734d822da4b0dbce30e382acc726, type: 3}
     - target: {fileID: 3730737263368563168, guid: 1e742a5bef4cbd84ba43aa17f9274ebe, type: 3}
       propertyPath: startingX
       value: 0.1
@@ -28942,6 +28946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door2
       objectReference: {fileID: 0}
+    - target: {fileID: 5483530144794424517, guid: c7182affb058b44c99e38eaded8060b4, type: 3}
+      propertyPath: isBossDoor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7182affb058b44c99e38eaded8060b4, type: 3}
 --- !u!4 &4239893111177775042 stripped
@@ -28956,6 +28964,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3205891612383054899, guid: c3a990d9b5b5343fa8d8451aba22809a, type: 3}
+      propertyPath: m_Color.a
+      value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205891612383054899, guid: c3a990d9b5b5343fa8d8451aba22809a, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205891612383054899, guid: c3a990d9b5b5343fa8d8451aba22809a, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205891612383054899, guid: c3a990d9b5b5343fa8d8451aba22809a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4622247724522481713, guid: c3a990d9b5b5343fa8d8451aba22809a, type: 3}
       propertyPath: m_RootOrder
       value: 2
