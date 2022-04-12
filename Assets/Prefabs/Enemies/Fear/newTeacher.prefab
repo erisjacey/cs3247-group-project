@@ -238,7 +238,7 @@ MonoBehaviour:
   - {fileID: 2572287186441502549, guid: 46cf94b6a2dd4fd47bd93b4de9cd8d32, type: 3}
   - {fileID: 3713258687697510160, guid: 14afe415ea64d2e4caa960b679a3b472, type: 3}
   - {fileID: 7392546983763670232, guid: 53979cfb39ef4544dbc0a02bdb9eb8e6, type: 3}
-  projectileForce: 450
+  projectileForce: 550
 --- !u!60 &7587980325526159426
 PolygonCollider2D:
   m_ObjectHideFlags: 0
