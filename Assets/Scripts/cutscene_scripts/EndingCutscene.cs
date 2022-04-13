@@ -47,7 +47,8 @@ public class EndingCutscene : MonoBehaviour
         yield return new WaitForSecondsRealtime(messageInterval);
         text4.enabled = false;
         textWriter.AddWriter(text5, "~THE END~",0.05f,true);
-        yield return new WaitForSecondsRealtime(messageInterval/2);
-        textWriter.AddWriter(text6, "Credits\nGermaine\nEris\nKerwin\nHuiting\nZhenxin\nLucas",0.05f,true);
+        yield return new WaitForSecondsRealtime(messageInterval);
+        yield return new WaitForSecondsRealtime(messageInterval);
+        text5.enabled = false;
     }
 }

@@ -135,6 +135,12 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Modified player attack damage scripts to differentiate melee/range attack (to create different powerups)
    * Create ambient fire prefab for House maps
    * Create powerup effect for ambient fire invulnerability (to be used for shop items)
+   * Updated shop items and ui with buffs
+* [Germaine] 13/4/22: Shop modifications, Health bar modifications
+   * Include tooltips for shop items on hover to show description of buffs
+   * Implement OOS overlay for shop items with 0 quantity left
+   * Include tooltip on hover over healthbar to show health details
+   * Fix health buff/ health bar bugs
 
 # Template Scene Hierarchy
 [Scene_Name]
@@ -263,10 +269,8 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * [Modern Tilesets](https://limezu.itch.io/moderninteriors)
 * [8-direction top down Boss Enemy](https://e-bros-assets.itch.io/top-down-enemy-animated-8-directions)
 * [Music loop bundle - Tallbeard Studios](https://tallbeard.itch.io/music-loop-bundle)
-   * Ludum Dare 32 - Track Five (MenuTheme)
 * [SFX Pack v1 - Mythril Age](https://mythril-age.itch.io/mythril-age-sfx-pack-v1)
-   * Sound 1 (EnemyHurt)
-   * Sound 86 (PlayerHurt)
 * [Fireball - NYKNCK](https://nyknck.itch.io/fireball-animation)
 * [Pixel Art FX - SpiritWitchSpirit](https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx)
 * [Medieval weapons pack - PixelHole](https://pixelhole.itch.io/medieval-weapons-pack)
+* [8-bit sound pack - SoundsByDane](https://soundsbydane.itch.io/8-bit-sound-pack)

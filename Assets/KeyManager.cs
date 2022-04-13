@@ -1,11 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KeyManager : MonoBehaviour
 {
-    private int numKeys = 0;
-    private int numBossKeys = 0;
+    [SerializeField] private int numKeys = 0;
+    [SerializeField] private int numBossKeys = 0;
+
+    [SerializeField] private Text keyCount;
+    [SerializeField] private Text bossKeyCount;
+
+    void Update()
+    {
+        keyCount.text = numKeys.ToString();
+        bossKeyCount.text = numBossKeys.ToString();
+    }
 
     public int GetNumKeys() 
     {

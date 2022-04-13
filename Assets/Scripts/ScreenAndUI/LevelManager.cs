@@ -1,18 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public static LevelManager instance;
-
     UIManager uiManager;
-
-    private void Awake()
-    {
-        if (LevelManager.instance == null) instance = this;
-        else Destroy(gameObject);
-    }
+    string lastScene = "";
 
     private void Start()
     {
@@ -27,16 +21,39 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void RestartGame()
+    void CloseUI()
     {
         if (uiManager != null)
         {
             uiManager.CloseDeathPanel();
             uiManager.Resume();
         }
+        Time.timeScale = 1f;
+    }
+
+    public void SaveGame()
+    {
+        CloseUI();
+
+        if (FindObjectsOfType<PlayerController>().Length == 0) return;
+        GameObject player = FindObjectOfType<PlayerController>().gameObject;
+
+        GetComponentInChildren<PlayerLocationManager>().SetPausedLocation(player.transform.position);
+
+        lastScene = SceneManager.GetActiveScene().name;
+    }
+
+    public void ResumeGame()
+    {   
+        SceneManager.LoadScene(lastScene);
+        lastScene = "";
+    }
+
+    public void ResetGame()
+    {
+        CloseUI();
 
         GetComponentInChildren<HealthManager>().ResetHealth();
         GetComponentInChildren<PlayerLocationManager>().SetLocation("Shop-2");
-        Time.timeScale = 1f;
     }
 }

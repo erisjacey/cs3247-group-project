@@ -126,9 +126,72 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: Money
+    clip: {fileID: 8300000, guid: 39bc31802dd54f5498fed1c08f77a2ee, type: 3}
+    volume: 0.3
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ItemAppear
+    clip: {fileID: 8300000, guid: 38011b05be82ee646b2690730be23d2a, type: 3}
+    volume: 0.9
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
   - name: PlayerHurt
     clip: {fileID: 8300000, guid: 24b73fcda9e742e43882099b637ca937, type: 3}
+    volume: 0.7
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: PlayerDie
+    clip: {fileID: 8300000, guid: 3202acd9f26372d4eb81cfc7ebc90eee, type: 3}
+    volume: 0.9
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Sword
+    clip: {fileID: 8300000, guid: 7f9540550e921a6498d5fcfa447a04d7, type: 3}
+    volume: 0.9
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: FireballShoot
+    clip: {fileID: 8300000, guid: add0c1813603a4041aa3820e549103e9, type: 3}
     volume: 0.3
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: FireballHit
+    clip: {fileID: 8300000, guid: 7a03f02a335575b49ae00b6ff9286d82, type: 3}
+    volume: 0.1
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Shield
+    clip: {fileID: 8300000, guid: 31563b70773e44b4d8a41d0a3944ba19, type: 3}
+    volume: 0.7
     volumeVariance: 0.5
     pitch: 1
     pitchVariance: 0
@@ -137,6 +200,15 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: EnemyHurt
     clip: {fileID: 8300000, guid: fb465bf1a9115064ea9602e0f50cc322, type: 3}
+    volume: 0.3
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: EnemyDie
+    clip: {fileID: 8300000, guid: 8182ca5dc6ea68549961ec2b48b7a524, type: 3}
     volume: 0.3
     volumeVariance: 0.5
     pitch: 1
@@ -154,8 +226,8 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: BossRage
-    clip: {fileID: 8300000, guid: fb465bf1a9115064ea9602e0f50cc322, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: 4b476f47c475d4641b26751a731ad2fe, type: 3}
+    volume: 0.2
     volumeVariance: 0.5
     pitch: 1
     pitchVariance: 0
@@ -163,7 +235,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: BossDie
-    clip: {fileID: 8300000, guid: fb465bf1a9115064ea9602e0f50cc322, type: 3}
+    clip: {fileID: 8300000, guid: 8182ca5dc6ea68549961ec2b48b7a524, type: 3}
     volume: 0.3
     volumeVariance: 0.5
     pitch: 1

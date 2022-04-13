@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject levelCanvas;
     [SerializeField] GameObject deathPanel;
 
-    public static bool GameIsPaused = false;
+    public static bool gameIsPaused = false;
 
     [SerializeField] GameObject exitMenu;
 
@@ -53,7 +53,7 @@ public class UIManager : MonoBehaviour
     {           
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GameIsPaused)
+            if (gameIsPaused)
             {
                 Resume();
             }
@@ -68,14 +68,14 @@ public class UIManager : MonoBehaviour
     {
         exitMenu.SetActive(false);
         Time.timeScale = 1f;
-        GameIsPaused = false;
+        gameIsPaused = false;
     }
 
     public void Pause()
     {
         exitMenu.SetActive(true);
         Time.timeScale = 0f;
-        GameIsPaused = true;
+        gameIsPaused = true;
     }
 
     public void ToggleDeathPanel()
