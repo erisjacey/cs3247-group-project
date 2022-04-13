@@ -56,10 +56,11 @@ public class EnemyHealthManager : MonoBehaviour
 
         if (currentHealth <= 0)
         {   
+            GetComponentInChildren<Collider2D>().enabled = false;
             animator.Play("Death");
             FindObjectOfType<AudioManager>().Play("EnemyDie");
             DropItem();
-            Destroy(gameObject, 0.10f);
+            Destroy(gameObject, 0.15f);
 	    }
         else
         {

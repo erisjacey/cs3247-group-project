@@ -37,8 +37,8 @@ public class AngryPlayerAI : MonoBehaviour
     private GuardPath path;
     private AngryPlayerHealth health;
 
-    private int explosionTimes = 20;
-    private float rageAttackDelay = 0.3f;
+    private int explosionTimes = 30;
+    private float rageAttackDelay = 0.15f;
     private float lastExplosion = 0f;
 
     void Start()
@@ -67,7 +67,7 @@ public class AngryPlayerAI : MonoBehaviour
                     RageAttack();
                     explosionTimes -= 1;
                 } else {
-                    explosionTimes = 20;
+                    explosionTimes = 30;
                     path.EnableMove();
                     animator.SetBool("isEnraged", false);
                     animator.Play("Move");
