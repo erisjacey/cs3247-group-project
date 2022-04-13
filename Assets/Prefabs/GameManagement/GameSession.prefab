@@ -514,6 +514,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4622247724522481713}
     m_Modifications:
+    - target: {fileID: 1092287419113410776, guid: 0bbfc8437dc41444f9d03292a2a65852, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092287419113410776, guid: 0bbfc8437dc41444f9d03292a2a65852, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.41
+      objectReference: {fileID: 0}
     - target: {fileID: 1486774800048897348, guid: 0bbfc8437dc41444f9d03292a2a65852, type: 3}
       propertyPath: m_Name
       value: PlayerLocationManager
@@ -561,6 +569,10 @@ PrefabInstance:
     - target: {fileID: 1486774800048897354, guid: 0bbfc8437dc41444f9d03292a2a65852, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486774801358487246, guid: 0bbfc8437dc41444f9d03292a2a65852, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 38.31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bbfc8437dc41444f9d03292a2a65852, type: 3}

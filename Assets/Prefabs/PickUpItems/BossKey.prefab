@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5713493813323154940}
   m_Layer: 0
   m_Name: BossKey
-  m_TagString: Untagged
+  m_TagString: KeyItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

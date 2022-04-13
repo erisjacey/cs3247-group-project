@@ -50,10 +50,6 @@ public class GuardAI : MonoBehaviour
 	}
 
 
-	public void Knockback(Vector3 knockback) {
-		transform.position += knockback;
-	}
-
 }
 
 

@@ -4108,6 +4108,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbdcc5268011f4f22abf8699e351a93d, type: 3}
+--- !u!1 &440351880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7667834383440628816, guid: fbdcc5268011f4f22abf8699e351a93d, type: 3}
+  m_PrefabInstance: {fileID: 297160219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &440351885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440351880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1099709222
 GameObject:
   m_ObjectHideFlags: 0
@@ -13392,6 +13430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1045833846279032218, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Text
+      value: Speed Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1045833846297841803, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13403,6 +13445,10 @@ PrefabInstance:
     - target: {fileID: 1045833846688894738, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847155795814, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Text
+      value: Max Health Potion
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847305326181, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_IsActive
@@ -13416,6 +13462,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1045833847553277174, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: oosOverlay
+      value: 
+      objectReference: {fileID: 8116055479501451642}
     - target: {fileID: 1045833847553277174, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: powerupEffect
       value: 
@@ -13467,6 +13517,14 @@ PrefabInstance:
     - target: {fileID: 1045833847926602710, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337277750652894136, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: uiCamera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852589654803450969, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: uiCamera
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8116055480423288651, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Name
@@ -13558,4 +13616,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1045833846471717318, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+    - {fileID: 6424490913562066112, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+--- !u!1 &8116055479501451642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2253501474681954533, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+  m_PrefabInstance: {fileID: 8116055479501451641}
+  m_PrefabAsset: {fileID: 0}

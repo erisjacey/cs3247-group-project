@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using Pathfinding;
 
-public class GuardKnockback : MonoBehaviour
+public class Knockback : MonoBehaviour
 {   
 
     private void OnTriggerEnter2D(Collider2D other){
@@ -11,7 +12,15 @@ public class GuardKnockback : MonoBehaviour
 		Vector3 knockback = (transform.position - other.transform.position).normalized / 1.75f;
 		if (other.tag == "MyWeapon")
 		{	
-            guard.Knockback(knockback);
+            StartCoroutine(Holdback());
 		}
 	}
+
+	IEnumerator Holdback()
+    {
+        GuardPath guard = transform.parent.GetComponent<GuardPath>();
+		guard.DisableMove();
+		yield return new WaitForSeconds(0.325f);
+		guard.EnableMove();
+    }
 }

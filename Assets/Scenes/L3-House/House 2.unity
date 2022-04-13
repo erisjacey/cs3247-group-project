@@ -3648,6 +3648,26 @@ PrefabInstance:
       propertyPath: autoLock
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5897826789089919849, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0142365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897826789089919849, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.86630344
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897826789089919849, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0320282
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897826789089919849, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.1797156
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506507120430755621, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.95
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5f70810172c4d1e858e6dd04fa06eb, type: 3}
 --- !u!4 &523568467 stripped

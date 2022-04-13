@@ -43,6 +43,7 @@ public class Fireball : MonoBehaviour
     private void DestroySelf()
     {
         myAnim.SetTrigger("hit");
+        FindObjectOfType<AudioManager>().Play("FireballHit");
         myRB.velocity = Vector2.zero;
         StartCoroutine(DestroyGameObjectAfter(0.2f));
     }
