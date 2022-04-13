@@ -12720,6 +12720,7 @@ GameObject:
   - component: {fileID: 7684931615843694880}
   - component: {fileID: 7684931615843694881}
   - component: {fileID: 7684931615843694886}
+  - component: {fileID: 7684931615843694888}
   m_Layer: 5
   m_Name: TutorialCanvas
   m_TagString: Untagged
@@ -12727,6 +12728,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7684931615843694888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7684931615843694887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3499ffa618a07a4993987aa60d7c399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationToWait: 6.5
 --- !u!224 &7684931616174294960
 RectTransform:
   m_ObjectHideFlags: 0
