@@ -27,16 +27,16 @@ public class Tooltip : MonoBehaviour
     {
         Vector2 localPoint;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(transform.parent.GetComponent<RectTransform>(), Input.mousePosition, uiCamera, out localPoint);
-        transform.localPosition = localPoint;
+        transform.localPosition = localPoint + new Vector2(100, -25);
     }
     private void ShowTooltip(string tooltipString)
     {
         gameObject.SetActive(true);
 
         tooltipText.text = tooltipString;
-        float textPaddingSize = 4f;
-        Vector2 backgroundSize = new Vector2(tooltipText.preferredWidth + textPaddingSize * 2f, tooltipText.preferredHeight + textPaddingSize * 2f);
-        backgroundRectTransform.sizeDelta = backgroundSize;
+        // float textPaddingSize = 0.2f;
+        // Vector2 backgroundSize = new Vector2(tooltipText.preferredWidth, tooltipText.preferredHeight);
+        // backgroundRectTransform.sizeDelta = backgroundSize;
     }
 
     private void HideTooltip()

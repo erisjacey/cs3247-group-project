@@ -26,10 +26,10 @@ public class HealthBarTooltip : MonoBehaviour
         RectTransformUtility.ScreenPointToLocalPointInRectangle(transform.parent.GetComponent<RectTransform>(), Input.mousePosition, uiCamera, out localPoint);
         transform.localPosition = localPoint;
 
-        tooltipText.text = "Current Health " + healthManager.currentHealth + "/" + healthManager.maxHealth;
-        float textPaddingSize = 4f;
-        Vector2 backgroundSize = new Vector2(tooltipText.preferredWidth + textPaddingSize * 2f, tooltipText.preferredHeight + textPaddingSize * 2f);
-        backgroundRectTransform.sizeDelta = backgroundSize;
+        tooltipText.text = healthManager.currentHealth + "/" + healthManager.maxHealth;
+        // float textPaddingSize = 4f;
+        // Vector2 backgroundSize = new Vector2(tooltipText.preferredWidth + textPaddingSize * 2f, tooltipText.preferredHeight + textPaddingSize * 2f);
+        // backgroundRectTransform.sizeDelta = backgroundSize;
 
     }
     public void ShowTooltip()

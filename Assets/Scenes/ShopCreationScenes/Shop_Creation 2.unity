@@ -304,26 +304,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3072967878636747625, guid: 89904a8147bcb3e4f8681262a8e023e2, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7482667652216324306, guid: b5ccc6e9500584c66b84f5298964fcc6, type: 3}
-    - target: {fileID: 3072967878636747625, guid: 89904a8147bcb3e4f8681262a8e023e2, type: 3}
-      propertyPath: m_Color.a
-      value: 0.18431373
-      objectReference: {fileID: 0}
-    - target: {fileID: 3072967878636747625, guid: 89904a8147bcb3e4f8681262a8e023e2, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3072967878636747625, guid: 89904a8147bcb3e4f8681262a8e023e2, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3072967878636747625, guid: 89904a8147bcb3e4f8681262a8e023e2, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3936280344806965996, guid: 89904a8147bcb3e4f8681262a8e023e2, type: 3}
       propertyPath: m_Name
       value: ChapterTitle
