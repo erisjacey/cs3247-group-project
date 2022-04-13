@@ -269,6 +269,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4622247724522481713}
     m_Modifications:
+    - target: {fileID: 3940333400809757157, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_text
+      value: 'Resume
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 6991484553478932802, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
       propertyPath: m_Name
       value: LevelCanvas
@@ -361,6 +367,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4622247724522481714}
+    - target: {fileID: 8111341950250892681, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341950250892681, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StateManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341950250892682, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 950
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341950250892683, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_Name
+      value: BackToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341950555236830, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341950745134005, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_text
+      value: Back to Main menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341951006809503, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8111341951249147305, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -368,7 +402,23 @@ PrefabInstance:
     - target: {fileID: 8111341951524598028, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4622247724522481714}
+      objectReference: {fileID: 4622247724522481712}
+    - target: {fileID: 8111341951524598028, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341951524598028, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341951524598029, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111341951524598030, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
+      propertyPath: m_Name
+      value: ResumeButton
+      objectReference: {fileID: 0}
     - target: {fileID: 8111341951602433503, guid: a7882d6b038c24a2ab3a17ec853aea79, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

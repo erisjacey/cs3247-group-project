@@ -5,19 +5,15 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    public void PlayLevelOne()
+    public void StartNewGame()
     {
         SceneManager.LoadScene("Prologue_Cutscene");
+        FindObjectOfType<LevelManager>().ResetGame();
     }
 
-    public void PlayLevelTwo()
+    public void ResumeGame()
     {
-        SceneManager.LoadScene("Anxiety_Cutscene");
-    }
-
-    public void PlayLevelThree()
-    {
-        SceneManager.LoadScene("Fear_Cutscene");
+        FindObjectOfType<LevelManager>().ResumeGame();
     }
 
     public void QuitGame()

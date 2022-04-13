@@ -104,7 +104,7 @@ public class HealthManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>().gameObject;
 	    playerSprite = player.GetComponent<SpriteRenderer>();  
 
-        LevelManager.instance.GameOver();
+        FindObjectOfType<LevelManager>().GameOver();
         player.SetActive(false);
     }
 

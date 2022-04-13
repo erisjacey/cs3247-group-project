@@ -8,6 +8,7 @@ public class PlayerLocationManager : MonoBehaviour
 {
     [SerializeField] string locationName = "";
     [SerializeField] GameObject[] testSpawnLocations;
+    [SerializeField] Vector3 pausedPosition = Vector3.zero;
 
     void OnEnable()
     {
@@ -20,8 +21,6 @@ public class PlayerLocationManager : MonoBehaviour
         // Debug.Log(mode);
 
         // If locationName is not set, do not adjust player location
-        if (locationName == "") return;
-
         if (SceneManager.GetActiveScene().name == "Menu") 
         {
             locationName = "";
@@ -29,13 +28,28 @@ public class PlayerLocationManager : MonoBehaviour
         }
         if (FindObjectsOfType<PlayerController>().Length == 0) return;
 
-        GameObject newLocation = Array.Find(testSpawnLocations, item => item.name == locationName);
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
+        Debug.LogWarning(pausedPosition != Vector3.zero);
+        if (pausedPosition != Vector3.zero)
+        {
+            player.transform.position = pausedPosition;
+            pausedPosition = Vector3.zero;
+            return;
+        }
+
+        if (locationName == "") return;
+
+        GameObject newLocation = Array.Find(testSpawnLocations, item => item.name == locationName);
         player.transform.position = newLocation.transform.position;
     }
 
     public void SetLocation(string newLocation)
     {
         locationName = newLocation;
+    }
+
+    public void SetPausedLocation(Vector3 newPausedPosition)
+    {
+        pausedPosition = newPausedPosition;
     }
 }
