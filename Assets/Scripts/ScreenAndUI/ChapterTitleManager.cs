@@ -16,10 +16,12 @@ public class ChapterTitleManager : MonoBehaviour
     public string location;
     public string period;
 
+    private Image textBg;
     private Text text1;
     private Text text2;
 
     private void Awake() {
+        textBg = transform.Find("TextBackground").GetComponent<Image>();
         text1 = transform.Find("Text1").GetComponent<Text>();
         text2 = transform.Find("Text2").GetComponent<Text>(); 
     }
@@ -41,6 +43,7 @@ public class ChapterTitleManager : MonoBehaviour
 
         // Disable texts
         yield return new WaitForSecondsRealtime(textTotalDuration);
+        textBg.gameObject.SetActive(false);
         text1.gameObject.SetActive(false);
         text2.gameObject.SetActive(false);
     }

@@ -28,11 +28,12 @@ public class HealthManager : MonoBehaviour
     {
         isInvulnerable = false;
         string currentScene = SceneManager.GetActiveScene().name;
+        Debug.Log("HealthManager");
         if (currentScene.Contains("Shop_Creation")) ResetHealth();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    // Awake is called before the first frame update
+    void Awake()
     {
         healthBar = GetComponent<HealthBar>();
         player = FindObjectOfType<PlayerController>().gameObject;
@@ -112,6 +113,16 @@ public class HealthManager : MonoBehaviour
 
     public void ResetHealth()
     {
-        currentHealth = 100;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(currentHealth);
+    }
+
+    public void IncreaseMaxHealth(int increaseAmt)
+    {
+        maxHealth += increaseAmt;
+        healthBar.SetMaxHealth(maxHealth);
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
     }
 }
