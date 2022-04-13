@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34ea782cbe006c42b2aac302c327c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 10
+  damageToGive: 7
 --- !u!1001 &3657348632521329480
 PrefabInstance:
   m_ObjectHideFlags: 0
