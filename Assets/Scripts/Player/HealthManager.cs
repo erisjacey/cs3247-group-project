@@ -32,8 +32,8 @@ public class HealthManager : MonoBehaviour
         if (currentScene.Contains("Shop_Creation")) ResetHealth();
     }
 
-    // Awake is called before the first frame update
-    void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
         healthBar = GetComponent<HealthBar>();
         player = FindObjectOfType<PlayerController>().gameObject;
@@ -46,6 +46,7 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (healthBar == null) healthBar = GetComponent<HealthBar>();
         if (FindObjectsOfType<PlayerController>().Length <= 0) return;
 
         player = FindObjectOfType<PlayerController>().gameObject;
@@ -113,6 +114,7 @@ public class HealthManager : MonoBehaviour
 
     public void ResetHealth()
     {
+        if (healthBar == null) healthBar = GetComponent<HealthBar>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
@@ -120,6 +122,7 @@ public class HealthManager : MonoBehaviour
 
     public void IncreaseMaxHealth(int increaseAmt)
     {
+        if (healthBar == null) healthBar = GetComponent<HealthBar>();
         maxHealth += increaseAmt;
         healthBar.SetMaxHealth(maxHealth);
         currentHealth = maxHealth;
