@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class ShopManager : MonoBehaviour
 {
     public int[,] shopItems = new int[4, 9];
+    public string[] shopItemDesc = new string[9];
     public bool shopOpen = false;
     private int currency;
 
@@ -60,6 +61,16 @@ public class ShopManager : MonoBehaviour
         shopItems[3, 6] = 1; // Health +30
         shopItems[3, 7] = 1; // Ranged Damage +10
         shopItems[3, 8] = 1; // Fire Immunity
+
+        // ----- Description ----- //
+        shopItemDesc[1] = "Max Health +20";
+        shopItemDesc[2] = "Movement Speed +2";
+        shopItemDesc[3] = "Max Health +30";
+        shopItemDesc[4] = "Movement Speed +2";
+        shopItemDesc[5] = "Sword Damage +5";
+        shopItemDesc[6] = "Max Health +30";
+        shopItemDesc[7] = "Fireball Damage +10";
+        shopItemDesc[8] = "Immunity to ambient fire";
     }
 
     void Update()
@@ -98,6 +109,9 @@ public class ShopManager : MonoBehaviour
 
             // update UI data
             FindObjectOfType<OrbCounter>().SetCount(currency);
+
+            // play sound
+            FindObjectOfType<AudioManager>().Play("Money");
         }
     }
 }

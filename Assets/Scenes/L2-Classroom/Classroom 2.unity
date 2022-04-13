@@ -3410,7 +3410,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7738524576522260191, guid: 2ce25881f90e69047bc84937a110b32f, type: 3}
       propertyPath: health
-      value: 100
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738524576522260191, guid: 2ce25881f90e69047bc84937a110b32f, type: 3}
+      propertyPath: maxHealth
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738524576522260191, guid: 2ce25881f90e69047bc84937a110b32f, type: 3}
+      propertyPath: rageThreshold
+      value: 0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ce25881f90e69047bc84937a110b32f, type: 3}

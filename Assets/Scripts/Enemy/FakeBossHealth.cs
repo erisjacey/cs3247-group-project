@@ -49,7 +49,6 @@ public class FakeBossHealth : MonoBehaviour
 
     public void HurtFakeBoss(int damageToGive)
     {
-        FindObjectOfType<AudioManager>().Play("EnemyHurt");
         currentHealth -= damageToGive;
 
         flashActive = true;
@@ -57,9 +56,14 @@ public class FakeBossHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("EnemyDie");
             chat.SetActive(true);
             DropItem();
             Destroy(gameObject);
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("EnemyHurt");
         }
     }
 

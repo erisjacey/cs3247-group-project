@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6529218217751536251}
   - component: {fileID: 1751702161322586338}
-  - component: {fileID: 6053845035174093571}
+  - component: {fileID: 8645717400029811823}
   m_Layer: 0
   m_Name: Damageable
   m_TagString: Damageable
@@ -48,7 +48,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.022597075, y: -0.33922577}
   m_Size: {x: 0.26942873, y: 1.3044491}
   m_Direction: 0
---- !u!114 &6053845035174093571
+--- !u!114 &8645717400029811823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3910459233715714475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dafcf81b50fb7b647b68b1c62a20635f, type: 3}
+  m_Script: {fileID: 11500000, guid: 65c1448559d7b164bb3f823e2eb61346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7709541241133520521
@@ -133,10 +133,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDelay: 1.5
-  attackRange: 4.5
+  attackRange: 5
   maxRange: 7
   minRange: 0.5
-  projectileForce: 425
+  projectileForce: 950
   projectile: {fileID: 86180692175746711, guid: 645a3e6c0d90caf4d819aef1945a1369, type: 3}
 --- !u!114 &1331718178590392943
 MonoBehaviour:
@@ -182,7 +182,7 @@ MonoBehaviour:
   radius: 0.11
   height: 1.6
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 3.25
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2

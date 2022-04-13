@@ -103,7 +103,7 @@ public class HealthManager : MonoBehaviour
     {
         player = FindObjectOfType<PlayerController>().gameObject;
 	    playerSprite = player.GetComponent<SpriteRenderer>();  
-
+        FindObjectOfType<AudioManager>().Play("PlayerDie");
         LevelManager.instance.GameOver();
         player.SetActive(false);
     }

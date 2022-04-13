@@ -17,8 +17,12 @@ public class LevelExit : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    {
-        StartCoroutine(LoadScene());
+    {   
+        if (other.tag == "Player")
+        {
+            StartCoroutine(LoadScene());
+        }
+        
     }
 
     IEnumerator LoadScene() 

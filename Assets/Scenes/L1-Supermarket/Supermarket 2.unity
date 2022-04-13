@@ -3108,7 +3108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6117748545175976524, guid: fed7f982715dc9e419313186a44b1e72, type: 3}
       propertyPath: maxSpeed
-      value: 2.5
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 7800504811167640820, guid: fed7f982715dc9e419313186a44b1e72, type: 3}
       propertyPath: m_Name
@@ -3954,10 +3954,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 329611560884081503, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1.4849205
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 329611560884081503, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.25753975
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 329611560884081497, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
+--- !u!1 &1709330011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 329611560884081502, guid: 540efd8f1eabe4fecaa6b1dbbbaf2e78, type: 3}
+  m_PrefabInstance: {fileID: 1701861972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1709330012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709330011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c02c518818e8447bbebe753c107f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoadDelay: 0
+  nextLevel: Supermarket 1
+  nextLocationName: SM1-2
+  boss: {fileID: 2037949958}
 --- !u!1 &1719775201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5645,10 +5671,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318d464e441cdba4f98861b9395a197d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 35
-  maxHealth: 35
-  flashLength: 0.5
-  blinkLength: 0.5
+  currentHealth: 40
+  maxHealth: 40
+  flashLength: 0.25
+  blinkLength: 0.25
   chat: {fileID: 620876237}
   itemToDrop: {fileID: 8701238487987058524, guid: fc6b9c38613fc4fc4bf9bbc08b590cc7, type: 3}
 --- !u!1 &2098478645

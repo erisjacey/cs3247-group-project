@@ -64,7 +64,7 @@ public class StudentAI : MonoBehaviour
 
 	void RangeAttack()
 	{   
-		Vector3 playerDirection = player.position - transform.position;
+		Vector3 playerDirection = (player.position - transform.position).normalized;
 		if (Time.time > lastAttackTime + attackDelay) {
 			GameObject word = Instantiate (projectile, transform.position, transform.rotation);
 			word.GetComponent<Rigidbody2D>().AddForce(playerDirection * projectileForce);

@@ -1155,14 +1155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5596db9374dcb33468ae718cfca31de8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDelay: 1.1
-  attackTime: 1.1
+  attackDelay: 1.4
+  attackTime: 1.4
   attackRange: 1.75
   maxRange: 9
   minRange: 0.5
   flame: {fileID: 6715154916708742136, guid: b5646af3c7ee7f74a80e2bd526933235, type: 3}
   explosion: {fileID: 9088382721849949824, guid: 4059a02430055154e8ab5cc797e25ee8, type: 3}
-  hide: {fileID: 0}
 --- !u!70 &5280981370113223563
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1290,8 +1289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf36b431289b22d409f2fb32cdfe8620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
-  maxHealth: 80
+  health: 210
+  maxHealth: 210
   rageThreshold: 0.5
   isInvulnerable: 0
   isDead: 0
