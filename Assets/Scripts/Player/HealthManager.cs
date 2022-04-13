@@ -26,6 +26,7 @@ public class HealthManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        isInvulnerable = false;
         string currentScene = SceneManager.GetActiveScene().name;
         if (currentScene.Contains("Shop_Creation")) ResetHealth();
     }
