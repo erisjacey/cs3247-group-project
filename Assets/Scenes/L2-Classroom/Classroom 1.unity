@@ -32799,6 +32799,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4781593861411673107, guid: 61522ac6f3cb0334199bc1c4530147b7, type: 3}
+      propertyPath: itemToDrop
+      value: 
+      objectReference: {fileID: 7382119441561283077, guid: 58b4734d822da4b0dbce30e382acc726, type: 3}
     - target: {fileID: 5905937061899514838, guid: 61522ac6f3cb0334199bc1c4530147b7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -42524,10 +42528,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048700269}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0.01, y: 1.17, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 105822233}
+  m_Father: {fileID: 523148359}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2048700271

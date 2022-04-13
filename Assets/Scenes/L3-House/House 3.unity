@@ -4868,7 +4868,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 461086130791420838, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: maxSpeed
-      value: 4.55
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 724868199658459118, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+      propertyPath: damageToGive
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 787150494135703394, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: attackTime
@@ -4932,7 +4936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2032362842985303009, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: m_LinearDrag
-      value: 2000
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 3300565160643789411, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: m_IsActive
@@ -5040,11 +5044,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493446947767185428, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: health
-      value: 260
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 5493446947767185428, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: maxHealth
-      value: 260
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493446947767185428, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
+      propertyPath: rageThreshold
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7065306751398641149, guid: c345008c1a2f1c0419674c0e096824b3, type: 3}
       propertyPath: m_IsActive

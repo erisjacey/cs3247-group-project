@@ -85,6 +85,14 @@ namespace Pathfinding {
             DisableMove();
         }
 
+        public void IncreaseVelocity(float speed)
+        {   
+            if (agent.maxSpeed <= 4) {
+                agent.maxSpeed += speed;
+            }
+            
+        }
+
 
     }
 
