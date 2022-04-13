@@ -191,7 +191,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Shield
     clip: {fileID: 8300000, guid: 31563b70773e44b4d8a41d0a3944ba19, type: 3}
-    volume: 1
+    volume: 0.7
     volumeVariance: 0.5
     pitch: 1
     pitchVariance: 0

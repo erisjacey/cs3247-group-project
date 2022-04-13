@@ -9,7 +9,7 @@ public class StateManager : MonoBehaviour
     {   
         // index 1 represents start of supermarket
         FindObjectOfType<CheckpointManager>().LoadCheckpoint();
-        FindObjectOfType<LevelManager>().RestartGame();
+        FindObjectOfType<LevelManager>().ResetGame();
     }
 
     public void Exit()
@@ -22,7 +22,9 @@ public class StateManager : MonoBehaviour
         // index 0 represents the main menu
         SceneManager.LoadScene(0);
 
-        FindObjectOfType<LevelManager>().RestartGame();
+        FindObjectOfType<LevelManager>().SaveGame();
+
+        // FindObjectOfType<LevelManager>().ResetGame();
     }
 
     public void LoadNextLevel() 

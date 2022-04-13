@@ -26,6 +26,7 @@ public class HealthManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        isInvulnerable = false;
         string currentScene = SceneManager.GetActiveScene().name;
         if (currentScene.Contains("Shop_Creation")) ResetHealth();
     }
@@ -103,8 +104,9 @@ public class HealthManager : MonoBehaviour
     {
         player = FindObjectOfType<PlayerController>().gameObject;
 	    playerSprite = player.GetComponent<SpriteRenderer>();  
+
+        FindObjectOfType<LevelManager>().GameOver();
         FindObjectOfType<AudioManager>().Play("PlayerDie");
-        LevelManager.instance.GameOver();
         player.SetActive(false);
     }
 
