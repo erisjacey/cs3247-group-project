@@ -15,6 +15,7 @@ public class EnemyHealthManager : MonoBehaviour
     private float flashCounter = 0f;
     private SpriteRenderer enemySprite;
     private Animator animator;
+    bool isDead = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,10 +57,12 @@ public class EnemyHealthManager : MonoBehaviour
 
         if (currentHealth <= 0)
         {   
-            GetComponentInChildren<Collider2D>().enabled = false;
             animator.Play("Death");
+            if (!isDead) {
+                DropItem();
+                isDead = true;
+            }
             FindObjectOfType<AudioManager>().Play("EnemyDie");
-            DropItem();
             Destroy(gameObject, 0.15f);
 	    }
         else

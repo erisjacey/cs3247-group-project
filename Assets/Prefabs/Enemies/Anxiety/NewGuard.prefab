@@ -45,8 +45,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01604475, y: 0.5845063}
-  m_Size: {x: 0.2739897, y: 1.4429619}
+  m_Offset: {x: -0.0016729534, y: 0.6132499}
+  m_Size: {x: 0.33147693, y: 1.5004492}
   m_Direction: 0
 --- !u!114 &118347801806698861
 MonoBehaviour:
@@ -75,8 +75,8 @@ GameObject:
   - component: {fileID: 5919851150635402483}
   - component: {fileID: 2618393533488539881}
   - component: {fileID: 6729246893780647322}
-  - component: {fileID: 5443754664008199569}
   - component: {fileID: 743283698232132093}
+  - component: {fileID: 7674762035907860263}
   m_Layer: 6
   m_Name: NewGuard
   m_TagString: Enemy
@@ -144,7 +144,7 @@ MonoBehaviour:
   radius: 0.14
   height: 2
   canMove: 1
-  maxSpeed: 4.5
+  maxSpeed: 4.25
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -235,19 +235,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1227522
---- !u!114 &5443754664008199569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7800504811167640820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57d0ef2dbbd31474eb6c4e4ee24d5672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToGive: 10
 --- !u!50 &743283698232132093
 Rigidbody2D:
   serializedVersion: 4
@@ -260,8 +247,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 100
+  m_Mass: 0.0001
+  m_LinearDrag: 1000
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -269,6 +256,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &7674762035907860263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800504811167640820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34ea782cbe006c42b2aac302c327c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 7
 --- !u!1001 &3657348632521329480
 PrefabInstance:
   m_ObjectHideFlags: 0
