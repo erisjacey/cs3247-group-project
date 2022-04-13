@@ -17,9 +17,6 @@ public class PlayerLocationManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Debug.Log("OnSceneLoaded: " + scene.name);
-        // Debug.Log(mode);
-
         // If locationName is not set, do not adjust player location
         if (SceneManager.GetActiveScene().name == "Menu") 
         {
@@ -29,7 +26,6 @@ public class PlayerLocationManager : MonoBehaviour
         if (FindObjectsOfType<PlayerController>().Length == 0) return;
 
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
-        Debug.LogWarning(pausedPosition != Vector3.zero);
         if (pausedPosition != Vector3.zero)
         {
             player.transform.position = pausedPosition;

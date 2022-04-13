@@ -57415,10 +57415,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9113401176274707236, guid: c3a990d9b5b5343fa8d8451aba22809a, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3a990d9b5b5343fa8d8451aba22809a, type: 3}
 --- !u!1001 &7667834382135618308
