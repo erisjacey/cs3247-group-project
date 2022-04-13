@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3feef1a1ebf27d4ba0c907d3edacf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTag: Player
   tooltip: {fileID: 251530254935979098}
 --- !u!61 &251530255150987989
 BoxCollider2D:
