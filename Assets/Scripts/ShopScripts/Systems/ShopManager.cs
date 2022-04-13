@@ -98,6 +98,9 @@ public class ShopManager : MonoBehaviour
 
             // update UI data
             FindObjectOfType<OrbCounter>().SetCount(currency);
+
+            // play sound
+            FindObjectOfType<AudioManager>().Play("Money");
         }
     }
 }
