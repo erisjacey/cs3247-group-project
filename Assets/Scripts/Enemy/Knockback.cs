@@ -20,7 +20,7 @@ public class Knockback : MonoBehaviour
     {
         GuardPath guard = transform.parent.GetComponent<GuardPath>();
 		guard.DisableMove();
-		yield return new WaitForSeconds(0.325f);
+		yield return new WaitForSeconds(0.25f);
 		guard.EnableMove();
     }
 }
