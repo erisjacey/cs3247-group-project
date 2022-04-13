@@ -138,6 +138,7 @@ public class PlayerController : MonoBehaviour
             attackCounter = attackTime;
             myAnim.SetBool("isAttacking", true);
             isAttacking = true;
+            FindObjectOfType<AudioManager>().Play("Sword");
         }
     }
 
@@ -153,6 +154,7 @@ public class PlayerController : MonoBehaviour
                 isAttacking = true;
                 Instantiate(fireball, shotPoint.position, shotPoint.rotation);
                 timeBetweenShots = startTimeBetweenShots;
+                FindObjectOfType<AudioManager>().Play("FireballShoot");
             }
         }
         else
@@ -181,6 +183,7 @@ public class PlayerController : MonoBehaviour
             myAnim.SetBool("isAttacking", true);
             isAttacking = true;
             walkSpeed /= 10;
+            FindObjectOfType<AudioManager>().Play("Shield");
         }
     }
 }

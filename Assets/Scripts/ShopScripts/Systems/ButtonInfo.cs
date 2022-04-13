@@ -9,12 +9,29 @@ public class ButtonInfo : MonoBehaviour
     public Text PriceTxt;
     public Text QtyTxt;
     public PowerupEffect powerupEffect;
+    public GameObject oosOverlay;
+
+    private ShopManager shopManager;
 
     // Update is called once per frame
     void Update()
     {
-        ShopManager shopManager = FindObjectOfType<ShopManager>();
+        shopManager = FindObjectOfType<ShopManager>();
         PriceTxt.text = shopManager.shopItems[2, ItemID].ToString();
         QtyTxt.text = shopManager.shopItems[3, ItemID].ToString();
+
+        if (shopManager.shopItems[3, ItemID] <= 0)
+        {
+            oosOverlay.SetActive(true);
+        }
+    }
+
+    public void ShowTooltip()
+    {
+        Tooltip.ShowTooltip_Static(shopManager.shopItemDesc[ItemID]);
+    }
+    public void HideTooltip()
+    {
+        Tooltip.HideTooltip_Static();
     }
 }

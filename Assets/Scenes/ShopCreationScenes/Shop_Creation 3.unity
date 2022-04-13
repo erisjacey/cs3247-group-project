@@ -12262,7 +12262,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3417cb0126297491e8d401069c124f4e, type: 2}
     - target: {fileID: 1045833846279032218, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Text
-      value: Fireball Damage +10
+      value: Fireball Damage
       objectReference: {fileID: 0}
     - target: {fileID: 1045833846279032218, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Color.b
@@ -12314,7 +12314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847155795814, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Text
-      value: Max Health +30
+      value: Max Health Boost 2
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847155795814, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Color.b

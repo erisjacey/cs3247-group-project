@@ -30,7 +30,7 @@ public class Shopkeeper : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             ShopManager shopManager = FindObjectOfType<ShopManager>();
             if (shopManager.shopOpen) 
