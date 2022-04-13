@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     UIManager uiManager;
+    HealthManager healthManager;
+    PlayerLocationManager playerLocationManager;
     string lastScene = "";
+    public static bool hasSavedGame = false;
 
-    private void Start()
+    private void Awake()
     {
         uiManager = GetComponent<UIManager>();
+        healthManager = GetComponentInChildren<HealthManager>();
+        playerLocationManager = GetComponentInChildren<PlayerLocationManager>();
     }
 
     public void GameOver()
@@ -38,22 +43,24 @@ public class LevelManager : MonoBehaviour
         if (FindObjectsOfType<PlayerController>().Length == 0) return;
         GameObject player = FindObjectOfType<PlayerController>().gameObject;
 
-        GetComponentInChildren<PlayerLocationManager>().SetPausedLocation(player.transform.position);
+        playerLocationManager.SetPausedLocation(player.transform.position);
 
         lastScene = SceneManager.GetActiveScene().name;
+        hasSavedGame = true;
     }
 
     public void ResumeGame()
     {   
         SceneManager.LoadScene(lastScene);
         lastScene = "";
+        hasSavedGame = false;
     }
 
     public void ResetGame()
     {
         CloseUI();
 
-        GetComponentInChildren<HealthManager>().ResetHealth();
-        GetComponentInChildren<PlayerLocationManager>().SetLocation("Shop-2");
+        healthManager.ResetHealth();
+        playerLocationManager.SetLocation("Shop-2");
     }
 }
