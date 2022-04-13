@@ -14,7 +14,7 @@ public class AngryPlayerHealth : MonoBehaviour
     private Renderer bossRenderer;
     private Animator animator;
     private float lastRageTime = 0f;
-    private float rageAttackCoolDown = 12f;
+    private float rageAttackCoolDown = 16f;
     private Collider2D Collider2D;
 
      // Start is called before the first frame update
