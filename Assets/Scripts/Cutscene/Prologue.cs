@@ -25,7 +25,7 @@ public class Prologue : MonoBehaviour
         yield return new WaitForSecondsRealtime(timeTillMessageAppears);
         textWriter.AddWriter(text1, "Benjamin has been feeling really down recently with many things in life going wrong.",0.05f,true);
         yield return new WaitForSecondsRealtime(messageInterval);
-        textWriter.AddWriter(text2, "Thus Benjamin seeks the help of a local therapist who has been known for her unorthodox methods...",0.05f,true);
+        textWriter.AddWriter(text2, "Thus he seeks the help of a local therapist who has been known for her unorthodox methods...",0.05f,true);
 
     }
 }
