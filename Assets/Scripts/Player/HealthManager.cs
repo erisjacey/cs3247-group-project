@@ -110,6 +110,16 @@ public class HealthManager : MonoBehaviour
 
     public void ResetHealth()
     {
-        currentHealth = 100;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(currentHealth);
+    }
+
+    public void IncreaseMaxHealth(int increaseAmt)
+    {
+        maxHealth += increaseAmt;
+        healthBar.SetMaxHealth(maxHealth);
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
     }
 }

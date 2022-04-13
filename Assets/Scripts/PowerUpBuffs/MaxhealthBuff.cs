@@ -12,8 +12,7 @@ public class MaxhealthBuff : PowerupEffect
     {
         if (target.tag == "Player")
         {
-            FindObjectOfType<HealthManager>().maxHealth += amount;
-            FindObjectOfType<HealthManager>().currentHealth += amount;
+            FindObjectOfType<HealthManager>().IncreaseMaxHealth(amount);
         }
     }
 }
