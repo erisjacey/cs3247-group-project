@@ -9,6 +9,7 @@ public class ButtonInfo : MonoBehaviour
     public Text PriceTxt;
     public Text QtyTxt;
     public PowerupEffect powerupEffect;
+    public GameObject oosOverlay;
 
     private ShopManager shopManager;
 
@@ -18,6 +19,11 @@ public class ButtonInfo : MonoBehaviour
         shopManager = FindObjectOfType<ShopManager>();
         PriceTxt.text = shopManager.shopItems[2, ItemID].ToString();
         QtyTxt.text = shopManager.shopItems[3, ItemID].ToString();
+
+        if (shopManager.shopItems[3, ItemID] <= 0)
+        {
+            oosOverlay.SetActive(true);
+        }
     }
 
     public void ShowTooltip()

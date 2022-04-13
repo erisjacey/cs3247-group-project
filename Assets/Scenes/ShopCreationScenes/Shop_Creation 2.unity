@@ -12204,6 +12204,10 @@ PrefabInstance:
       propertyPath: ItemID
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1045833846279032218, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Text
+      value: Speed Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1045833846471717318, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: ItemID
       value: 5
@@ -12214,7 +12218,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: e6d01a37ab00f48939f20ba2acc233f3, type: 2}
     - target: {fileID: 1045833846688894736, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Text
-      value: Sword Damage +5
+      value: Sharpened Sword
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847088251131, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_SizeDelta.x
@@ -12226,7 +12230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847155795814, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Text
-      value: Max Health +30
+      value: Max Health Boost 2
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847305326180, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_SizeDelta.x

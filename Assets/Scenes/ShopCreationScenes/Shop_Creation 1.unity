@@ -13430,6 +13430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1045833846279032218, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Text
+      value: Speed Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1045833846297841803, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13441,6 +13445,10 @@ PrefabInstance:
     - target: {fileID: 1045833846688894738, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847155795814, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Text
+      value: Max Health Potion
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847305326181, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_IsActive
@@ -13454,6 +13462,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1045833847553277174, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: oosOverlay
+      value: 
+      objectReference: {fileID: 8116055479501451642}
     - target: {fileID: 1045833847553277174, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: powerupEffect
       value: 
@@ -13606,3 +13618,8 @@ PrefabInstance:
     - {fileID: 1045833846471717318, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
     - {fileID: 6424490913562066112, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+--- !u!1 &8116055479501451642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2253501474681954533, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+  m_PrefabInstance: {fileID: 8116055479501451641}
+  m_PrefabAsset: {fileID: 0}
