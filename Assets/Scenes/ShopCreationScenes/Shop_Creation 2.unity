@@ -12348,6 +12348,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 585375217435349476, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1045833846043979416, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: ItemID
       value: 4
@@ -12355,6 +12359,14 @@ PrefabInstance:
     - target: {fileID: 1045833846279032218, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Text
       value: Speed Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833846297841803, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833846471717312, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1045833846471717318, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: ItemID
@@ -12367,6 +12379,22 @@ PrefabInstance:
     - target: {fileID: 1045833846688894736, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Text
       value: Sharpened Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833846688894736, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.b
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833846688894736, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.g
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833846688894736, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833846688894738, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847088251131, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_SizeDelta.x
@@ -12387,6 +12415,30 @@ PrefabInstance:
     - target: {fileID: 1045833847305326180, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -47.41016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847305326181, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847337873776, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1624166259545072629, guid: 68b095a3496434349bf91e5b45bba079, type: 3}
+    - target: {fileID: 1045833847337873776, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7528181
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847337873776, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847337873776, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847337873778, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1045833847500650532, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Sprite
@@ -12412,6 +12464,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1045833847849871493, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Text
+      value: 'Available:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847849871493, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847849871493, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847849871493, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847849871494, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 11.079
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847849871494, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847849871494, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 164.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045833847926602710, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622296295934589499, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: ItemID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622296295934589499, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: e6d01a37ab00f48939f20ba2acc233f3, type: 2}
     - target: {fileID: 8116055480423288651, guid: 7c04ffea17fcf48569304a2e683b2973, type: 3}
       propertyPath: m_Name
       value: Canvas
