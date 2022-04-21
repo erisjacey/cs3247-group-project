@@ -1,16 +1,24 @@
-# About
+# Upside Down
 
 ### Welcome to Upside Down!
 
-* 2D top-down dungeon crawler
-* Optimised for FHD 1920x1080 resolution
+Upside Down is an emotional top-down 2D dungeon crawler game that follows Benjamin Parker, an emotionally damaged man as he overcomes his worst fears. 
 
-### Story (WIP)
+*Optimised for FHD 1920x1080 resolution.*
 
-Benjamin Parker is a depressed man who is emotionally damaged from his bad life experiences. 
-He is too sad to wake up unless he overcomes all his inner demons. 
-Despite all that, he still has a ray of hope in him, equipping him with the power to fight and face his inner demons. (Missing animation for that, Coming Soon!)
-In the first level, Benjamin is facing his childhood fear of being lost in a huge supermarket.
+### Upside Down Trailer
+
+<a href="https://tingalinga.itch.io/upside-down" target="_blank"><img src="http://img.youtube.com/vi/tGLOjfuTrN0/0.jpg" 
+alt="Upside Down Trailer" width="480" height="360" border="10" /></a>
+
+[Play Upside Down on itch.io](https://tingalinga.itch.io/upside-down)
+
+### Story
+
+Benjamin Parker is emotionally damaged from some traumas in his life. 
+He is too sad to wake up until he overcomes all his inner demons. 
+Despite all that, he still has a ray of hope in him, equipping him with the power to fight. 
+Help Benjamin navigate his traumas and face his inner demons. 
 
 ### Controls
 
@@ -18,6 +26,15 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 * Attack - Spacebar
 * Escape - Pause/Resume
 * 1-3 - Switch between different skills
+
+### Developed by: 
+
+Huang Zhenxin 
+Kerwin Lim
+Lee Hui Ting 
+Masagca Eris Jacey
+Tai Wen Le Lucas 
+Tan Yu Ting, Germaine 
 
 ### Flow
 
@@ -35,16 +52,35 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
 
 ### Coming soon
 
-* General game polish
-* Game victory screen upon beating boss
-* More mechanics (dash, shield, etc.)
-* Expansion of supermarket
+* Health bar for boss enemies
+* Minimap
 * More health collectibles!
 * More maps! (fear - classroom, anger - house)
 * More enemy types!
-* More sounds!
 
-# Changelog
+# Acknowledgements
+
+### Tutorials
+
+* Used [this tutorial](https://www.youtube.com/watch?v=BfgyI1RkVo4&list=PLLtCXwcEVtulmgxqM_cA8hjIWkSNMWuie&index=1) for setting up the project
+* Used [this tutorial](https://www.youtube.com/watch?v=6OT43pvUyfY) for setting up audio and for audio manager script
+
+### Assets
+
+* [8-direction top down character - Gamekrazzy](https://gamekrazzy.itch.io/8-direction-top-down-character)
+* [Modern Tilesets](https://limezu.itch.io/moderninteriors)
+* [8-direction top down Boss Enemy](https://e-bros-assets.itch.io/top-down-enemy-animated-8-directions)
+* [Music loop bundle - Tallbeard Studios](https://tallbeard.itch.io/music-loop-bundle)
+* [SFX Pack v1 - Mythril Age](https://mythril-age.itch.io/mythril-age-sfx-pack-v1)
+* [Fireball - NYKNCK](https://nyknck.itch.io/fireball-animation)
+* [Pixel Art FX - SpiritWitchSpirit](https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx)
+* [Medieval weapons pack - PixelHole](https://pixelhole.itch.io/medieval-weapons-pack)
+* [8-bit sound pack - SoundsByDane](https://soundsbydane.itch.io/8-bit-sound-pack)
+
+
+# DevLog
+
+### Changelog
 
 * [Eris] 6/3/22: Set up character movement, animation, idle, camera follow
    * [Tutorial levels completed:](https://www.youtube.com/watch?v=BfgyI1RkVo4&list=PLLtCXwcEVtulmgxqM_cA8hjIWkSNMWuie&index=1)
@@ -142,7 +178,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Include tooltip on hover over healthbar to show health details
    * Fix health buff/ health bar bugs
 
-# Template Scene Hierarchy
+### Template Scene Hierarchy
 [Scene_Name]
 * Cameras
    * Main Camera
@@ -175,7 +211,7 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * ...
 * ...
 
-# Folder Hierarchy-ish
+### Folder Hierarchy-ish
 
 * Assets
    * Animations
@@ -256,21 +292,3 @@ In the first level, Benjamin is facing his childhood fear of being lost in a hug
    * Boss_Move [State Machine Script]
 * ...
 
-# Acknowledgements
-
-### Tutorials
-
-* Used [this tutorial](https://www.youtube.com/watch?v=BfgyI1RkVo4&list=PLLtCXwcEVtulmgxqM_cA8hjIWkSNMWuie&index=1) for setting up the project
-* Used [this tutorial](https://www.youtube.com/watch?v=6OT43pvUyfY) for setting up audio and for audio manager script
-
-### Assets
-
-* [8-direction top down character - Gamekrazzy](https://gamekrazzy.itch.io/8-direction-top-down-character)
-* [Modern Tilesets](https://limezu.itch.io/moderninteriors)
-* [8-direction top down Boss Enemy](https://e-bros-assets.itch.io/top-down-enemy-animated-8-directions)
-* [Music loop bundle - Tallbeard Studios](https://tallbeard.itch.io/music-loop-bundle)
-* [SFX Pack v1 - Mythril Age](https://mythril-age.itch.io/mythril-age-sfx-pack-v1)
-* [Fireball - NYKNCK](https://nyknck.itch.io/fireball-animation)
-* [Pixel Art FX - SpiritWitchSpirit](https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx)
-* [Medieval weapons pack - PixelHole](https://pixelhole.itch.io/medieval-weapons-pack)
-* [8-bit sound pack - SoundsByDane](https://soundsbydane.itch.io/8-bit-sound-pack)
