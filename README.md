@@ -29,18 +29,18 @@ Help Benjamin navigate his traumas and face his inner demons.
 
 ### Developed by: 
 
-Huang Zhenxin 
-Kerwin Lim
-Lee Hui Ting 
-Masagca Eris Jacey
-Tai Wen Le Lucas 
-Tan Yu Ting, Germaine 
+* Huang Zhenxin 
+* Kerwin Lim
+* Lee Hui Ting 
+* Masagca Eris Jacey
+* Tai Wen Le Lucas 
+* Tan Yu Ting, Germaine 
 
 ### Flow
 
-1. Main menu -> tutorial room
-1. Tutorial room -> main supermarket room
-1. Main supermarket room -> fake boss room / actual boss room
+1. Main menu
+1. Tutorial room
+1. Main room
 1. Actual boss room
 
 ### Objective
@@ -50,13 +50,14 @@ Tan Yu Ting, Germaine
 * Reach the boss (the manifestation of anxiety itself)
 * Beat the boss
 
-### Coming soon
+### Future Iterations
 
 * Health bar for boss enemies
 * Minimap
-* More health collectibles!
-* More maps! (fear - classroom, anger - house)
-* More enemy types!
+* More collectibles
+* More maps
+* More enemy types
+* More robust shop
 
 # Acknowledgements
 
